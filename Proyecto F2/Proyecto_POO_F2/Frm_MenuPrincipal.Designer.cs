@@ -1,0 +1,114 @@
+﻿namespace Capa01_Presentacion
+{
+    partial class Frm_MenuPrincipal
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_MenuPrincipal));
+            menuStrip1 = new System.Windows.Forms.MenuStrip();
+            pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            funcionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            pacientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            citasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            menuStrip1.SuspendLayout();
+            SuspendLayout();
+            // 
+            // menuStrip1
+            // 
+            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { pacientesToolStripMenuItem, serviciosToolStripMenuItem });
+            menuStrip1.Location = new System.Drawing.Point(0, 0);
+            menuStrip1.Name = "menuStrip1";
+            menuStrip1.Size = new System.Drawing.Size(800, 24);
+            menuStrip1.TabIndex = 0;
+            menuStrip1.Text = "menuStrip1";
+            // 
+            // pacientesToolStripMenuItem
+            // 
+            pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { pacientesToolStripMenuItem1, funcionariosToolStripMenuItem });
+            pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
+            pacientesToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
+            pacientesToolStripMenuItem.Text = "Editar";
+            // 
+            // funcionariosToolStripMenuItem
+            // 
+            funcionariosToolStripMenuItem.Name = "funcionariosToolStripMenuItem";
+            funcionariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            funcionariosToolStripMenuItem.Text = "Funcionarios";
+            // 
+            // pacientesToolStripMenuItem1
+            // 
+            pacientesToolStripMenuItem1.Name = "pacientesToolStripMenuItem1";
+            pacientesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            pacientesToolStripMenuItem1.Text = "Pacientes";
+            pacientesToolStripMenuItem1.Click += pacientesToolStripMenuItem1_Click;
+            // 
+            // serviciosToolStripMenuItem
+            // 
+            serviciosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { citasToolStripMenuItem });
+            serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
+            serviciosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            serviciosToolStripMenuItem.Text = "Servicios";
+            // 
+            // citasToolStripMenuItem
+            // 
+            citasToolStripMenuItem.Name = "citasToolStripMenuItem";
+            citasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            citasToolStripMenuItem.Text = "Citas";
+            // 
+            // Frm_MenuPrincipal
+            // 
+            AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.Screenshot_2023_06_10_171827;
+            BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            ClientSize = new System.Drawing.Size(800, 450);
+            Controls.Add(menuStrip1);
+            DoubleBuffered = true;
+            Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            IsMdiContainer = true;
+            MainMenuStrip = menuStrip1;
+            Name = "Frm_MenuPrincipal";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Frm_MenuPrincipal";
+            WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            menuStrip1.ResumeLayout(false);
+            menuStrip1.PerformLayout();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem pacientesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem funcionariosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem pacientesToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem serviciosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem citasToolStripMenuItem;
+    }
+}

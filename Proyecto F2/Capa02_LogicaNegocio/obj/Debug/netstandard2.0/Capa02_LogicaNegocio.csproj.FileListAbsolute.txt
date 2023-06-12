@@ -1,0 +1,15 @@
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\bin\Debug\netstandard2.0\Capa02_LogicaNegocio.deps.json
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\bin\Debug\netstandard2.0\Capa02_LogicaNegocio.dll
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\bin\Debug\netstandard2.0\Capa02_LogicaNegocio.pdb
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\bin\Debug\netstandard2.0\Capa03_AccesoDatos.dll
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\bin\Debug\netstandard2.0\Capa_Entidades.dll
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\bin\Debug\netstandard2.0\Capa03_AccesoDatos.pdb
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\bin\Debug\netstandard2.0\Capa_Entidades.pdb
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.csproj.AssemblyReference.cache
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.AssemblyInfoInputs.cache
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.AssemblyInfo.cs
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.csproj.CoreCompileInputs.cache
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.csproj.CopyComplete
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.dll
+D:\POO C#\Proyecto\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.pdb

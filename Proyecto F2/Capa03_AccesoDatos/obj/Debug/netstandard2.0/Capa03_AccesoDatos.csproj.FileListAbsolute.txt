@@ -1,0 +1,13 @@
+D:\POO C#\Proyecto\Capa03_AccesoDatos\bin\Debug\netstandard2.0\Capa03_AccesoDatos.deps.json
+D:\POO C#\Proyecto\Capa03_AccesoDatos\bin\Debug\netstandard2.0\Capa03_AccesoDatos.dll
+D:\POO C#\Proyecto\Capa03_AccesoDatos\bin\Debug\netstandard2.0\Capa03_AccesoDatos.pdb
+D:\POO C#\Proyecto\Capa03_AccesoDatos\bin\Debug\netstandard2.0\Capa_Entidades.dll
+D:\POO C#\Proyecto\Capa03_AccesoDatos\bin\Debug\netstandard2.0\Capa_Entidades.pdb
+D:\POO C#\Proyecto\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.csproj.AssemblyReference.cache
+D:\POO C#\Proyecto\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+D:\POO C#\Proyecto\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.AssemblyInfoInputs.cache
+D:\POO C#\Proyecto\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.AssemblyInfo.cs
+D:\POO C#\Proyecto\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.csproj.CoreCompileInputs.cache
+D:\POO C#\Proyecto\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.csproj.CopyComplete
+D:\POO C#\Proyecto\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.dll
+D:\POO C#\Proyecto\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.pdb
