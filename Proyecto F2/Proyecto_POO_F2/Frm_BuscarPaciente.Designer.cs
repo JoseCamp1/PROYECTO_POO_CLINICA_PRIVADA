@@ -200,14 +200,18 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             BackgroundImage = Properties.Resources.Screenshot_2023_06_10_171827;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             ClientSize = new System.Drawing.Size(1026, 405);
             Controls.Add(groupBox1);
             DoubleBuffered = true;
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
+            MaximizeBox = false;
+            MinimizeBox = false;
             Name = "Frm_BuscarPaciente";
-            Text = "Frm_BuscarPaciente";
+            StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            Text = "Buscar Paciente";
             Load += Frm_BuscarPaciente_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

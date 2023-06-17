@@ -230,7 +230,7 @@ namespace Capa01_Presentacion
                     {
                         //si el paciente no es nulo puede borrarlo
                         resultado = logica.EliminarPaciente(paciente);
-                        MessageBox.Show(logica.Mensaje, "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Eliminado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         //imprime el msj que el sp mando
                         Limpiar();
                         cargarListaPacientes();

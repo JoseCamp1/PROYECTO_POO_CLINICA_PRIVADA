@@ -68,6 +68,7 @@
             funcionariosToolStripMenuItem.Name = "funcionariosToolStripMenuItem";
             funcionariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             funcionariosToolStripMenuItem.Text = "Funcionarios";
+            funcionariosToolStripMenuItem.Click += funcionariosToolStripMenuItem_Click;
             // 
             // serviciosToolStripMenuItem
             // 

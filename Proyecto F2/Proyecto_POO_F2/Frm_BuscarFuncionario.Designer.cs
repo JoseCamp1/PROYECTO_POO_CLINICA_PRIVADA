@@ -34,7 +34,9 @@
             btnBuscar = new System.Windows.Forms.Button();
             btnCancelar = new System.Windows.Forms.Button();
             grdLista = new System.Windows.Forms.DataGridView();
-            ID_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            label2 = new System.Windows.Forms.Label();
+            txtNombre = new System.Windows.Forms.TextBox();
+            ID_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             NOMBRE_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             APELLIDOS_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             CEDULA_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -43,8 +45,6 @@
             DIRECCION_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             FECHA_NACIMIENTO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             Existe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            label2 = new System.Windows.Forms.Label();
-            txtNombre = new System.Windows.Forms.TextBox();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grdLista).BeginInit();
             SuspendLayout();
@@ -77,6 +77,7 @@
             btnAceptar.Text = "&Aceptar";
             btnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             btnAceptar.UseVisualStyleBackColor = false;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // btnBuscar
             // 
@@ -90,6 +91,7 @@
             btnBuscar.Text = "&Buscar";
             btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             btnBuscar.UseVisualStyleBackColor = false;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // btnCancelar
             // 
@@ -103,12 +105,13 @@
             btnCancelar.Text = "&Cancelar";
             btnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             btnCancelar.UseVisualStyleBackColor = false;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // grdLista
             // 
             grdLista.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             grdLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            grdLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { ID_PACIENTE, NOMBRE_PACIENTE, APELLIDOS_PACIENTE, CEDULA_PACIENTE, TELEFONO_PACIENTE, CORREO_PACIENTE, DIRECCION_PACIENTE, FECHA_NACIMIENTO_PACIENTE, Existe });
+            grdLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { ID_FUNCIONARIO, NOMBRE_PACIENTE, APELLIDOS_PACIENTE, CEDULA_PACIENTE, TELEFONO_PACIENTE, CORREO_PACIENTE, DIRECCION_PACIENTE, FECHA_NACIMIENTO_PACIENTE, Existe });
             grdLista.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             grdLista.GridColor = System.Drawing.SystemColors.ActiveBorder;
             grdLista.Location = new System.Drawing.Point(5, 89);
@@ -117,12 +120,29 @@
             grdLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             grdLista.Size = new System.Drawing.Size(1000, 290);
             grdLista.TabIndex = 15;
+            grdLista.DoubleClick += grdLista_DoubleClick;
             // 
-            // ID_PACIENTE
+            // label2
             // 
-            ID_PACIENTE.DataPropertyName = "IdPaciente";
-            ID_PACIENTE.HeaderText = "ID Paciente";
-            ID_PACIENTE.Name = "ID_PACIENTE";
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(6, 23);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(107, 15);
+            label2.TabIndex = 26;
+            label2.Text = "Ingrese el Nombre ";
+            // 
+            // txtNombre
+            // 
+            txtNombre.Location = new System.Drawing.Point(6, 41);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new System.Drawing.Size(284, 23);
+            txtNombre.TabIndex = 27;
+            // 
+            // ID_FUNCIONARIO
+            // 
+            ID_FUNCIONARIO.DataPropertyName = "IdFuncionario";
+            ID_FUNCIONARIO.HeaderText = "ID Funcionario";
+            ID_FUNCIONARIO.Name = "ID_FUNCIONARIO";
             // 
             // NOMBRE_PACIENTE
             // 
@@ -176,22 +196,6 @@
             Existe.Name = "Existe";
             Existe.Visible = false;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(6, 23);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(107, 15);
-            label2.TabIndex = 26;
-            label2.Text = "Ingrese el Nombre ";
-            // 
-            // txtNombre
-            // 
-            txtNombre.Location = new System.Drawing.Point(6, 41);
-            txtNombre.Name = "txtNombre";
-            txtNombre.Size = new System.Drawing.Size(284, 23);
-            txtNombre.TabIndex = 27;
-            // 
             // Frm_BuscarFuncionario
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -208,6 +212,7 @@
             Name = "Frm_BuscarFuncionario";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Buscar Funcionario";
+            Load += Frm_BuscarFuncionario_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)grdLista).EndInit();
@@ -221,7 +226,9 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.DataGridView grdLista;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_PACIENTE;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_FUNCIONARIO;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE_PACIENTE;
         private System.Windows.Forms.DataGridViewTextBoxColumn APELLIDOS_PACIENTE;
         private System.Windows.Forms.DataGridViewTextBoxColumn CEDULA_PACIENTE;
@@ -230,7 +237,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn DIRECCION_PACIENTE;
         private System.Windows.Forms.DataGridViewTextBoxColumn FECHA_NACIMIENTO_PACIENTE;
         private System.Windows.Forms.DataGridViewTextBoxColumn Existe;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtNombre;
     }
 }

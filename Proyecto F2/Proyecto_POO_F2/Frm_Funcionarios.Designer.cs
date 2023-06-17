@@ -40,15 +40,6 @@
             txtTelefono = new System.Windows.Forms.TextBox();
             txtCorreo = new System.Windows.Forms.TextBox();
             grdLista = new System.Windows.Forms.DataGridView();
-            ID_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            NOMBRE_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            APELLIDOS_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            CEDULA_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            TELEFONO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            CORREO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            DIRECCION_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            FECHA_NACIMIENTO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            Existe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             txtDireccion = new System.Windows.Forms.TextBox();
             label1 = new System.Windows.Forms.Label();
             label5 = new System.Windows.Forms.Label();
@@ -61,6 +52,15 @@
             btnEliminar = new System.Windows.Forms.Button();
             btnGuardar = new System.Windows.Forms.Button();
             btnBuscar = new System.Windows.Forms.Button();
+            ID_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            NOMBRE_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            APELLIDOS_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            CEDULA_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            TELEFONO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            CORREO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            DIRECCION_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            FECHA_NACIMIENTO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Existe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             groupBoxPaciente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grdLista).BeginInit();
             SuspendLayout();
@@ -169,7 +169,7 @@
             // 
             grdLista.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             grdLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            grdLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { ID_PACIENTE, NOMBRE_PACIENTE, APELLIDOS_PACIENTE, CEDULA_PACIENTE, TELEFONO_PACIENTE, CORREO_PACIENTE, DIRECCION_PACIENTE, FECHA_NACIMIENTO_PACIENTE, Existe });
+            grdLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { ID_FUNCIONARIO, NOMBRE_PACIENTE, APELLIDOS_PACIENTE, CEDULA_PACIENTE, TELEFONO_PACIENTE, CORREO_PACIENTE, DIRECCION_PACIENTE, FECHA_NACIMIENTO_PACIENTE, Existe });
             grdLista.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             grdLista.GridColor = System.Drawing.SystemColors.ActiveBorder;
             grdLista.Location = new System.Drawing.Point(6, 70);
@@ -178,64 +178,7 @@
             grdLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             grdLista.Size = new System.Drawing.Size(1000, 290);
             grdLista.TabIndex = 14;
-            // 
-            // ID_PACIENTE
-            // 
-            ID_PACIENTE.DataPropertyName = "IdPaciente";
-            ID_PACIENTE.HeaderText = "ID Paciente";
-            ID_PACIENTE.Name = "ID_PACIENTE";
-            // 
-            // NOMBRE_PACIENTE
-            // 
-            NOMBRE_PACIENTE.DataPropertyName = "Nombre";
-            NOMBRE_PACIENTE.HeaderText = "Nombre";
-            NOMBRE_PACIENTE.Name = "NOMBRE_PACIENTE";
-            // 
-            // APELLIDOS_PACIENTE
-            // 
-            APELLIDOS_PACIENTE.DataPropertyName = "Apellidos";
-            APELLIDOS_PACIENTE.HeaderText = "Apellidos";
-            APELLIDOS_PACIENTE.Name = "APELLIDOS_PACIENTE";
-            APELLIDOS_PACIENTE.Width = 150;
-            // 
-            // CEDULA_PACIENTE
-            // 
-            CEDULA_PACIENTE.DataPropertyName = "Cedula";
-            CEDULA_PACIENTE.HeaderText = "Cedula";
-            CEDULA_PACIENTE.Name = "CEDULA_PACIENTE";
-            // 
-            // TELEFONO_PACIENTE
-            // 
-            TELEFONO_PACIENTE.DataPropertyName = "Telefono";
-            TELEFONO_PACIENTE.HeaderText = "Telefono";
-            TELEFONO_PACIENTE.Name = "TELEFONO_PACIENTE";
-            // 
-            // CORREO_PACIENTE
-            // 
-            CORREO_PACIENTE.DataPropertyName = "Correo";
-            CORREO_PACIENTE.HeaderText = "Correo Electronico";
-            CORREO_PACIENTE.Name = "CORREO_PACIENTE";
-            CORREO_PACIENTE.Width = 150;
-            // 
-            // DIRECCION_PACIENTE
-            // 
-            DIRECCION_PACIENTE.DataPropertyName = "Direccion";
-            DIRECCION_PACIENTE.HeaderText = "Direccion";
-            DIRECCION_PACIENTE.Name = "DIRECCION_PACIENTE";
-            DIRECCION_PACIENTE.Width = 150;
-            // 
-            // FECHA_NACIMIENTO_PACIENTE
-            // 
-            FECHA_NACIMIENTO_PACIENTE.DataPropertyName = "FechaNacimiento";
-            FECHA_NACIMIENTO_PACIENTE.HeaderText = "Fecha de Nacimiento";
-            FECHA_NACIMIENTO_PACIENTE.Name = "FECHA_NACIMIENTO_PACIENTE";
-            // 
-            // Existe
-            // 
-            Existe.DataPropertyName = "Existe";
-            Existe.HeaderText = "Existe";
-            Existe.Name = "Existe";
-            Existe.Visible = false;
+            grdLista.DoubleClick += grdLista_DoubleClick;
             // 
             // txtDireccion
             // 
@@ -306,6 +249,7 @@
             btnLimpiar.Text = "&Limpiar";
             btnLimpiar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             btnLimpiar.UseVisualStyleBackColor = false;
+            btnLimpiar.Click += btnLimpiar_Click;
             // 
             // btnSalir
             // 
@@ -319,6 +263,7 @@
             btnSalir.Text = "&Salir";
             btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
             // 
             // btnEliminar
             // 
@@ -332,6 +277,7 @@
             btnEliminar.Text = "&Eliminar";
             btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             btnEliminar.UseVisualStyleBackColor = false;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnGuardar
             // 
@@ -345,6 +291,7 @@
             btnGuardar.Text = "&Guardar";
             btnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             btnGuardar.UseVisualStyleBackColor = false;
+            btnGuardar.Click += btnGuardar_Click;
             // 
             // btnBuscar
             // 
@@ -358,6 +305,65 @@
             btnBuscar.Text = "&Buscar";
             btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             btnBuscar.UseVisualStyleBackColor = false;
+            btnBuscar.Click += btnBuscar_Click;
+            // 
+            // ID_FUNCIONARIO
+            // 
+            ID_FUNCIONARIO.DataPropertyName = "IdFuncionario";
+            ID_FUNCIONARIO.HeaderText = "ID Funcionario";
+            ID_FUNCIONARIO.Name = "ID_FUNCIONARIO";
+            // 
+            // NOMBRE_PACIENTE
+            // 
+            NOMBRE_PACIENTE.DataPropertyName = "Nombre";
+            NOMBRE_PACIENTE.HeaderText = "Nombre";
+            NOMBRE_PACIENTE.Name = "NOMBRE_PACIENTE";
+            // 
+            // APELLIDOS_PACIENTE
+            // 
+            APELLIDOS_PACIENTE.DataPropertyName = "Apellidos";
+            APELLIDOS_PACIENTE.HeaderText = "Apellidos";
+            APELLIDOS_PACIENTE.Name = "APELLIDOS_PACIENTE";
+            APELLIDOS_PACIENTE.Width = 150;
+            // 
+            // CEDULA_PACIENTE
+            // 
+            CEDULA_PACIENTE.DataPropertyName = "Cedula";
+            CEDULA_PACIENTE.HeaderText = "Cedula";
+            CEDULA_PACIENTE.Name = "CEDULA_PACIENTE";
+            // 
+            // TELEFONO_PACIENTE
+            // 
+            TELEFONO_PACIENTE.DataPropertyName = "Telefono";
+            TELEFONO_PACIENTE.HeaderText = "Telefono";
+            TELEFONO_PACIENTE.Name = "TELEFONO_PACIENTE";
+            // 
+            // CORREO_PACIENTE
+            // 
+            CORREO_PACIENTE.DataPropertyName = "Correo";
+            CORREO_PACIENTE.HeaderText = "Correo Electronico";
+            CORREO_PACIENTE.Name = "CORREO_PACIENTE";
+            CORREO_PACIENTE.Width = 150;
+            // 
+            // DIRECCION_PACIENTE
+            // 
+            DIRECCION_PACIENTE.DataPropertyName = "Direccion";
+            DIRECCION_PACIENTE.HeaderText = "Direccion";
+            DIRECCION_PACIENTE.Name = "DIRECCION_PACIENTE";
+            DIRECCION_PACIENTE.Width = 150;
+            // 
+            // FECHA_NACIMIENTO_PACIENTE
+            // 
+            FECHA_NACIMIENTO_PACIENTE.DataPropertyName = "FechaNacimiento";
+            FECHA_NACIMIENTO_PACIENTE.HeaderText = "Fecha de Nacimiento";
+            FECHA_NACIMIENTO_PACIENTE.Name = "FECHA_NACIMIENTO_PACIENTE";
+            // 
+            // Existe
+            // 
+            Existe.DataPropertyName = "Existe";
+            Existe.HeaderText = "Existe";
+            Existe.Name = "Existe";
+            Existe.Visible = false;
             // 
             // Frm_Funcionarios
             // 
@@ -380,6 +386,7 @@
             Name = "Frm_Funcionarios";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Funcionarios";
+            Load += Frm_Funcionarios_Load;
             groupBoxPaciente.ResumeLayout(false);
             groupBoxPaciente.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)grdLista).EndInit();
@@ -399,15 +406,6 @@
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.DataGridView grdLista;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_PACIENTE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE_PACIENTE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn APELLIDOS_PACIENTE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CEDULA_PACIENTE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TELEFONO_PACIENTE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CORREO_PACIENTE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DIRECCION_PACIENTE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FECHA_NACIMIENTO_PACIENTE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Existe;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label5;
@@ -420,5 +418,14 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_FUNCIONARIO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn APELLIDOS_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CEDULA_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TELEFONO_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CORREO_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DIRECCION_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FECHA_NACIMIENTO_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Existe;
     }
 }
