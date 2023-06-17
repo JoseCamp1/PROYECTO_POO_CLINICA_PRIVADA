@@ -35,58 +35,53 @@
             label4 = new System.Windows.Forms.Label();
             label3 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
-            btnNuevo = new System.Windows.Forms.Button();
+            btnLimpiar = new System.Windows.Forms.Button();
             btnSalir = new System.Windows.Forms.Button();
             btnEliminar = new System.Windows.Forms.Button();
             btnGuardar = new System.Windows.Forms.Button();
             btnBuscar = new System.Windows.Forms.Button();
-            grdClientes = new System.Windows.Forms.DataGridView();
+            grdLista = new System.Windows.Forms.DataGridView();
             ID_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             NOMBRE_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            APELLIDO1_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            APELLIDO2_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            APELLIDOS_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             CEDULA_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             TELEFONO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             CORREO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             DIRECCION_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             FECHA_NACIMIENTO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ESTADO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            BORRADO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            txtApellido1 = new System.Windows.Forms.TextBox();
+            Existe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            txtApellidos = new System.Windows.Forms.TextBox();
             label5 = new System.Windows.Forms.Label();
-            txtApellido2 = new System.Windows.Forms.TextBox();
-            label6 = new System.Windows.Forms.Label();
             txtCedula = new System.Windows.Forms.TextBox();
             label7 = new System.Windows.Forms.Label();
             txtFechaNacimiento = new System.Windows.Forms.TextBox();
             label8 = new System.Windows.Forms.Label();
             txtCorreo = new System.Windows.Forms.TextBox();
             label1 = new System.Windows.Forms.Label();
-            txtBuscarNombre = new System.Windows.Forms.TextBox();
-            label9 = new System.Windows.Forms.Label();
-            btnCargarLista = new System.Windows.Forms.Button();
             txtID_Paciente = new System.Windows.Forms.TextBox();
             label10 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)grdClientes).BeginInit();
+            groupBoxPaciente = new System.Windows.Forms.GroupBox();
+            ((System.ComponentModel.ISupportInitialize)grdLista).BeginInit();
+            groupBoxPaciente.SuspendLayout();
             SuspendLayout();
             // 
             // txtDireccion
             // 
-            txtDireccion.Location = new System.Drawing.Point(805, 67);
+            txtDireccion.Location = new System.Drawing.Point(697, 41);
             txtDireccion.Name = "txtDireccion";
             txtDireccion.Size = new System.Drawing.Size(100, 23);
             txtDireccion.TabIndex = 27;
             // 
             // txtTelefono
             // 
-            txtTelefono.Location = new System.Drawing.Point(595, 67);
+            txtTelefono.Location = new System.Drawing.Point(487, 41);
             txtTelefono.Name = "txtTelefono";
             txtTelefono.Size = new System.Drawing.Size(100, 23);
             txtTelefono.TabIndex = 26;
             // 
             // txtNombre
             // 
-            txtNombre.Location = new System.Drawing.Point(170, 67);
+            txtNombre.Location = new System.Drawing.Point(168, 41);
             txtNombre.Name = "txtNombre";
             txtNombre.Size = new System.Drawing.Size(100, 23);
             txtNombre.TabIndex = 25;
@@ -94,7 +89,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new System.Drawing.Point(805, 49);
+            label4.Location = new System.Drawing.Point(697, 23);
             label4.Name = "label4";
             label4.Size = new System.Drawing.Size(57, 15);
             label4.TabIndex = 23;
@@ -103,7 +98,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new System.Drawing.Point(595, 49);
+            label3.Location = new System.Drawing.Point(487, 23);
             label3.Name = "label3";
             label3.Size = new System.Drawing.Size(52, 15);
             label3.TabIndex = 22;
@@ -112,85 +107,96 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(170, 49);
+            label2.Location = new System.Drawing.Point(168, 23);
             label2.Name = "label2";
             label2.Size = new System.Drawing.Size(51, 15);
             label2.TabIndex = 21;
             label2.Text = "Nombre";
             // 
-            // btnNuevo
+            // btnLimpiar
             // 
-            btnNuevo.Image = Properties.Resources._1490129329_rounded38_82203;
-            btnNuevo.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnNuevo.Location = new System.Drawing.Point(526, 577);
-            btnNuevo.Name = "btnNuevo";
-            btnNuevo.Size = new System.Drawing.Size(75, 71);
-            btnNuevo.TabIndex = 19;
-            btnNuevo.Text = "&Nuevo";
-            btnNuevo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnNuevo.UseVisualStyleBackColor = true;
-            btnNuevo.Click += btnNuevo_Click;
+            btnLimpiar.BackColor = System.Drawing.SystemColors.Window;
+            btnLimpiar.Image = Properties.Resources.broom_5182;
+            btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnLimpiar.Location = new System.Drawing.Point(362, 387);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new System.Drawing.Size(75, 71);
+            btnLimpiar.TabIndex = 19;
+            btnLimpiar.Text = "&Limpiar";
+            btnLimpiar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btnLimpiar.UseVisualStyleBackColor = false;
+            btnLimpiar.Click += btnNuevo_Click;
             // 
             // btnSalir
             // 
+            btnSalir.BackColor = System.Drawing.SystemColors.Window;
             btnSalir.Image = Properties.Resources._4115235_exit_logout_sign_out_114030;
             btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnSalir.Location = new System.Drawing.Point(830, 577);
+            btnSalir.Location = new System.Drawing.Point(666, 387);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new System.Drawing.Size(75, 71);
             btnSalir.TabIndex = 18;
             btnSalir.Text = "&Salir";
             btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnSalir.UseVisualStyleBackColor = true;
+            btnSalir.UseVisualStyleBackColor = false;
             btnSalir.Click += btnSalir_Click;
             // 
             // btnEliminar
             // 
+            btnEliminar.BackColor = System.Drawing.SystemColors.Window;
             btnEliminar.Image = Properties.Resources.trash_bin_icon_icons_com_67981;
             btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnEliminar.Location = new System.Drawing.Point(735, 577);
+            btnEliminar.Location = new System.Drawing.Point(575, 387);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new System.Drawing.Size(75, 71);
             btnEliminar.TabIndex = 17;
             btnEliminar.Text = "&Eliminar";
             btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnEliminar.UseVisualStyleBackColor = true;
+            btnEliminar.UseVisualStyleBackColor = false;
+            btnEliminar.Click += btnEliminar_Click;
             // 
             // btnGuardar
             // 
-            btnGuardar.Image = Properties.Resources._1904659_arrow_backup_down_download_save_storage_transfer_122509;
+            btnGuardar.BackColor = System.Drawing.SystemColors.Window;
+            btnGuardar.Image = Properties.Resources._1490129329_rounded38_82203;
             btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnGuardar.Location = new System.Drawing.Point(629, 575);
+            btnGuardar.Location = new System.Drawing.Point(465, 385);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new System.Drawing.Size(75, 71);
             btnGuardar.TabIndex = 16;
             btnGuardar.Text = "&Guardar";
             btnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.UseVisualStyleBackColor = false;
             btnGuardar.Click += btnGuardar_Click;
             // 
             // btnBuscar
             // 
+            btnBuscar.BackColor = System.Drawing.SystemColors.Window;
             btnBuscar.Image = Properties.Resources.seo_social_web_network_internet_340_icon_icons_com_61497;
             btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnBuscar.Location = new System.Drawing.Point(323, 575);
+            btnBuscar.Location = new System.Drawing.Point(267, 385);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new System.Drawing.Size(75, 71);
             btnBuscar.TabIndex = 15;
             btnBuscar.Text = "&Buscar";
             btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnBuscar.UseVisualStyleBackColor = true;
+            btnBuscar.UseVisualStyleBackColor = false;
             btnBuscar.Click += btnBuscar_Click;
             // 
-            // grdClientes
+            // grdLista
             // 
-            grdClientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            grdClientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { ID_PACIENTE, NOMBRE_PACIENTE, APELLIDO1_PACIENTE, APELLIDO2_PACIENTE, CEDULA_PACIENTE, TELEFONO_PACIENTE, CORREO_PACIENTE, DIRECCION_PACIENTE, FECHA_NACIMIENTO_PACIENTE, ESTADO_PACIENTE, BORRADO_PACIENTE });
-            grdClientes.Location = new System.Drawing.Point(3, 110);
-            grdClientes.Name = "grdClientes";
-            grdClientes.RowTemplate.Height = 25;
-            grdClientes.Size = new System.Drawing.Size(1149, 448);
-            grdClientes.TabIndex = 14;
+            grdLista.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            grdLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            grdLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { ID_PACIENTE, NOMBRE_PACIENTE, APELLIDOS_PACIENTE, CEDULA_PACIENTE, TELEFONO_PACIENTE, CORREO_PACIENTE, DIRECCION_PACIENTE, FECHA_NACIMIENTO_PACIENTE, Existe });
+            grdLista.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            grdLista.GridColor = System.Drawing.SystemColors.ActiveBorder;
+            grdLista.Location = new System.Drawing.Point(6, 70);
+            grdLista.Name = "grdLista";
+            grdLista.RowTemplate.Height = 25;
+            grdLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            grdLista.Size = new System.Drawing.Size(1000, 290);
+            grdLista.TabIndex = 14;
+            grdLista.DoubleClick += grdLista_DoubleClick;
             // 
             // ID_PACIENTE
             // 
@@ -204,17 +210,12 @@
             NOMBRE_PACIENTE.HeaderText = "Nombre";
             NOMBRE_PACIENTE.Name = "NOMBRE_PACIENTE";
             // 
-            // APELLIDO1_PACIENTE
+            // APELLIDOS_PACIENTE
             // 
-            APELLIDO1_PACIENTE.DataPropertyName = "Apellido1";
-            APELLIDO1_PACIENTE.HeaderText = "1er Apellido";
-            APELLIDO1_PACIENTE.Name = "APELLIDO1_PACIENTE";
-            // 
-            // APELLIDO2_PACIENTE
-            // 
-            APELLIDO2_PACIENTE.DataPropertyName = "Apellido2";
-            APELLIDO2_PACIENTE.HeaderText = "2do Apellido";
-            APELLIDO2_PACIENTE.Name = "APELLIDO2_PACIENTE";
+            APELLIDOS_PACIENTE.DataPropertyName = "Apellidos";
+            APELLIDOS_PACIENTE.HeaderText = "Apellidos";
+            APELLIDOS_PACIENTE.Name = "APELLIDOS_PACIENTE";
+            APELLIDOS_PACIENTE.Width = 150;
             // 
             // CEDULA_PACIENTE
             // 
@@ -233,12 +234,14 @@
             CORREO_PACIENTE.DataPropertyName = "Correo";
             CORREO_PACIENTE.HeaderText = "Correo Electronico";
             CORREO_PACIENTE.Name = "CORREO_PACIENTE";
+            CORREO_PACIENTE.Width = 150;
             // 
             // DIRECCION_PACIENTE
             // 
             DIRECCION_PACIENTE.DataPropertyName = "Direccion";
             DIRECCION_PACIENTE.HeaderText = "Direccion";
             DIRECCION_PACIENTE.Name = "DIRECCION_PACIENTE";
+            DIRECCION_PACIENTE.Width = 150;
             // 
             // FECHA_NACIMIENTO_PACIENTE
             // 
@@ -246,53 +249,32 @@
             FECHA_NACIMIENTO_PACIENTE.HeaderText = "Fecha de Nacimiento";
             FECHA_NACIMIENTO_PACIENTE.Name = "FECHA_NACIMIENTO_PACIENTE";
             // 
-            // ESTADO_PACIENTE
+            // Existe
             // 
-            ESTADO_PACIENTE.DataPropertyName = "Estado";
-            ESTADO_PACIENTE.HeaderText = "Estado";
-            ESTADO_PACIENTE.Name = "ESTADO_PACIENTE";
+            Existe.DataPropertyName = "Existe";
+            Existe.HeaderText = "Existe";
+            Existe.Name = "Existe";
+            Existe.Visible = false;
             // 
-            // BORRADO_PACIENTE
+            // txtApellidos
             // 
-            BORRADO_PACIENTE.DataPropertyName = "Borrado";
-            BORRADO_PACIENTE.HeaderText = "Borrado";
-            BORRADO_PACIENTE.Name = "BORRADO_PACIENTE";
-            // 
-            // txtApellido1
-            // 
-            txtApellido1.Location = new System.Drawing.Point(276, 67);
-            txtApellido1.Name = "txtApellido1";
-            txtApellido1.Size = new System.Drawing.Size(100, 23);
-            txtApellido1.TabIndex = 29;
+            txtApellidos.Location = new System.Drawing.Point(274, 41);
+            txtApellidos.Name = "txtApellidos";
+            txtApellidos.Size = new System.Drawing.Size(100, 23);
+            txtApellidos.TabIndex = 29;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new System.Drawing.Point(276, 49);
+            label5.Location = new System.Drawing.Point(274, 23);
             label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(70, 15);
+            label5.Size = new System.Drawing.Size(56, 15);
             label5.TabIndex = 28;
-            label5.Text = "1er Apellido";
-            // 
-            // txtApellido2
-            // 
-            txtApellido2.Location = new System.Drawing.Point(382, 67);
-            txtApellido2.Name = "txtApellido2";
-            txtApellido2.Size = new System.Drawing.Size(100, 23);
-            txtApellido2.TabIndex = 31;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new System.Drawing.Point(382, 49);
-            label6.Name = "label6";
-            label6.Size = new System.Drawing.Size(74, 15);
-            label6.TabIndex = 30;
-            label6.Text = "2do Apellido";
+            label5.Text = "Apellidos";
             // 
             // txtCedula
             // 
-            txtCedula.Location = new System.Drawing.Point(488, 67);
+            txtCedula.Location = new System.Drawing.Point(380, 41);
             txtCedula.Name = "txtCedula";
             txtCedula.Size = new System.Drawing.Size(100, 23);
             txtCedula.TabIndex = 33;
@@ -300,7 +282,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new System.Drawing.Point(488, 49);
+            label7.Location = new System.Drawing.Point(380, 23);
             label7.Name = "label7";
             label7.Size = new System.Drawing.Size(44, 15);
             label7.TabIndex = 32;
@@ -308,7 +290,7 @@
             // 
             // txtFechaNacimiento
             // 
-            txtFechaNacimiento.Location = new System.Drawing.Point(911, 67);
+            txtFechaNacimiento.Location = new System.Drawing.Point(803, 41);
             txtFechaNacimiento.Name = "txtFechaNacimiento";
             txtFechaNacimiento.Size = new System.Drawing.Size(100, 23);
             txtFechaNacimiento.TabIndex = 35;
@@ -316,7 +298,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new System.Drawing.Point(911, 49);
+            label8.Location = new System.Drawing.Point(803, 23);
             label8.Name = "label8";
             label8.Size = new System.Drawing.Size(119, 15);
             label8.TabIndex = 34;
@@ -324,7 +306,7 @@
             // 
             // txtCorreo
             // 
-            txtCorreo.Location = new System.Drawing.Point(699, 67);
+            txtCorreo.Location = new System.Drawing.Point(591, 41);
             txtCorreo.Name = "txtCorreo";
             txtCorreo.Size = new System.Drawing.Size(100, 23);
             txtCorreo.TabIndex = 37;
@@ -332,46 +314,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new System.Drawing.Point(699, 49);
+            label1.Location = new System.Drawing.Point(591, 23);
             label1.Name = "label1";
             label1.Size = new System.Drawing.Size(43, 15);
             label1.TabIndex = 36;
             label1.Text = "Correo";
             // 
-            // txtBuscarNombre
-            // 
-            txtBuscarNombre.Location = new System.Drawing.Point(134, 624);
-            txtBuscarNombre.Name = "txtBuscarNombre";
-            txtBuscarNombre.Size = new System.Drawing.Size(150, 23);
-            txtBuscarNombre.TabIndex = 39;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new System.Drawing.Point(134, 606);
-            label9.Name = "label9";
-            label9.Size = new System.Drawing.Size(110, 15);
-            label9.TabIndex = 38;
-            label9.Text = "Buscar por Nombre";
-            // 
-            // btnCargarLista
-            // 
-            btnCargarLista.Image = Properties.Resources._1492790910_94list_84237;
-            btnCargarLista.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnCargarLista.Location = new System.Drawing.Point(423, 575);
-            btnCargarLista.Name = "btnCargarLista";
-            btnCargarLista.Size = new System.Drawing.Size(75, 71);
-            btnCargarLista.TabIndex = 40;
-            btnCargarLista.Text = "&Cargar";
-            btnCargarLista.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnCargarLista.UseVisualStyleBackColor = true;
-            btnCargarLista.Click += btnCargarLista_Click;
-            // 
             // txtID_Paciente
             // 
             txtID_Paciente.BackColor = System.Drawing.SystemColors.Info;
             txtID_Paciente.Enabled = false;
-            txtID_Paciente.Location = new System.Drawing.Point(64, 67);
+            txtID_Paciente.Location = new System.Drawing.Point(62, 41);
             txtID_Paciente.Name = "txtID_Paciente";
             txtID_Paciente.Size = new System.Drawing.Size(100, 23);
             txtID_Paciente.TabIndex = 42;
@@ -379,56 +332,66 @@
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new System.Drawing.Point(64, 49);
+            label10.Location = new System.Drawing.Point(62, 23);
             label10.Name = "label10";
             label10.Size = new System.Drawing.Size(66, 15);
             label10.TabIndex = 41;
             label10.Text = "ID Paciente";
             // 
+            // groupBoxPaciente
+            // 
+            groupBoxPaciente.BackColor = System.Drawing.Color.Transparent;
+            groupBoxPaciente.Controls.Add(txtFechaNacimiento);
+            groupBoxPaciente.Controls.Add(txtID_Paciente);
+            groupBoxPaciente.Controls.Add(label2);
+            groupBoxPaciente.Controls.Add(label10);
+            groupBoxPaciente.Controls.Add(label3);
+            groupBoxPaciente.Controls.Add(label4);
+            groupBoxPaciente.Controls.Add(txtNombre);
+            groupBoxPaciente.Controls.Add(txtTelefono);
+            groupBoxPaciente.Controls.Add(txtCorreo);
+            groupBoxPaciente.Controls.Add(grdLista);
+            groupBoxPaciente.Controls.Add(txtDireccion);
+            groupBoxPaciente.Controls.Add(label1);
+            groupBoxPaciente.Controls.Add(label5);
+            groupBoxPaciente.Controls.Add(txtApellidos);
+            groupBoxPaciente.Controls.Add(label8);
+            groupBoxPaciente.Controls.Add(label7);
+            groupBoxPaciente.Controls.Add(txtCedula);
+            groupBoxPaciente.Location = new System.Drawing.Point(12, 12);
+            groupBoxPaciente.Name = "groupBoxPaciente";
+            groupBoxPaciente.Size = new System.Drawing.Size(1013, 369);
+            groupBoxPaciente.TabIndex = 43;
+            groupBoxPaciente.TabStop = false;
+            groupBoxPaciente.Text = "Informacion del Paciente";
+            // 
             // Frm_Pacientes
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            BackColor = System.Drawing.SystemColors.Window;
             BackgroundImage = Properties.Resources.Screenshot_2023_06_10_171827;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            ClientSize = new System.Drawing.Size(1156, 660);
-            Controls.Add(txtID_Paciente);
-            Controls.Add(label10);
-            Controls.Add(btnCargarLista);
-            Controls.Add(txtBuscarNombre);
-            Controls.Add(label9);
-            Controls.Add(txtCorreo);
-            Controls.Add(label1);
-            Controls.Add(txtFechaNacimiento);
-            Controls.Add(label8);
-            Controls.Add(txtCedula);
-            Controls.Add(label7);
-            Controls.Add(txtApellido2);
-            Controls.Add(label6);
-            Controls.Add(txtApellido1);
-            Controls.Add(label5);
-            Controls.Add(txtDireccion);
-            Controls.Add(txtTelefono);
-            Controls.Add(txtNombre);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(btnNuevo);
+            ClientSize = new System.Drawing.Size(1033, 463);
+            Controls.Add(groupBoxPaciente);
+            Controls.Add(btnLimpiar);
             Controls.Add(btnSalir);
             Controls.Add(btnEliminar);
             Controls.Add(btnGuardar);
             Controls.Add(btnBuscar);
-            Controls.Add(grdClientes);
             DoubleBuffered = true;
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "Frm_Pacientes";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "Frm_Pacientes";
-            ((System.ComponentModel.ISupportInitialize)grdClientes).EndInit();
+            Text = "Pacientes";
+            Load += Frm_Pacientes_Load;
+            ((System.ComponentModel.ISupportInitialize)grdLista).EndInit();
+            groupBoxPaciente.ResumeLayout(false);
+            groupBoxPaciente.PerformLayout();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -439,37 +402,31 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Button btnLimpiar;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnBuscar;
-        private System.Windows.Forms.DataGridView grdClientes;
-        private System.Windows.Forms.TextBox txtApellido1;
+        private System.Windows.Forms.DataGridView grdLista;
+        private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtApellido2;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtFechaNacimiento;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtCorreo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtBuscarNombre;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button btnCargarLista;
+        private System.Windows.Forms.TextBox txtID_Paciente;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.GroupBox groupBoxPaciente;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_PACIENTE;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE_PACIENTE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn APELLIDO1_PACIENTE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn APELLIDO2_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn APELLIDOS_PACIENTE;
         private System.Windows.Forms.DataGridViewTextBoxColumn CEDULA_PACIENTE;
         private System.Windows.Forms.DataGridViewTextBoxColumn TELEFONO_PACIENTE;
         private System.Windows.Forms.DataGridViewTextBoxColumn CORREO_PACIENTE;
         private System.Windows.Forms.DataGridViewTextBoxColumn DIRECCION_PACIENTE;
         private System.Windows.Forms.DataGridViewTextBoxColumn FECHA_NACIMIENTO_PACIENTE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ESTADO_PACIENTE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn BORRADO_PACIENTE;
-        private System.Windows.Forms.TextBox txtID_Paciente;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Existe;
     }
 }

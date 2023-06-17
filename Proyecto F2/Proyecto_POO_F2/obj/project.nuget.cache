@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6TC5k/gIH7CtOCfMZtiK9bruyOHlKShuse5Ba1n/9sGppuzGZwm3ZzyIy2lOCY59/Eg4qlM2ysi128paOA0cyw==",
+  "dgSpecHash": "pcYhc+7kgaOTRUFQ/rYNuOB5EcvfB4T3SMLaa4vXuXDH/k3vQgdrrmB2x7h/0HhjgqTPyDpUHOmAbmQHg6mr7g==",
   "success": true,
-  "projectFilePath": "D:\\POO C#\\Proyecto\\Proyecto_POO_F2\\Capa01_Presentacion.csproj",
+  "projectFilePath": "D:\\POO C#\\Proyecto POO\\Proyecto F2\\Proyecto_POO_F2\\Capa01_Presentacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JoaCa\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\JoaCa\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

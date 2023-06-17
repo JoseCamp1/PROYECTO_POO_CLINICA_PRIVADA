@@ -27,13 +27,13 @@ namespace Capa02_LogicaNegocio
         }
 
         //metodo para llamar al metodo insertar de la capa3accesodatos
-        public int Insertar(Entidad_Paciente paciente)
+        public int InsertarPaciente(Entidad_Paciente paciente)
         {
             int id_paciente = 0;
             DA_Paciente accesoDatos = new DA_Paciente(_cadenaConexion);
             try
             {
-                id_paciente = accesoDatos.Insertar(paciente);
+                id_paciente = accesoDatos.InsertarPaciente(paciente);
             }
             catch (Exception)
             {
@@ -72,6 +72,39 @@ namespace Capa02_LogicaNegocio
             }
             return cliente;
         }
+
+        public int EliminarPaciente(Entidad_Paciente paciente)
+        {
+            int resultado;
+            DA_Paciente accesoDatos = new DA_Paciente(_cadenaConexion);
+            try
+            {
+                //aqui antes de eliminar se podria verificar si es posible eliminar
+                resultado = accesoDatos.EliminarRegistroPaciente(paciente);
+                _mensaje = accesoDatos.Mensaje;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return resultado;
+        }//eliminarfin
+
+        public int ModificarPaciente(Entidad_Paciente paciente)
+        {
+            int filasAfectadas = 0;
+            DA_Paciente accesoDatos = new DA_Paciente(_cadenaConexion);
+            try
+            {
+                filasAfectadas = accesoDatos.ModificarRegistroPaciente(paciente);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return filasAfectadas;
+        }//finmodificar
+
 
     }
 }

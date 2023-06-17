@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_MenuPrincipal));
             menuStrip1 = new System.Windows.Forms.MenuStrip();
             pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            funcionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             pacientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            funcionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             citasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             menuStrip1.SuspendLayout();
@@ -54,18 +54,20 @@
             pacientesToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             pacientesToolStripMenuItem.Text = "Editar";
             // 
-            // funcionariosToolStripMenuItem
-            // 
-            funcionariosToolStripMenuItem.Name = "funcionariosToolStripMenuItem";
-            funcionariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            funcionariosToolStripMenuItem.Text = "Funcionarios";
-            // 
             // pacientesToolStripMenuItem1
             // 
+            pacientesToolStripMenuItem1.Image = Properties.Resources.users_people_workers_customers_icon_124243;
             pacientesToolStripMenuItem1.Name = "pacientesToolStripMenuItem1";
             pacientesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             pacientesToolStripMenuItem1.Text = "Pacientes";
             pacientesToolStripMenuItem1.Click += pacientesToolStripMenuItem1_Click;
+            // 
+            // funcionariosToolStripMenuItem
+            // 
+            funcionariosToolStripMenuItem.Image = Properties.Resources.users_people_workers_customers_icon_124243;
+            funcionariosToolStripMenuItem.Name = "funcionariosToolStripMenuItem";
+            funcionariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            funcionariosToolStripMenuItem.Text = "Funcionarios";
             // 
             // serviciosToolStripMenuItem
             // 
@@ -77,7 +79,7 @@
             // citasToolStripMenuItem
             // 
             citasToolStripMenuItem.Name = "citasToolStripMenuItem";
-            citasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            citasToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             citasToolStripMenuItem.Text = "Citas";
             // 
             // Frm_MenuPrincipal

@@ -63,9 +63,39 @@ namespace Capa01_Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1487086345_cross_81577 {
+            get {
+                object obj = ResourceManager.GetObject("1487086345-cross_81577", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1487086345_cross_815771 {
+            get {
+                object obj = ResourceManager.GetObject("1487086345-cross_815771", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1490129329_rounded38_82203 {
             get {
                 object obj = ResourceManager.GetObject("1490129329-rounded38_82203", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1490793813_user_interface20_82328 {
+            get {
+                object obj = ResourceManager.GetObject("1490793813-user-interface20_82328", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -93,9 +123,29 @@ namespace Capa01_Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4115228_accept_checklist_checkmark_yes_114037 {
+            get {
+                object obj = ResourceManager.GetObject("4115228-accept-checklist-checkmark-yes_114037", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4115235_exit_logout_sign_out_114030 {
             get {
                 object obj = ResourceManager.GetObject("4115235-exit-logout-sign-out_114030", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap broom_5182 {
+            get {
+                object obj = ResourceManager.GetObject("broom_5182", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +176,16 @@ namespace Capa01_Presentacion.Properties {
         internal static System.Drawing.Bitmap trash_bin_icon_icons_com_67981 {
             get {
                 object obj = ResourceManager.GetObject("trash_bin_icon-icons.com_67981", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap users_people_workers_customers_icon_124243 {
+            get {
+                object obj = ResourceManager.GetObject("users_people_workers_customers_icon_124243", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
