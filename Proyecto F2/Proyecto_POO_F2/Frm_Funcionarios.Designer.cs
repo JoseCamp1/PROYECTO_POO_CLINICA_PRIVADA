@@ -35,6 +35,8 @@
             Nombre_PuestoTrabajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            label12 = new System.Windows.Forms.Label();
+            label11 = new System.Windows.Forms.Label();
             grdEspecialidad = new System.Windows.Forms.DataGridView();
             IdEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,8 +79,6 @@
             btnEliminar = new System.Windows.Forms.Button();
             btnGuardar = new System.Windows.Forms.Button();
             btnBuscar = new System.Windows.Forms.Button();
-            label11 = new System.Windows.Forms.Label();
-            label12 = new System.Windows.Forms.Label();
             groupBoxPaciente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grdPuesto).BeginInit();
             ((System.ComponentModel.ISupportInitialize)grdEspecialidad).BeginInit();
@@ -163,6 +163,24 @@
             dataGridViewTextBoxColumn3.HeaderText = "Existe";
             dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new System.Drawing.Point(803, 78);
+            label12.Name = "label12";
+            label12.Size = new System.Drawing.Size(323, 15);
+            label12.TabIndex = 50;
+            label12.Text = "*Doble click sobre la especialidad del medico para agregarlo";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new System.Drawing.Point(90, 78);
+            label11.Name = "label11";
+            label11.Size = new System.Drawing.Size(288, 15);
+            label11.TabIndex = 49;
+            label11.Text = "*Doble click sobre el puesto de trabajo para agregarlo";
             // 
             // grdEspecialidad
             // 
@@ -530,24 +548,6 @@
             btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             btnBuscar.UseVisualStyleBackColor = false;
             btnBuscar.Click += btnBuscar_Click;
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new System.Drawing.Point(90, 78);
-            label11.Name = "label11";
-            label11.Size = new System.Drawing.Size(284, 15);
-            label11.TabIndex = 49;
-            label11.Text = "*Doble click sobre el puesto de trabajo del empleado";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new System.Drawing.Point(803, 78);
-            label12.Name = "label12";
-            label12.Size = new System.Drawing.Size(244, 15);
-            label12.TabIndex = 50;
-            label12.Text = "*Doble click sobre la especialidad del medico";
             // 
             // Frm_Funcionarios
             // 

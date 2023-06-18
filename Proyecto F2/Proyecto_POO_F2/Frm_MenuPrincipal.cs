@@ -42,5 +42,12 @@ namespace Capa01_Presentacion
             especialidades.MdiParent = this;
             especialidades.Show();
         }
+
+        private void agendaEspecialistaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Agenda agenda = new Frm_Agenda();
+            agenda.MdiParent = this;
+            agenda.Show();
+        }
     }
 }

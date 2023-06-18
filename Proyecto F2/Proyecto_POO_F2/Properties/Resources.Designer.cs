@@ -153,6 +153,36 @@ namespace Capa01_Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap calendar_with_a_clock_time_tools_icon_icons_com_56831 {
+            get {
+                object obj = ResourceManager.GetObject("calendar-with-a-clock-time-tools_icon-icons.com_56831", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap effective_employees_users_team_group_icon_152042 {
+            get {
+                object obj = ResourceManager.GetObject("effective_employees_users_team_group_icon_152042", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap medical_clinic_icon_194649 {
+            get {
+                object obj = ResourceManager.GetObject("medical_clinic_icon_194649", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap products_new_cube_product_design_icon_153845 {
             get {
                 object obj = ResourceManager.GetObject("products_new_cube_product_design_icon_153845", resourceCulture);
@@ -183,9 +213,29 @@ namespace Capa01_Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap self_protection_healthcare_medical_covid_coronavirus_icon_140748 {
+            get {
+                object obj = ResourceManager.GetObject("self_protection_healthcare_medical_covid_coronavirus_icon_140748", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap seo_social_web_network_internet_340_icon_icons_com_61497 {
             get {
                 object obj = ResourceManager.GetObject("seo-social-web-network-internet_340_icon-icons.com_61497", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap time_clock_icon_129581 {
+            get {
+                object obj = ResourceManager.GetObject("time_clock_icon_129581", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
