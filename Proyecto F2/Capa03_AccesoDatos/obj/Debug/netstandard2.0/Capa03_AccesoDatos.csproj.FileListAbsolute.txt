@@ -24,3 +24,16 @@ D:\POO C#\Proyecto POO\Proyecto F2\Capa03_AccesoDatos\bin\Debug\netstandard2.0\C
 D:\POO C#\Proyecto POO\Proyecto F2\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.csproj.CopyComplete
 D:\POO C#\Proyecto POO\Proyecto F2\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.dll
 D:\POO C#\Proyecto POO\Proyecto F2\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.pdb
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa03_AccesoDatos\bin\Debug\netstandard2.0\Capa03_AccesoDatos.deps.json
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa03_AccesoDatos\bin\Debug\netstandard2.0\Capa03_AccesoDatos.dll
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa03_AccesoDatos\bin\Debug\netstandard2.0\Capa03_AccesoDatos.pdb
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa03_AccesoDatos\bin\Debug\netstandard2.0\Capa_Entidades.dll
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa03_AccesoDatos\bin\Debug\netstandard2.0\Capa_Entidades.pdb
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.csproj.AssemblyReference.cache
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.GeneratedMSBuildEditorConfig.editorconfig
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.AssemblyInfoInputs.cache
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.AssemblyInfo.cs
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.csproj.CoreCompileInputs.cache
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.csproj.CopyComplete
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.dll
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa03_AccesoDatos\obj\Debug\netstandard2.0\Capa03_AccesoDatos.pdb

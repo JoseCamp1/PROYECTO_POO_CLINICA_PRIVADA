@@ -28,3 +28,18 @@ D:\POO C#\Proyecto POO\Proyecto F2\Capa02_LogicaNegocio\bin\Debug\netstandard2.0
 D:\POO C#\Proyecto POO\Proyecto F2\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.csproj.CopyComplete
 D:\POO C#\Proyecto POO\Proyecto F2\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.dll
 D:\POO C#\Proyecto POO\Proyecto F2\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.pdb
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\bin\Debug\netstandard2.0\Capa02_LogicaNegocio.deps.json
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\bin\Debug\netstandard2.0\Capa02_LogicaNegocio.dll
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\bin\Debug\netstandard2.0\Capa02_LogicaNegocio.pdb
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\bin\Debug\netstandard2.0\Capa03_AccesoDatos.dll
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\bin\Debug\netstandard2.0\Capa_Entidades.dll
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\bin\Debug\netstandard2.0\Capa03_AccesoDatos.pdb
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\bin\Debug\netstandard2.0\Capa_Entidades.pdb
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.csproj.AssemblyReference.cache
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.AssemblyInfoInputs.cache
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.AssemblyInfo.cs
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.csproj.CoreCompileInputs.cache
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.csproj.CopyComplete
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.dll
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa02_LogicaNegocio\obj\Debug\netstandard2.0\Capa02_LogicaNegocio.pdb

@@ -45,7 +45,7 @@ CREATE TABLE ESPECIALIDADES (
 CREATE TABLE FUNCIONARIOS (
   ID_FUNCIONARIO INT PRIMARY KEY IDENTITY(1,1),
   ID_PUESTO INT,
-  ID_ESPECIALIDAD INT NULL,
+  ID_ESPECIALIDAD INT,
   NOMBRE_FUNCIONARIO VARCHAR(50),
   APELLIDOS_FUNCIONARIO VARCHAR(50),
   CEDULA_FUNCIONARIO VARCHAR(9),
@@ -94,6 +94,7 @@ VALUES
 -- Inserción de datos en la tabla ESPECIALIDADES
 INSERT INTO ESPECIALIDADES (NOMBRE_ESPECIALIDAD, DESCRIPCION_ESPECIALIDAD)
 VALUES
+  ('', ''),
   ('Medicina General', 'Especialidad médica que se encarga del cuidado integral de la salud de los pacientes'),
   ('Pediatría', 'Especialidad médica que se enfoca en la atención y cuidado de los niños y adolescentes'),
   ('Ginecología', 'Especialidad médica que se ocupa de la salud del aparato reproductor femenino');
@@ -102,8 +103,8 @@ VALUES
 --DELETE FUNCIONARIOS
 INSERT INTO FUNCIONARIOS (ID_PUESTO, ID_ESPECIALIDAD, NOMBRE_FUNCIONARIO, APELLIDOS_FUNCIONARIO, CEDULA_FUNCIONARIO, TELEFONO_FUNCIONARIO, CORREO_FUNCIONARIO, DIRECCION_FUNCIONARIO, FECHA_NACIMIENTO_FUNCIONARIO)
 VALUES
-  (1,null, 'Juana', 'Gonzales', '123456777', '12345777', 'juana@example.com', 'San José', '1990-05-15')
-  (1, 1, 'Juan', 'Pérez', '123456789', '12345678', 'juan@example.com', 'San José', '1990-05-10'),
+  (2, 1, 'Juana', 'Gonzales', '123456777', '12345777', 'juana@example.com', 'San José', '1990-05-15'),
+  (1, 2, 'Juan', 'Pérez', '123456789', '12345678', 'juan@example.com', 'San José', '1990-05-10'),
   (1, 2, 'María', 'López', '987654321', '87654321', 'maria@example.com', 'Heredia', '1985-12-15'),
   (1, 3, 'Carlos', 'González', '456789123', '65432198', 'carlos@example.com', 'Alajuela', '1988-09-20'),
   (1, 1, 'Ana', 'Ramírez', '789123456', '32198765', 'ana@example.com', 'Cartago', '1992-07-05'),
@@ -112,17 +113,18 @@ VALUES
 -- Inserción de datos en la tabla AGENDA_TRABAJO
 INSERT INTO AGENDA_TRABAJO (ID_FUNCIONARIO, FECHA, HORA_INICIO, HORA_FIN)
 VALUES
-  (1, '2023-06-17', '08:00:00', '12:00:00'),
-  (2, '2023-06-17', '14:00:00', '18:00:00'),
-  (3, '2023-06-18', '09:00:00', '13:00:00');
+  (2, '2023-06-20', '08:00:00', '12:00:00'),
+  (2, '2023-06-21', '14:00:00', '18:00:00'),
+  (2, '2023-06-22', '09:00:00', '13:00:00');
 
 -- Verificación de los datos insertados en la tabla PACIENTES
 SELECT * FROM PACIENTES;
 
 -- Verificación de los datos insertados en la tabla FUNCIONARIOS
 SELECT * FROM FUNCIONARIOS;
-SELECT * FROM FUNCIONARIOS F
-LEFT JOIN ESPECIALIDADES E ON F.ID_ESPECIALIDAD = E.ID_ESPECIALIDAD
+
+--SELECT * FROM FUNCIONARIOS F
+--LEFT JOIN ESPECIALIDADES E ON F.ID_ESPECIALIDAD = E.ID_ESPECIALIDAD
 
 -- Verificación de los datos insertados en la tabla PUESTOS_DE_TRABAJO
 SELECT * FROM PUESTOS_DE_TRABAJO;

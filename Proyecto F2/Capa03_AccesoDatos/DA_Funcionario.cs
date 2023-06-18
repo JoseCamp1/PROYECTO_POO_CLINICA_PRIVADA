@@ -33,7 +33,9 @@ namespace Capa03_AccesoDatos
             //Establecer los comandos sQL
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            string sentencia = "INSERT INTO FUNCIONARIOS (NOMBRE_FUNCIONARIO,APELLIDOS_FUNCIONARIO,CEDULA_FUNCIONARIO,TELEFONO_FUNCIONARIO,CORREO_FUNCIONARIO,DIRECCION_FUNCIONARIO,FECHA_NACIMIENTO_FUNCIONARIO) VALUES (@NOMBRE_FUNCIONARIO,@APELLIDOS_FUNCIONARIO,@CEDULA_FUNCIONARIO,@TELEFONO_FUNCIONARIO,@CORREO_FUNCIONARIO,@DIRECCION_FUNCIONARIO,@FECHA_NACIMIENTO_FUNCIONARIO) SELECT @@IDENTITY";
+            string sentencia = "INSERT INTO FUNCIONARIOS (ID_PUESTO,ID_ESPECIALIDAD,NOMBRE_FUNCIONARIO,APELLIDOS_FUNCIONARIO,CEDULA_FUNCIONARIO,TELEFONO_FUNCIONARIO,CORREO_FUNCIONARIO,DIRECCION_FUNCIONARIO,FECHA_NACIMIENTO_FUNCIONARIO) VALUES (@ID_PUESTO,@ID_ESPECIALIDAD,@NOMBRE_FUNCIONARIO,@APELLIDOS_FUNCIONARIO,@CEDULA_FUNCIONARIO,@TELEFONO_FUNCIONARIO,@CORREO_FUNCIONARIO,@DIRECCION_FUNCIONARIO,@FECHA_NACIMIENTO_FUNCIONARIO) SELECT @@IDENTITY";
+            comando.Parameters.AddWithValue("@ID_PUESTO", funcionario.IdFuncionario);
+            comando.Parameters.AddWithValue("@ID_ESPECIALIDAD", funcionario.IdEspecialidad);
             comando.Parameters.AddWithValue("@NOMBRE_FUNCIONARIO", funcionario.Nombre);
             comando.Parameters.AddWithValue("@APELLIDOS_FUNCIONARIO", funcionario.Apellidos);
             comando.Parameters.AddWithValue("@CEDULA_FUNCIONARIO", funcionario.Cedula);
@@ -60,13 +62,16 @@ namespace Capa03_AccesoDatos
             return id;
         }
 
+        
+
+
         public List<Entidad_Funcionario> ListarFuncionarios(string condicion = "")
         {
             DataSet DS = new DataSet();
             SqlConnection connection = new SqlConnection(_cadenaConexion);
             SqlDataAdapter adapter;
             List<Entidad_Funcionario> funcionario;
-            string sentencia = "SELECT ID_FUNCIONARIO,NOMBRE_FUNCIONARIO,APELLIDOS_FUNCIONARIO,CEDULA_FUNCIONARIO,TELEFONO_FUNCIONARIO,CORREO_FUNCIONARIO,DIRECCION_FUNCIONARIO,FECHA_NACIMIENTO_FUNCIONARIO FROM FUNCIONARIOS";
+            string sentencia = "SELECT ID_FUNCIONARIO,ID_PUESTO,ID_ESPECIALIDAD,NOMBRE_FUNCIONARIO,APELLIDOS_FUNCIONARIO,CEDULA_FUNCIONARIO,TELEFONO_FUNCIONARIO,CORREO_FUNCIONARIO,DIRECCION_FUNCIONARIO,FECHA_NACIMIENTO_FUNCIONARIO FROM FUNCIONARIOS";
             if (!string.IsNullOrEmpty(condicion))
             {
                 sentencia = string.Format("{0} WHERE {1}", sentencia, condicion);
@@ -79,13 +84,15 @@ namespace Capa03_AccesoDatos
                                select new Entidad_Funcionario()
                                {
                                    IdFuncionario = (int)unaFila[0],
-                                   Nombre = unaFila[1].ToString(),
-                                   Apellidos = unaFila[2].ToString(),
-                                   Cedula = unaFila[3].ToString(),
-                                   Telefono = unaFila[4].ToString(),
-                                   Correo = unaFila[5].ToString(),
-                                   Direccion = unaFila[6].ToString(),
-                                   FechaNacimiento = DateTime.Parse(unaFila[7].ToString()),
+                                   IdPuestoTrabajo = (int)unaFila[1],
+                                   IdEspecialidad = (int)unaFila[2],
+                                   Nombre = unaFila[3].ToString(),
+                                   Apellidos = unaFila[4].ToString(),
+                                   Cedula = unaFila[5].ToString(),
+                                   Telefono = unaFila[6].ToString(),
+                                   Correo = unaFila[7].ToString(),
+                                   Direccion = unaFila[8].ToString(),
+                                   FechaNacimiento = DateTime.Parse(unaFila[9].ToString()),
                                }).ToList();
             }
             catch (Exception)
@@ -101,7 +108,7 @@ namespace Capa03_AccesoDatos
             SqlConnection conexion = new SqlConnection(_cadenaConexion);
             SqlCommand comando = new SqlCommand();
             SqlDataReader dataReader;
-            string sentencia = string.Format("SELECT ID_FUNCIONARIO,NOMBRE_FUNCIONARIO,APELLIDOS_FUNCIONARIO,CEDULA_FUNCIONARIO,TELEFONO_FUNCIONARIO,CORREO_FUNCIONARIO,DIRECCION_FUNCIONARIO,FECHA_NACIMIENTO_FUNCIONARIO FROM FUNCIONARIOS WHERE ID_FUNCIONARIO ={0}", id);
+            string sentencia = string.Format("SELECT ID_FUNCIONARIO,ID_PUESTO,ID_ESPECIALIDAD,NOMBRE_FUNCIONARIO,APELLIDOS_FUNCIONARIO,CEDULA_FUNCIONARIO,TELEFONO_FUNCIONARIO,CORREO_FUNCIONARIO,DIRECCION_FUNCIONARIO,FECHA_NACIMIENTO_FUNCIONARIO FROM FUNCIONARIOS WHERE ID_FUNCIONARIO ={0}", id);
             comando.Connection = conexion;
             comando.CommandText = sentencia;
             try
@@ -113,13 +120,15 @@ namespace Capa03_AccesoDatos
                     funcionario = new Entidad_Funcionario();
                     dataReader.Read();
                     funcionario.IdFuncionario = dataReader.GetInt32(0);
-                    funcionario.Nombre = dataReader.GetString(1);
-                    funcionario.Apellidos = dataReader.GetString(2);
-                    funcionario.Cedula = dataReader.GetString(3);
-                    funcionario.Telefono = dataReader.GetString(4);
-                    funcionario.Correo = dataReader.GetString(5);
-                    funcionario.Direccion = dataReader.GetString(6);
-                    funcionario.FechaNacimiento = dataReader.GetDateTime(7);
+                    funcionario.IdPuestoTrabajo = dataReader.GetInt32(1);
+                    funcionario.IdEspecialidad = dataReader.GetInt32(2);
+                    funcionario.Nombre = dataReader.GetString(3);
+                    funcionario.Apellidos = dataReader.GetString(4);
+                    funcionario.Cedula = dataReader.GetString(5);
+                    funcionario.Telefono = dataReader.GetString(6);
+                    funcionario.Correo = dataReader.GetString(7);
+                    funcionario.Direccion = dataReader.GetString(8);
+                    funcionario.FechaNacimiento = dataReader.GetDateTime(9);
                     funcionario.Existe = true;
                 }
                 conexion.Close();
@@ -129,13 +138,13 @@ namespace Capa03_AccesoDatos
         }
 
         //este metodo sirve para eliminar un funcionario pero sin llamar a un SP
-        public int EliminarRegistroFuncionario(Entidad_Funcionario paciente)
+        public int EliminarRegistroFuncionario(Entidad_Funcionario funcionario)
         {
             int afectado = -1;
             SqlConnection conexion = new SqlConnection(_cadenaConexion);
             SqlCommand comando = new SqlCommand();
             string sentencia = "DELETE FROM FUNCIONARIOS";
-            sentencia = string.Format("{0} WHERE ID_FUNCIONARIO ={1}", sentencia, paciente.IdFuncionario);
+            sentencia = string.Format("{0} WHERE ID_FUNCIONARIO ={1}", sentencia, funcionario.IdFuncionario);
             comando.CommandText = sentencia;
             comando.Connection = conexion;
             try
@@ -158,10 +167,12 @@ namespace Capa03_AccesoDatos
             int filasAfectadas = -1;
             SqlConnection conexion = new SqlConnection(_cadenaConexion);
             SqlCommand comando = new SqlCommand();
-            string sentencia = "UPDATE FUNCIONARIOS SET NOMBRE_FUNCIONARIO=@NOMBRE_FUNCIONARIO,APELLIDOS_FUNCIONARIO=@APELLIDOS_FUNCIONARIO,CEDULA_FUNCIONARIO=@CEDULA_FUNCIONARIO,TELEFONO_FUNCIONARIO=@TELEFONO_FUNCIONARIO,CORREO_FUNCIONARIO=@CORREO_FUNCIONARIO,DIRECCION_FUNCIONARIO=@DIRECCION_FUNCIONARIO,FECHA_NACIMIENTO_FUNCIONARIO=@FECHA_NACIMIENTO_FUNCIONARIO WHERE ID_FUNCIONARIO=@ID_FUNCIONARIO";
+            string sentencia = "UPDATE FUNCIONARIOS SET ID_PUESTO=@ID_PUESTO,ID_ESPECIALIDAD=@ID_ESPECIALIDAD,NOMBRE_FUNCIONARIO=@NOMBRE_FUNCIONARIO,APELLIDOS_FUNCIONARIO=@APELLIDOS_FUNCIONARIO,CEDULA_FUNCIONARIO=@CEDULA_FUNCIONARIO,TELEFONO_FUNCIONARIO=@TELEFONO_FUNCIONARIO,CORREO_FUNCIONARIO=@CORREO_FUNCIONARIO,DIRECCION_FUNCIONARIO=@DIRECCION_FUNCIONARIO,FECHA_NACIMIENTO_FUNCIONARIO=@FECHA_NACIMIENTO_FUNCIONARIO WHERE ID_FUNCIONARIO=@ID_FUNCIONARIO";
             comando.CommandText = sentencia;
             comando.Connection = conexion;
             comando.Parameters.AddWithValue("@ID_FUNCIONARIO", funcionario.IdFuncionario);
+            comando.Parameters.AddWithValue("@ID_FUNCIONARIO", funcionario.IdPuestoTrabajo);
+            comando.Parameters.AddWithValue("@ID_FUNCIONARIO", funcionario.IdEspecialidad);
             comando.Parameters.AddWithValue("@NOMBRE_FUNCIONARIO", funcionario.Nombre);
             comando.Parameters.AddWithValue("@APELLIDOS_FUNCIONARIO", funcionario.Apellidos);
             comando.Parameters.AddWithValue("@CEDULA_FUNCIONARIO", funcionario.Cedula);

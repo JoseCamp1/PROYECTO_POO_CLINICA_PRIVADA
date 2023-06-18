@@ -18,3 +18,13 @@ D:\POO C#\Proyecto POO\Proyecto F2\Capa_Entidades\obj\Debug\netstandard2.0\Capa_
 D:\POO C#\Proyecto POO\Proyecto F2\Capa_Entidades\obj\Debug\netstandard2.0\Capa_Entidades.csproj.CoreCompileInputs.cache
 D:\POO C#\Proyecto POO\Proyecto F2\Capa_Entidades\obj\Debug\netstandard2.0\Capa_Entidades.dll
 D:\POO C#\Proyecto POO\Proyecto F2\Capa_Entidades\obj\Debug\netstandard2.0\Capa_Entidades.pdb
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa_Entidades\bin\Debug\netstandard2.0\Capa_Entidades.deps.json
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa_Entidades\bin\Debug\netstandard2.0\Capa_Entidades.dll
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa_Entidades\bin\Debug\netstandard2.0\Capa_Entidades.pdb
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa_Entidades\obj\Debug\netstandard2.0\Capa_Entidades.csproj.AssemblyReference.cache
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa_Entidades\obj\Debug\netstandard2.0\Capa_Entidades.GeneratedMSBuildEditorConfig.editorconfig
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa_Entidades\obj\Debug\netstandard2.0\Capa_Entidades.AssemblyInfoInputs.cache
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa_Entidades\obj\Debug\netstandard2.0\Capa_Entidades.AssemblyInfo.cs
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa_Entidades\obj\Debug\netstandard2.0\Capa_Entidades.csproj.CoreCompileInputs.cache
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa_Entidades\obj\Debug\netstandard2.0\Capa_Entidades.dll
+E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Capa_Entidades\obj\Debug\netstandard2.0\Capa_Entidades.pdb

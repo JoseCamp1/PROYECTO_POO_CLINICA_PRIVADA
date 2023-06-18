@@ -21,6 +21,45 @@ namespace Capa01_Presentacion
         // Variable global: si el campo txtIdFuncionario.Text tiene algún valor, significa que el funcionario existe y no se debe insertar sino modificar
         Entidad_Funcionario funcionarioRegistrado;
 
+        public void cargarListaPuestosTrabajo(string condicion = "")
+        {
+            grdPuesto.Refresh();
+            BL_PuestosTrabajo logica = new BL_PuestosTrabajo(Configuracion.getConnectionString);
+            List<Entidad_PuestosTrabajo> puestosTrabajo;
+            try
+            {
+                puestosTrabajo = logica.ListarPuestosTrabajo(condicion);
+                if (puestosTrabajo.Count > 0)
+                {
+                    grdPuesto.DataSource = puestosTrabajo;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+
+        public void cargarListaEspecialidades(string condicion = "")
+        {
+            grdEspecialidad.Refresh();
+            BL_Especialidades logica = new BL_Especialidades(Configuracion.getConnectionString);
+            List<Entidad_Especialidades> especialidades;
+            try
+            {
+                especialidades = logica.ListarEspecialidades(condicion);
+                if (especialidades.Count > 0)
+                {
+                    grdEspecialidad.DataSource = especialidades;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         public Entidad_Funcionario GenerarEntidadFuncionario()
         {
             Entidad_Funcionario funcionario;
@@ -32,6 +71,9 @@ namespace Capa01_Presentacion
             {
                 funcionario = new Entidad_Funcionario();
             }
+            funcionario.IdFuncionario = Convert.ToInt32(txtID_Funcionario.Text);
+            funcionario.IdPuestoTrabajo = Convert.ToInt32(txtID_Puesto.Text);
+            funcionario.IdEspecialidad = Convert.ToInt32(txtID_Especialidad.Text);
             funcionario.Nombre = txtNombre.Text;
             funcionario.Apellidos = txtApellidos.Text;
             funcionario.Cedula = txtCedula.Text;
@@ -44,6 +86,7 @@ namespace Capa01_Presentacion
 
         private void Limpiar()
         {
+            txtID_Puesto.Text = string.Empty;
             txtID_Funcionario.Text = string.Empty;
             txtNombre.Text = string.Empty;
             txtApellidos.Text = string.Empty;
@@ -103,6 +146,8 @@ namespace Capa01_Presentacion
                 if (funcionario != null)
                 {
                     txtID_Funcionario.Text = funcionario.IdFuncionario.ToString();
+                    txtID_Puesto.Text = funcionario.IdPuestoTrabajo.ToString();
+                    txtID_Especialidad.Text = funcionario.IdEspecialidad.ToString();
                     txtNombre.Text = funcionario.Nombre;
                     txtApellidos.Text = funcionario.Apellidos;
                     txtCedula.Text = funcionario.Cedula;
@@ -141,7 +186,7 @@ namespace Capa01_Presentacion
             int resultado;
             try
             {
-                if (!string.IsNullOrEmpty(txtNombre.Text) && !string.IsNullOrEmpty(txtApellidos.Text) && !string.IsNullOrEmpty(txtCedula.Text) && !string.IsNullOrEmpty(txtTelefono.Text) && !string.IsNullOrEmpty(txtCorreo.Text) && !string.IsNullOrEmpty(txtDireccion.Text) && !string.IsNullOrEmpty(txtFechaNacimiento.Text))
+                if (!string.IsNullOrEmpty(txtNombre.Text) && !string.IsNullOrEmpty(txtApellidos.Text) && !string.IsNullOrEmpty(txtCedula.Text) && !string.IsNullOrEmpty(txtTelefono.Text) && !string.IsNullOrEmpty(txtCorreo.Text) && !string.IsNullOrEmpty(txtDireccion.Text) && !string.IsNullOrEmpty(txtFechaNacimiento.Text) && !string.IsNullOrEmpty(txtID_Puesto.Text))
                 {
                     funcionario = GenerarEntidadFuncionario();
                     if (!funcionario.Existe)
@@ -185,6 +230,8 @@ namespace Capa01_Presentacion
         {
             try
             {
+                verificarDoctor();
+                cargarListaPuestosTrabajo();
                 cargarListaFuncionarios();
             }
             catch (Exception ex)
@@ -220,7 +267,7 @@ namespace Capa01_Presentacion
                     if (funcionario != null)
                     {
                         resultado = logica.EliminarFuncionario(funcionario);
-                        MessageBox.Show("Eliminado","Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Eliminado", "Aviso", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         Limpiar();
                         cargarListaFuncionarios();
                     }
@@ -241,6 +288,53 @@ namespace Capa01_Presentacion
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void grdEspecialidad_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Asegurarse de que se haya hecho clic en una fila válida
+            {
+                DataGridViewRow row = grdEspecialidad.Rows[e.RowIndex];
+
+                // Obtener el valor de la primera columna de la fila seleccionada
+                string valor = row.Cells[0].Value.ToString();
+
+                // Asignar el valor al TextBox
+                txtID_Especialidad.Text = valor;
+            }
+        }
+
+        private void grdPuesto_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Asegurarse de que se haya hecho clic en una fila válida
+            {
+                DataGridViewRow row = grdPuesto.Rows[e.RowIndex];
+
+                // Obtener el valor de la primera columna de la fila seleccionada
+                string valor = row.Cells[0].Value.ToString();
+
+                // Asignar el valor al TextBox
+                txtID_Puesto.Text = valor;
+            }
+        }
+
+        private void verificarDoctor()
+        {
+            if (txtID_Puesto.Text == "1")
+            {
+                grdEspecialidad.Enabled = false;
+                cargarListaEspecialidades();
+            }
+            else
+            {
+                txtID_Especialidad.Text = "1";
+                grdEspecialidad.Enabled = true;
+            }
+        }
+
+        private void txtID_Puesto_TextChanged(object sender, EventArgs e)
+        {
+            verificarDoctor();
         }
     }
 }

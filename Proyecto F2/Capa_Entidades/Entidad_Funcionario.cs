@@ -8,6 +8,8 @@ namespace Capa_Entidades
     {
         //atributos
         private int idFuncionario;
+        private int idPuestoTrabajo;
+        private int idEspecialidad;
         private string nombre;
         private string apellidos;
         private string cedula;
@@ -27,11 +29,15 @@ namespace Capa_Entidades
         public string Direccion { get => direccion; set => direccion = value; }
         public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
         public bool Existe { get => existe; set => existe = value; }
+        public int IdPuestoTrabajo { get => idPuestoTrabajo; set => idPuestoTrabajo = value; }
+        public int IdEspecialidad { get => idEspecialidad; set => idEspecialidad = value; }
 
         //constructores
         public Entidad_Funcionario()
         {
             IdFuncionario = 0;
+            idPuestoTrabajo = 0;
+            idEspecialidad = 0;            
             Nombre = string.Empty;
             Apellidos = string.Empty;
             Cedula = string.Empty;
@@ -42,12 +48,14 @@ namespace Capa_Entidades
             Existe = false;
         }
 
-        public Entidad_Funcionario(int id, string nombre, string apellidos, string apellido2,
+        public Entidad_Funcionario(int id, int idPuestoTrabajo, int idEspecialidad, string nombre, string apellidos, string apellido2,
             string cedula, string telefono, string correo, string direccion,
             DateTime fechaNacimiento, bool existe)
         {
 
-            this.IdFuncionario = id;
+            this.IdFuncionario = id;            
+            this.idPuestoTrabajo = idPuestoTrabajo;
+            this.IdEspecialidad = idEspecialidad;
             this.Nombre = nombre;
             this.Apellidos = apellidos;
             this.Cedula = cedula;
