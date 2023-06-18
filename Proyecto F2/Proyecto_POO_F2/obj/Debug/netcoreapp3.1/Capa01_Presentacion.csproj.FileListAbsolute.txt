@@ -65,3 +65,7 @@ D:\POO C#\Proyecto POO\Proyecto F2\Proyecto_POO_F2\obj\Debug\netcoreapp3.1\Capa0
 D:\POO C#\Proyecto POO\Proyecto F2\Proyecto_POO_F2\obj\Debug\netcoreapp3.1\Capa01_Presentacion.dll
 D:\POO C#\Proyecto POO\Proyecto F2\Proyecto_POO_F2\obj\Debug\netcoreapp3.1\Capa01_Presentacion.pdb
 D:\POO C#\Proyecto POO\Proyecto F2\Proyecto_POO_F2\obj\Debug\netcoreapp3.1\Capa01_Presentacion.genruntimeconfig.cache
+D:\POO C#\Proyecto POO\Proyecto F2\Proyecto_POO_F2\obj\Debug\netcoreapp3.1\Capa01_Presentacion.Frm_PuestosdeTrabajo.resources
+D:\POO C#\Proyecto POO\Proyecto F2\Proyecto_POO_F2\obj\Debug\netcoreapp3.1\Capa01_Presentacion.Frm_BuscarPuestoTrabajo.resources
+D:\POO C#\Proyecto POO\Proyecto F2\Proyecto_POO_F2\obj\Debug\netcoreapp3.1\Capa01_Presentacion.Frm_BuscarEspecialidades.resources
+D:\POO C#\Proyecto POO\Proyecto F2\Proyecto_POO_F2\obj\Debug\netcoreapp3.1\Capa01_Presentacion.Frm_Especialidades.resources

@@ -63,7 +63,7 @@
             groupBox1.Size = new System.Drawing.Size(1011, 385);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Buscar Paciente";
+            groupBox1.Text = "Buscar";
             // 
             // btnAceptar
             // 

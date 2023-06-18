@@ -153,6 +153,26 @@ namespace Capa01_Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap products_new_cube_product_design_icon_153845 {
+            get {
+                object obj = ResourceManager.GetObject("products_new_cube_product_design_icon_153845", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap products_new_cube_product_design_icon_1538451 {
+            get {
+                object obj = ResourceManager.GetObject("products_new_cube_product_design_icon_1538451", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Screenshot_2023_06_10_171827 {
             get {
                 object obj = ResourceManager.GetObject("Screenshot 2023-06-10 171827", resourceCulture);

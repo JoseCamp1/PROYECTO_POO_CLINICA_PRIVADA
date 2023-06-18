@@ -34,8 +34,6 @@
             btnBuscar = new System.Windows.Forms.Button();
             btnCancelar = new System.Windows.Forms.Button();
             grdLista = new System.Windows.Forms.DataGridView();
-            label2 = new System.Windows.Forms.Label();
-            txtNombre = new System.Windows.Forms.TextBox();
             ID_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             NOMBRE_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             APELLIDOS_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +43,8 @@
             DIRECCION_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             FECHA_NACIMIENTO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             Existe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            label2 = new System.Windows.Forms.Label();
+            txtNombre = new System.Windows.Forms.TextBox();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grdLista).BeginInit();
             SuspendLayout();
@@ -63,7 +63,7 @@
             groupBox1.Size = new System.Drawing.Size(1011, 385);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Buscar Funcionario";
+            groupBox1.Text = "Buscar";
             // 
             // btnAceptar
             // 
@@ -122,22 +122,6 @@
             grdLista.TabIndex = 15;
             grdLista.DoubleClick += grdLista_DoubleClick;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(6, 23);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(107, 15);
-            label2.TabIndex = 26;
-            label2.Text = "Ingrese el Nombre ";
-            // 
-            // txtNombre
-            // 
-            txtNombre.Location = new System.Drawing.Point(6, 41);
-            txtNombre.Name = "txtNombre";
-            txtNombre.Size = new System.Drawing.Size(284, 23);
-            txtNombre.TabIndex = 27;
-            // 
             // ID_FUNCIONARIO
             // 
             ID_FUNCIONARIO.DataPropertyName = "IdFuncionario";
@@ -195,6 +179,22 @@
             Existe.HeaderText = "Existe";
             Existe.Name = "Existe";
             Existe.Visible = false;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(6, 23);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(107, 15);
+            label2.TabIndex = 26;
+            label2.Text = "Ingrese el Nombre ";
+            // 
+            // txtNombre
+            // 
+            txtNombre.Location = new System.Drawing.Point(6, 41);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new System.Drawing.Size(284, 23);
+            txtNombre.TabIndex = 27;
             // 
             // Frm_BuscarFuncionario
             // 

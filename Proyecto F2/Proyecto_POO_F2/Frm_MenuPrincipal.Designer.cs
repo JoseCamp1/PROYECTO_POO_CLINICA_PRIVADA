@@ -33,8 +33,10 @@
             pacientesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             pacientesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             funcionariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            puestosDeTrabajoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             citasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            especialidadesMedicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -49,7 +51,7 @@
             // 
             // pacientesToolStripMenuItem
             // 
-            pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { pacientesToolStripMenuItem1, funcionariosToolStripMenuItem });
+            pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { pacientesToolStripMenuItem1, funcionariosToolStripMenuItem, puestosDeTrabajoToolStripMenuItem, especialidadesMedicasToolStripMenuItem });
             pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
             pacientesToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             pacientesToolStripMenuItem.Text = "Editar";
@@ -58,7 +60,7 @@
             // 
             pacientesToolStripMenuItem1.Image = Properties.Resources.users_people_workers_customers_icon_124243;
             pacientesToolStripMenuItem1.Name = "pacientesToolStripMenuItem1";
-            pacientesToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            pacientesToolStripMenuItem1.Size = new System.Drawing.Size(197, 22);
             pacientesToolStripMenuItem1.Text = "Pacientes";
             pacientesToolStripMenuItem1.Click += pacientesToolStripMenuItem1_Click;
             // 
@@ -66,9 +68,17 @@
             // 
             funcionariosToolStripMenuItem.Image = Properties.Resources.users_people_workers_customers_icon_124243;
             funcionariosToolStripMenuItem.Name = "funcionariosToolStripMenuItem";
-            funcionariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            funcionariosToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             funcionariosToolStripMenuItem.Text = "Funcionarios";
             funcionariosToolStripMenuItem.Click += funcionariosToolStripMenuItem_Click;
+            // 
+            // puestosDeTrabajoToolStripMenuItem
+            // 
+            puestosDeTrabajoToolStripMenuItem.Image = Properties.Resources.products_new_cube_product_design_icon_1538451;
+            puestosDeTrabajoToolStripMenuItem.Name = "puestosDeTrabajoToolStripMenuItem";
+            puestosDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            puestosDeTrabajoToolStripMenuItem.Text = "Puestos de Trabajo";
+            puestosDeTrabajoToolStripMenuItem.Click += puestosDeTrabajoToolStripMenuItem_Click;
             // 
             // serviciosToolStripMenuItem
             // 
@@ -80,8 +90,16 @@
             // citasToolStripMenuItem
             // 
             citasToolStripMenuItem.Name = "citasToolStripMenuItem";
-            citasToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
+            citasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             citasToolStripMenuItem.Text = "Citas";
+            // 
+            // especialidadesMedicasToolStripMenuItem
+            // 
+            especialidadesMedicasToolStripMenuItem.Image = Properties.Resources.products_new_cube_product_design_icon_153845;
+            especialidadesMedicasToolStripMenuItem.Name = "especialidadesMedicasToolStripMenuItem";
+            especialidadesMedicasToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            especialidadesMedicasToolStripMenuItem.Text = "Especialidades Medicas";
+            especialidadesMedicasToolStripMenuItem.Click += especialidadesMedicasToolStripMenuItem_Click;
             // 
             // Frm_MenuPrincipal
             // 
@@ -113,5 +131,7 @@
         private System.Windows.Forms.ToolStripMenuItem pacientesToolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem serviciosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem citasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem puestosDeTrabajoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem especialidadesMedicasToolStripMenuItem;
     }
 }

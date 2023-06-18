@@ -104,7 +104,5 @@ namespace Capa02_LogicaNegocio
             }
             return filasAfectadas;
         }//finmodificar
-
-
     }
 }

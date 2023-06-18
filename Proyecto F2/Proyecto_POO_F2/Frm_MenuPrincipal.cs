@@ -28,5 +28,19 @@ namespace Capa01_Presentacion
             funcionario.MdiParent = this;
             funcionario.Show();
         }
+
+        private void puestosDeTrabajoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_PuestosdeTrabajo puestosTrabajo = new Frm_PuestosdeTrabajo();
+            puestosTrabajo.MdiParent = this;
+            puestosTrabajo.Show();
+        }
+
+        private void especialidadesMedicasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Especialidades especialidades = new Frm_Especialidades();
+            especialidades.MdiParent = this;
+            especialidades.Show();
+        }
     }
 }
