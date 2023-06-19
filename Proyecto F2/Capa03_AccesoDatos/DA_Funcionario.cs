@@ -25,6 +25,32 @@ namespace Capa03_AccesoDatos
         }
 
         //Metodos
+
+        public DataSet ListarFuncionariosconEspecialidad(string condicion = "",string orden = "")
+        {
+            DataSet datos = new DataSet();
+            SqlConnection conexion = new SqlConnection(_cadenaConexion);
+            SqlDataAdapter adapter;
+            string sentencia = "SELECT E.NOMBRE_ESPECIALIDAD, F.ID_FUNCIONARIO, F.NOMBRE_FUNCIONARIO, F.APELLIDOS_FUNCIONARIO, A.FECHA, A.HORA_INICIO, A.HORA_FIN\r\nFROM FUNCIONARIOS F\r\nINNER JOIN ESPECIALIDADES E ON F.ID_ESPECIALIDAD = E.ID_ESPECIALIDAD\r\nINNER JOIN AGENDA A ON F.ID_FUNCIONARIO = A.ID_FUNCIONARIO\r\nWHERE E.ID_ESPECIALIDAD != 1;\r\n";
+
+            if (!string.IsNullOrEmpty(condicion))
+            {
+                sentencia = string.Format("{0} AND {1}", sentencia, condicion);
+            }
+
+            try
+            {
+                adapter = new SqlDataAdapter(sentencia, conexion);
+                adapter.Fill(datos, "Funcionarios");
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            return datos;
+        }
+
         public int InsertarFuncionario(Entidad_Funcionario funcionario)
         {
             int id = 0;

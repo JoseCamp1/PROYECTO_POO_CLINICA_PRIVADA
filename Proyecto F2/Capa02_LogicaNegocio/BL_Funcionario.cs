@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
 using Capa_Entidades;
 using Capa03_AccesoDatos;
@@ -25,6 +26,18 @@ namespace Capa02_LogicaNegocio
             _mensaje = string.Empty;
         }
 
+        public DataSet ListarFuncionariosconEspecialidad(string condicion="",string orden = "")
+        {
+            DataSet DS;
+            DA_Funcionario accesoDatos = new DA_Funcionario(_cadenaConexion);
+            try
+            {
+                DS = accesoDatos.ListarFuncionariosconEspecialidad(condicion, orden);
+            }
+            catch (Exception ) { throw; }
+            return DS;
+        }
+
         //metodo para llamar al metodo insertar de la capa3accesodatos
         public int InsertarFuncionario(Entidad_Funcionario funcionario)
         {
@@ -40,6 +53,9 @@ namespace Capa02_LogicaNegocio
             }
             return id_Funcionario;
         }// fin de la clase insertar
+
+        
+
 
         public List<Entidad_Funcionario> ListarFuncionarios(string condicion = "")
         {

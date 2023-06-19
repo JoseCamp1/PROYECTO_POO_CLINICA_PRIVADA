@@ -21,6 +21,22 @@ namespace Capa01_Presentacion
         // Variable global: si el campo txtIdFuncionario.Text tiene algún valor, significa que el funcionario existe y no se debe insertar sino modificar
         Entidad_Funcionario funcionarioRegistrado;
 
+        private void ListarFuncionariosconEspecialidad(string condicion = "",string orden="")
+        {
+            BL_Funcionario logica = new BL_Funcionario(Configuracion.getConnectionString);
+            DataSet DSFuncionarios;
+            try
+            {
+                DSFuncionarios = logica.ListarFuncionariosconEspecialidad(condicion,orden);
+                grdLista.DataSource = DSFuncionarios;
+                grdLista.DataMember = DSFuncionarios.Tables["Funcionarios"].TableName;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         public void cargarListaPuestosTrabajo(string condicion = "")
         {
             grdPuesto.Refresh();

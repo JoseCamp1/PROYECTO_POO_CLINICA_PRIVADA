@@ -22,24 +22,21 @@ namespace Capa01_Presentacion
         // No se debe insertar, se debe modificar
         Entidad_Citas citaRegistrada;
 
-        //public void cargarListaFuncionarios(string condicion = "")
-        //{
-        //    grdFuncionario.Refresh();
-        //    BL_Funcionario logica = new BL_Funcionario(Configuracion.getConnectionString);
-        //    List<Entidad_Funcionario> funcionarios;
-        //    try
-        //    {
-        //        funcionarios = logica.ListarFuncionarios(condicion);
-        //        if (funcionarios.Count > 0)
-        //        {
-        //            grdFuncionario.DataSource = funcionarios;
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //}
+        private void ListarFuncionariosconEspecialidad(string condicion = "", string orden = "")
+        {
+            BL_Funcionario logica = new BL_Funcionario(Configuracion.getConnectionString);
+            DataSet DSFuncionarios;
+            try
+            {
+                DSFuncionarios = logica.ListarFuncionariosconEspecialidad(condicion, orden);
+                grdEspecialista.DataSource = DSFuncionarios;
+                grdEspecialista.DataMember = DSFuncionarios.Tables["Funcionarios"].TableName;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }       
 
         public Entidad_Citas GenerarEntidadCitas()
         {
@@ -249,7 +246,8 @@ namespace Capa01_Presentacion
             try
             {
                 cargarListaCitas();
-                //cargarListaFuncionarios();
+                ListarFuncionariosconEspecialidad();
+                cargarListaPacientes();
 
             }
             catch (Exception ex)
@@ -258,34 +256,23 @@ namespace Capa01_Presentacion
             }
         }
 
-        //private void grdFuncionario_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        //{
-        //    if (e.RowIndex >= 0) // Asegurarse de que se haya hecho clic en una fila válida
-        //    {
-        //        DataGridViewRow row = grdFuncionario.Rows[e.RowIndex];
-
-        //        string puestoTrabajo = row.Cells[9].Value.ToString(); // Valor de la columna 9 (Puesto de trabajo)
-        //        string idEspecialidad = row.Cells[10].Value.ToString(); // Valor de la columna 10 (ID Especialidad)
-        //        string valor = row.Cells[0].Value.ToString(); // Valor de la columna 0 (idfuncionario)
-
-        //        if (puestoTrabajo == "1")
-        //        {
-        //            MessageBox.Show("Es médico");
-        //            if (idEspecialidad != "1")
-        //            {
-        //                MessageBox.Show("Tiene una especialidad");
-        //                txtID_Funcionario.Text = valor;
-        //            }
-        //            else
-        //            {
-        //                MessageBox.Show("No tiene una especialidad");
-        //            }
-        //        }
-        //        else
-        //        {
-        //            MessageBox.Show("No es médico");
-        //        }
-        //    }
-        //}
+        public void cargarListaPacientes(string condicion = "")
+        {
+            gdrPaciente.Refresh();
+            BL_Paciente logica = new BL_Paciente(Configuracion.getConnectionString);
+            List<Entidad_Paciente> paciente;
+            try
+            {
+                paciente = logica.ListarPacientes(condicion);
+                if (paciente.Count > 0)
+                {
+                    gdrPaciente.DataSource = paciente;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

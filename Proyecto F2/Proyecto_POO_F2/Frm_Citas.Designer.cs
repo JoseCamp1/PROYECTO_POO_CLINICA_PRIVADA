@@ -61,8 +61,34 @@
             label6 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             txtID_Paciente = new System.Windows.Forms.TextBox();
+            grdEspecialista = new System.Windows.Forms.DataGridView();
+            groupBox2 = new System.Windows.Forms.GroupBox();
+            label8 = new System.Windows.Forms.Label();
+            groupBox3 = new System.Windows.Forms.GroupBox();
+            label9 = new System.Windows.Forms.Label();
+            gdrPaciente = new System.Windows.Forms.DataGridView();
+            ID_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            NOMBRE_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            APELLIDOS_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            CEDULA_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            TELEFONO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            CORREO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            DIRECCION_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            FECHA_NACIMIENTO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Existe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            NOMBRE_ESPECIALIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ID_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            NOMBRE_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            APELLIDOS_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            FECHA_CITA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            HORA_INICIO_CITA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            HORA_FIN_CITA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grdLista).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)grdEspecialista).BeginInit();
+            groupBox2.SuspendLayout();
+            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)gdrPaciente).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -92,10 +118,10 @@
             groupBox1.Controls.Add(txtID_Paciente);
             groupBox1.Location = new System.Drawing.Point(12, 12);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new System.Drawing.Size(872, 389);
+            groupBox1.Size = new System.Drawing.Size(872, 421);
             groupBox1.TabIndex = 58;
             groupBox1.TabStop = false;
-            groupBox1.Text = "Cita";
+            groupBox1.Text = "Agendar una Cita";
             // 
             // txtEstado
             // 
@@ -188,26 +214,26 @@
             grdLista.Name = "grdLista";
             grdLista.RowTemplate.Height = 25;
             grdLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            grdLista.Size = new System.Drawing.Size(845, 164);
+            grdLista.Size = new System.Drawing.Size(845, 210);
             grdLista.TabIndex = 62;
             grdLista.DoubleClick += grdLista_DoubleClick;
             // 
             // IdCita
             // 
             IdCita.DataPropertyName = "IdCita";
-            IdCita.HeaderText = "ID Cita";
+            IdCita.HeaderText = "#Cita";
             IdCita.Name = "IdCita";
             // 
             // IdPaciente
             // 
             IdPaciente.DataPropertyName = "IdPaciente";
-            IdPaciente.HeaderText = "ID Paciente";
+            IdPaciente.HeaderText = "#Paciente";
             IdPaciente.Name = "IdPaciente";
             // 
             // IdFuncionario
             // 
             IdFuncionario.DataPropertyName = "IdFuncionario";
-            IdFuncionario.HeaderText = "ID Funcionario";
+            IdFuncionario.HeaderText = "#Funcionario";
             IdFuncionario.Name = "IdFuncionario";
             // 
             // Motivo
@@ -252,7 +278,7 @@
             btnLimpiar.BackColor = System.Drawing.SystemColors.Window;
             btnLimpiar.Image = Properties.Resources.broom_5182;
             btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnLimpiar.Location = new System.Drawing.Point(111, 296);
+            btnLimpiar.Location = new System.Drawing.Point(284, 334);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new System.Drawing.Size(75, 71);
             btnLimpiar.TabIndex = 61;
@@ -266,7 +292,7 @@
             btnSalir.BackColor = System.Drawing.SystemColors.Window;
             btnSalir.Image = Properties.Resources._4115235_exit_logout_sign_out_114030;
             btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnSalir.Location = new System.Drawing.Point(415, 296);
+            btnSalir.Location = new System.Drawing.Point(588, 334);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new System.Drawing.Size(75, 71);
             btnSalir.TabIndex = 60;
@@ -280,7 +306,7 @@
             btnEliminar.BackColor = System.Drawing.SystemColors.Window;
             btnEliminar.Image = Properties.Resources.trash_bin_icon_icons_com_67981;
             btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnEliminar.Location = new System.Drawing.Point(324, 296);
+            btnEliminar.Location = new System.Drawing.Point(497, 334);
             btnEliminar.Name = "btnEliminar";
             btnEliminar.Size = new System.Drawing.Size(75, 71);
             btnEliminar.TabIndex = 59;
@@ -294,7 +320,7 @@
             btnGuardar.BackColor = System.Drawing.SystemColors.Window;
             btnGuardar.Image = Properties.Resources._1490129329_rounded38_82203;
             btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnGuardar.Location = new System.Drawing.Point(214, 294);
+            btnGuardar.Location = new System.Drawing.Point(387, 332);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new System.Drawing.Size(75, 71);
             btnGuardar.TabIndex = 58;
@@ -308,7 +334,7 @@
             btnBuscar.BackColor = System.Drawing.SystemColors.Window;
             btnBuscar.Image = Properties.Resources.seo_social_web_network_internet_340_icon_icons_com_61497;
             btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnBuscar.Location = new System.Drawing.Point(16, 294);
+            btnBuscar.Location = new System.Drawing.Point(189, 332);
             btnBuscar.Name = "btnBuscar";
             btnBuscar.Size = new System.Drawing.Size(75, 71);
             btnBuscar.TabIndex = 57;
@@ -371,6 +397,184 @@
             txtID_Paciente.Size = new System.Drawing.Size(100, 23);
             txtID_Paciente.TabIndex = 52;
             // 
+            // grdEspecialista
+            // 
+            grdEspecialista.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            grdEspecialista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            grdEspecialista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { NOMBRE_ESPECIALIDAD, ID_FUNCIONARIO, NOMBRE_FUNCIONARIO, APELLIDOS_FUNCIONARIO, FECHA_CITA, HORA_INICIO_CITA, HORA_FIN_CITA });
+            grdEspecialista.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            grdEspecialista.GridColor = System.Drawing.SystemColors.ActiveBorder;
+            grdEspecialista.Location = new System.Drawing.Point(3, 39);
+            grdEspecialista.Name = "grdEspecialista";
+            grdEspecialista.RowTemplate.Height = 25;
+            grdEspecialista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            grdEspecialista.Size = new System.Drawing.Size(863, 173);
+            grdEspecialista.TabIndex = 63;
+            // 
+            // groupBox2
+            // 
+            groupBox2.BackColor = System.Drawing.Color.Transparent;
+            groupBox2.Controls.Add(label8);
+            groupBox2.Controls.Add(grdEspecialista);
+            groupBox2.Location = new System.Drawing.Point(12, 439);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new System.Drawing.Size(872, 218);
+            groupBox2.TabIndex = 64;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Especialistas Disponibles";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Location = new System.Drawing.Point(6, 21);
+            label8.Name = "label8";
+            label8.Size = new System.Drawing.Size(388, 15);
+            label8.TabIndex = 64;
+            label8.Text = "*Doble click para elegir al Especialista con el que se desea agendar la cita";
+            // 
+            // groupBox3
+            // 
+            groupBox3.BackColor = System.Drawing.Color.Transparent;
+            groupBox3.Controls.Add(label9);
+            groupBox3.Controls.Add(gdrPaciente);
+            groupBox3.Location = new System.Drawing.Point(890, 12);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new System.Drawing.Size(415, 645);
+            groupBox3.TabIndex = 65;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Paciente";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Location = new System.Drawing.Point(17, 36);
+            label9.Name = "label9";
+            label9.Size = new System.Drawing.Size(373, 15);
+            label9.TabIndex = 65;
+            label9.Text = "*Doble click para elegir al Paciente con el que se desea agendar la cita";
+            // 
+            // gdrPaciente
+            // 
+            gdrPaciente.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            gdrPaciente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            gdrPaciente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { ID_PACIENTE, NOMBRE_PACIENTE, APELLIDOS_PACIENTE, CEDULA_PACIENTE, TELEFONO_PACIENTE, CORREO_PACIENTE, DIRECCION_PACIENTE, FECHA_NACIMIENTO_PACIENTE, Existe });
+            gdrPaciente.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            gdrPaciente.GridColor = System.Drawing.SystemColors.ActiveBorder;
+            gdrPaciente.Location = new System.Drawing.Point(6, 69);
+            gdrPaciente.Name = "gdrPaciente";
+            gdrPaciente.RowTemplate.Height = 25;
+            gdrPaciente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            gdrPaciente.Size = new System.Drawing.Size(402, 570);
+            gdrPaciente.TabIndex = 15;
+            // 
+            // ID_PACIENTE
+            // 
+            ID_PACIENTE.DataPropertyName = "IdPaciente";
+            ID_PACIENTE.HeaderText = "#Paciente";
+            ID_PACIENTE.Name = "ID_PACIENTE";
+            // 
+            // NOMBRE_PACIENTE
+            // 
+            NOMBRE_PACIENTE.DataPropertyName = "Nombre";
+            NOMBRE_PACIENTE.HeaderText = "Nombre";
+            NOMBRE_PACIENTE.Name = "NOMBRE_PACIENTE";
+            // 
+            // APELLIDOS_PACIENTE
+            // 
+            APELLIDOS_PACIENTE.DataPropertyName = "Apellidos";
+            APELLIDOS_PACIENTE.HeaderText = "Apellidos";
+            APELLIDOS_PACIENTE.Name = "APELLIDOS_PACIENTE";
+            APELLIDOS_PACIENTE.Width = 150;
+            // 
+            // CEDULA_PACIENTE
+            // 
+            CEDULA_PACIENTE.DataPropertyName = "Cedula";
+            CEDULA_PACIENTE.HeaderText = "Cedula";
+            CEDULA_PACIENTE.Name = "CEDULA_PACIENTE";
+            CEDULA_PACIENTE.Visible = false;
+            // 
+            // TELEFONO_PACIENTE
+            // 
+            TELEFONO_PACIENTE.DataPropertyName = "Telefono";
+            TELEFONO_PACIENTE.HeaderText = "Telefono";
+            TELEFONO_PACIENTE.Name = "TELEFONO_PACIENTE";
+            TELEFONO_PACIENTE.Visible = false;
+            // 
+            // CORREO_PACIENTE
+            // 
+            CORREO_PACIENTE.DataPropertyName = "Correo";
+            CORREO_PACIENTE.HeaderText = "Correo Electronico";
+            CORREO_PACIENTE.Name = "CORREO_PACIENTE";
+            CORREO_PACIENTE.Visible = false;
+            CORREO_PACIENTE.Width = 150;
+            // 
+            // DIRECCION_PACIENTE
+            // 
+            DIRECCION_PACIENTE.DataPropertyName = "Direccion";
+            DIRECCION_PACIENTE.HeaderText = "Direccion";
+            DIRECCION_PACIENTE.Name = "DIRECCION_PACIENTE";
+            DIRECCION_PACIENTE.Visible = false;
+            DIRECCION_PACIENTE.Width = 150;
+            // 
+            // FECHA_NACIMIENTO_PACIENTE
+            // 
+            FECHA_NACIMIENTO_PACIENTE.DataPropertyName = "FechaNacimiento";
+            FECHA_NACIMIENTO_PACIENTE.HeaderText = "Fecha de Nacimiento";
+            FECHA_NACIMIENTO_PACIENTE.Name = "FECHA_NACIMIENTO_PACIENTE";
+            FECHA_NACIMIENTO_PACIENTE.Visible = false;
+            // 
+            // Existe
+            // 
+            Existe.DataPropertyName = "Existe";
+            Existe.HeaderText = "Existe";
+            Existe.Name = "Existe";
+            Existe.Visible = false;
+            // 
+            // NOMBRE_ESPECIALIDAD
+            // 
+            NOMBRE_ESPECIALIDAD.DataPropertyName = "NOMBRE_ESPECIALIDAD";
+            NOMBRE_ESPECIALIDAD.HeaderText = "Especialidad";
+            NOMBRE_ESPECIALIDAD.Name = "NOMBRE_ESPECIALIDAD";
+            NOMBRE_ESPECIALIDAD.Width = 110;
+            // 
+            // ID_FUNCIONARIO
+            // 
+            ID_FUNCIONARIO.DataPropertyName = "ID_FUNCIONARIO";
+            ID_FUNCIONARIO.HeaderText = "#Funcionario";
+            ID_FUNCIONARIO.Name = "ID_FUNCIONARIO";
+            // 
+            // NOMBRE_FUNCIONARIO
+            // 
+            NOMBRE_FUNCIONARIO.DataPropertyName = "NOMBRE_FUNCIONARIO";
+            NOMBRE_FUNCIONARIO.HeaderText = "Especialista";
+            NOMBRE_FUNCIONARIO.Name = "NOMBRE_FUNCIONARIO";
+            // 
+            // APELLIDOS_FUNCIONARIO
+            // 
+            APELLIDOS_FUNCIONARIO.DataPropertyName = "APELLIDOS_FUNCIONARIO";
+            APELLIDOS_FUNCIONARIO.HeaderText = "";
+            APELLIDOS_FUNCIONARIO.Name = "APELLIDOS_FUNCIONARIO";
+            // 
+            // FECHA_CITA
+            // 
+            FECHA_CITA.DataPropertyName = "FECHA";
+            FECHA_CITA.HeaderText = "Dia";
+            FECHA_CITA.Name = "FECHA_CITA";
+            // 
+            // HORA_INICIO_CITA
+            // 
+            HORA_INICIO_CITA.DataPropertyName = "HORA_INICIO";
+            HORA_INICIO_CITA.HeaderText = "Inicio del  Turno";
+            HORA_INICIO_CITA.Name = "HORA_INICIO_CITA";
+            HORA_INICIO_CITA.Width = 150;
+            // 
+            // HORA_FIN_CITA
+            // 
+            HORA_FIN_CITA.DataPropertyName = "HORA_FIN";
+            HORA_FIN_CITA.HeaderText = "Fin del Turno";
+            HORA_FIN_CITA.Name = "HORA_FIN_CITA";
+            HORA_FIN_CITA.Width = 150;
+            // 
             // Frm_Citas
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -378,7 +582,9 @@
             AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             BackgroundImage = Properties.Resources.Screenshot_2023_06_10_171827;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            ClientSize = new System.Drawing.Size(1492, 694);
+            ClientSize = new System.Drawing.Size(1313, 666);
+            Controls.Add(groupBox3);
+            Controls.Add(groupBox2);
             Controls.Add(groupBox1);
             DoubleBuffered = true;
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
@@ -391,6 +597,12 @@
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)grdLista).EndInit();
+            ((System.ComponentModel.ISupportInitialize)grdEspecialista).EndInit();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox3.ResumeLayout(false);
+            groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)gdrPaciente).EndInit();
             ResumeLayout(false);
         }
 
@@ -417,6 +629,10 @@
         private System.Windows.Forms.TextBox txtID_Paciente;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtID_Funcionario;
+        private System.Windows.Forms.TextBox txtEstado;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridView grdEspecialista;
+        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdCita;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdPaciente;
         private System.Windows.Forms.DataGridViewTextBoxColumn IdFuncionario;
@@ -426,7 +642,25 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HoraFin;
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.TextBox txtEstado;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DataGridView gdrPaciente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn APELLIDOS_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CEDULA_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TELEFONO_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CORREO_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DIRECCION_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FECHA_NACIMIENTO_PACIENTE;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Existe;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE_ESPECIALIDAD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID_FUNCIONARIO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE_FUNCIONARIO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn APELLIDOS_FUNCIONARIO;
+        private System.Windows.Forms.DataGridViewTextBoxColumn FECHA_CITA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HORA_INICIO_CITA;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HORA_FIN_CITA;
     }
 }
