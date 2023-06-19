@@ -7,6 +7,9 @@
     <Compile Update="Frm_BuscarAgenda.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Frm_BuscarCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Frm_BuscarEspecialidades.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -17,6 +20,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Frm_BuscarPuestoTrabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_Citas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Frm_Especialidades.cs">

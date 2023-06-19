@@ -110,3 +110,5 @@ E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Proyecto_POO_F2\obj\Debug\netco
 E:\PROYECTO_POO_CLINICA_PRIVADA-main\Proyecto F2\Proyecto_POO_F2\obj\Debug\netcoreapp3.1\Capa01_Presentacion.genruntimeconfig.cache
 D:\POO C#\Proyecto POO\Proyecto F2\Proyecto_POO_F2\obj\Debug\netcoreapp3.1\Capa01_Presentacion.Frm_Agenda.resources
 D:\POO C#\Proyecto POO\Proyecto F2\Proyecto_POO_F2\obj\Debug\netcoreapp3.1\Capa01_Presentacion.Frm_BuscarAgenda.resources
+D:\POO C#\Proyecto POO\Proyecto F2\Proyecto_POO_F2\obj\Debug\netcoreapp3.1\Capa01_Presentacion.Frm_BuscarCitas.resources
+D:\POO C#\Proyecto POO\Proyecto F2\Proyecto_POO_F2\obj\Debug\netcoreapp3.1\Capa01_Presentacion.Frm_Citas.resources

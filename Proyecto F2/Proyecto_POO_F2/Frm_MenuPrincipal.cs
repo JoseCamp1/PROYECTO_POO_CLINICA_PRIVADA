@@ -49,5 +49,12 @@ namespace Capa01_Presentacion
             agenda.MdiParent = this;
             agenda.Show();
         }
+
+        private void citasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Citas citas = new Frm_Citas();
+            citas.MdiParent = this;
+            citas.Show();
+        }
     }
 }

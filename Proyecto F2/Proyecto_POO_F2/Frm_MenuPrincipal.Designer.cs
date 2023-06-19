@@ -46,7 +46,7 @@
             menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { pacientesToolStripMenuItem, serviciosToolStripMenuItem });
             menuStrip1.Location = new System.Drawing.Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new System.Drawing.Size(800, 24);
+            menuStrip1.Size = new System.Drawing.Size(1518, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -110,6 +110,7 @@
             citasToolStripMenuItem.Name = "citasToolStripMenuItem";
             citasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             citasToolStripMenuItem.Text = "Citas";
+            citasToolStripMenuItem.Click += citasToolStripMenuItem_Click;
             // 
             // Frm_MenuPrincipal
             // 
@@ -117,7 +118,7 @@
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.Screenshot_2023_06_10_171827;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            ClientSize = new System.Drawing.Size(800, 450);
+            ClientSize = new System.Drawing.Size(1518, 590);
             Controls.Add(menuStrip1);
             DoubleBuffered = true;
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
