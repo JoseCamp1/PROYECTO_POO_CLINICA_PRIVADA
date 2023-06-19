@@ -62,11 +62,18 @@
             label2 = new System.Windows.Forms.Label();
             txtID_Paciente = new System.Windows.Forms.TextBox();
             grdEspecialista = new System.Windows.Forms.DataGridView();
+            NOMBRE_ESPECIALIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ID_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            NOMBRE_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            APELLIDOS_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            FECHA_CITA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            HORA_INICIO_CITA = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            HORA_FIN_CITA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             groupBox2 = new System.Windows.Forms.GroupBox();
             label8 = new System.Windows.Forms.Label();
             groupBox3 = new System.Windows.Forms.GroupBox();
             label9 = new System.Windows.Forms.Label();
-            gdrPaciente = new System.Windows.Forms.DataGridView();
+            grdPaciente = new System.Windows.Forms.DataGridView();
             ID_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             NOMBRE_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             APELLIDOS_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -76,19 +83,12 @@
             DIRECCION_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             FECHA_NACIMIENTO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             Existe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            NOMBRE_ESPECIALIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ID_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            NOMBRE_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            APELLIDOS_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            FECHA_CITA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            HORA_INICIO_CITA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            HORA_FIN_CITA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grdLista).BeginInit();
             ((System.ComponentModel.ISupportInitialize)grdEspecialista).BeginInit();
             groupBox2.SuspendLayout();
             groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)gdrPaciente).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)grdPaciente).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
@@ -129,6 +129,7 @@
             txtEstado.Name = "txtEstado";
             txtEstado.Size = new System.Drawing.Size(100, 23);
             txtEstado.TabIndex = 72;
+            txtEstado.TextChanged += txtEstado_TextChanged;
             // 
             // label7
             // 
@@ -175,6 +176,8 @@
             // 
             // txtHoraFin
             // 
+            txtHoraFin.BackColor = System.Drawing.SystemColors.Info;
+            txtHoraFin.Enabled = false;
             txtHoraFin.Location = new System.Drawing.Point(615, 36);
             txtHoraFin.Name = "txtHoraFin";
             txtHoraFin.Size = new System.Drawing.Size(100, 23);
@@ -186,9 +189,11 @@
             txtHoraInicio.Name = "txtHoraInicio";
             txtHoraInicio.Size = new System.Drawing.Size(100, 23);
             txtHoraInicio.TabIndex = 65;
+            txtHoraInicio.TextChanged += txtHoraInicio_TextChanged;
             // 
             // dtp_Fecha
             // 
+            dtp_Fecha.CalendarMonthBackground = System.Drawing.SystemColors.Menu;
             dtp_Fecha.Location = new System.Drawing.Point(335, 36);
             dtp_Fecha.Name = "dtp_Fecha";
             dtp_Fecha.Size = new System.Drawing.Size(170, 23);
@@ -410,6 +415,52 @@
             grdEspecialista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             grdEspecialista.Size = new System.Drawing.Size(863, 173);
             grdEspecialista.TabIndex = 63;
+            grdEspecialista.CellContentDoubleClick += grdEspecialista_CellContentDoubleClick;
+            // 
+            // NOMBRE_ESPECIALIDAD
+            // 
+            NOMBRE_ESPECIALIDAD.DataPropertyName = "NOMBRE_ESPECIALIDAD";
+            NOMBRE_ESPECIALIDAD.HeaderText = "Especialidad";
+            NOMBRE_ESPECIALIDAD.Name = "NOMBRE_ESPECIALIDAD";
+            NOMBRE_ESPECIALIDAD.Width = 110;
+            // 
+            // ID_FUNCIONARIO
+            // 
+            ID_FUNCIONARIO.DataPropertyName = "ID_FUNCIONARIO";
+            ID_FUNCIONARIO.HeaderText = "#Funcionario";
+            ID_FUNCIONARIO.Name = "ID_FUNCIONARIO";
+            // 
+            // NOMBRE_FUNCIONARIO
+            // 
+            NOMBRE_FUNCIONARIO.DataPropertyName = "NOMBRE_FUNCIONARIO";
+            NOMBRE_FUNCIONARIO.HeaderText = "Especialista";
+            NOMBRE_FUNCIONARIO.Name = "NOMBRE_FUNCIONARIO";
+            // 
+            // APELLIDOS_FUNCIONARIO
+            // 
+            APELLIDOS_FUNCIONARIO.DataPropertyName = "APELLIDOS_FUNCIONARIO";
+            APELLIDOS_FUNCIONARIO.HeaderText = "";
+            APELLIDOS_FUNCIONARIO.Name = "APELLIDOS_FUNCIONARIO";
+            // 
+            // FECHA_CITA
+            // 
+            FECHA_CITA.DataPropertyName = "FECHA";
+            FECHA_CITA.HeaderText = "Dia";
+            FECHA_CITA.Name = "FECHA_CITA";
+            // 
+            // HORA_INICIO_CITA
+            // 
+            HORA_INICIO_CITA.DataPropertyName = "HORA_INICIO";
+            HORA_INICIO_CITA.HeaderText = "Inicio del  Turno";
+            HORA_INICIO_CITA.Name = "HORA_INICIO_CITA";
+            HORA_INICIO_CITA.Width = 150;
+            // 
+            // HORA_FIN_CITA
+            // 
+            HORA_FIN_CITA.DataPropertyName = "HORA_FIN";
+            HORA_FIN_CITA.HeaderText = "Fin del Turno";
+            HORA_FIN_CITA.Name = "HORA_FIN_CITA";
+            HORA_FIN_CITA.Width = 150;
             // 
             // groupBox2
             // 
@@ -436,7 +487,7 @@
             // 
             groupBox3.BackColor = System.Drawing.Color.Transparent;
             groupBox3.Controls.Add(label9);
-            groupBox3.Controls.Add(gdrPaciente);
+            groupBox3.Controls.Add(grdPaciente);
             groupBox3.Location = new System.Drawing.Point(890, 12);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new System.Drawing.Size(415, 645);
@@ -453,19 +504,20 @@
             label9.TabIndex = 65;
             label9.Text = "*Doble click para elegir al Paciente con el que se desea agendar la cita";
             // 
-            // gdrPaciente
+            // grdPaciente
             // 
-            gdrPaciente.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            gdrPaciente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            gdrPaciente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { ID_PACIENTE, NOMBRE_PACIENTE, APELLIDOS_PACIENTE, CEDULA_PACIENTE, TELEFONO_PACIENTE, CORREO_PACIENTE, DIRECCION_PACIENTE, FECHA_NACIMIENTO_PACIENTE, Existe });
-            gdrPaciente.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            gdrPaciente.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            gdrPaciente.Location = new System.Drawing.Point(6, 69);
-            gdrPaciente.Name = "gdrPaciente";
-            gdrPaciente.RowTemplate.Height = 25;
-            gdrPaciente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            gdrPaciente.Size = new System.Drawing.Size(402, 570);
-            gdrPaciente.TabIndex = 15;
+            grdPaciente.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            grdPaciente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            grdPaciente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { ID_PACIENTE, NOMBRE_PACIENTE, APELLIDOS_PACIENTE, CEDULA_PACIENTE, TELEFONO_PACIENTE, CORREO_PACIENTE, DIRECCION_PACIENTE, FECHA_NACIMIENTO_PACIENTE, Existe });
+            grdPaciente.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            grdPaciente.GridColor = System.Drawing.SystemColors.ActiveBorder;
+            grdPaciente.Location = new System.Drawing.Point(6, 69);
+            grdPaciente.Name = "grdPaciente";
+            grdPaciente.RowTemplate.Height = 25;
+            grdPaciente.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            grdPaciente.Size = new System.Drawing.Size(402, 570);
+            grdPaciente.TabIndex = 15;
+            grdPaciente.CellDoubleClick += gdrPaciente_CellDoubleClick;
             // 
             // ID_PACIENTE
             // 
@@ -530,51 +582,6 @@
             Existe.Name = "Existe";
             Existe.Visible = false;
             // 
-            // NOMBRE_ESPECIALIDAD
-            // 
-            NOMBRE_ESPECIALIDAD.DataPropertyName = "NOMBRE_ESPECIALIDAD";
-            NOMBRE_ESPECIALIDAD.HeaderText = "Especialidad";
-            NOMBRE_ESPECIALIDAD.Name = "NOMBRE_ESPECIALIDAD";
-            NOMBRE_ESPECIALIDAD.Width = 110;
-            // 
-            // ID_FUNCIONARIO
-            // 
-            ID_FUNCIONARIO.DataPropertyName = "ID_FUNCIONARIO";
-            ID_FUNCIONARIO.HeaderText = "#Funcionario";
-            ID_FUNCIONARIO.Name = "ID_FUNCIONARIO";
-            // 
-            // NOMBRE_FUNCIONARIO
-            // 
-            NOMBRE_FUNCIONARIO.DataPropertyName = "NOMBRE_FUNCIONARIO";
-            NOMBRE_FUNCIONARIO.HeaderText = "Especialista";
-            NOMBRE_FUNCIONARIO.Name = "NOMBRE_FUNCIONARIO";
-            // 
-            // APELLIDOS_FUNCIONARIO
-            // 
-            APELLIDOS_FUNCIONARIO.DataPropertyName = "APELLIDOS_FUNCIONARIO";
-            APELLIDOS_FUNCIONARIO.HeaderText = "";
-            APELLIDOS_FUNCIONARIO.Name = "APELLIDOS_FUNCIONARIO";
-            // 
-            // FECHA_CITA
-            // 
-            FECHA_CITA.DataPropertyName = "FECHA";
-            FECHA_CITA.HeaderText = "Dia";
-            FECHA_CITA.Name = "FECHA_CITA";
-            // 
-            // HORA_INICIO_CITA
-            // 
-            HORA_INICIO_CITA.DataPropertyName = "HORA_INICIO";
-            HORA_INICIO_CITA.HeaderText = "Inicio del  Turno";
-            HORA_INICIO_CITA.Name = "HORA_INICIO_CITA";
-            HORA_INICIO_CITA.Width = 150;
-            // 
-            // HORA_FIN_CITA
-            // 
-            HORA_FIN_CITA.DataPropertyName = "HORA_FIN";
-            HORA_FIN_CITA.HeaderText = "Fin del Turno";
-            HORA_FIN_CITA.Name = "HORA_FIN_CITA";
-            HORA_FIN_CITA.Width = 150;
-            // 
             // Frm_Citas
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -602,7 +609,7 @@
             groupBox2.PerformLayout();
             groupBox3.ResumeLayout(false);
             groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)gdrPaciente).EndInit();
+            ((System.ComponentModel.ISupportInitialize)grdPaciente).EndInit();
             ResumeLayout(false);
         }
 
@@ -644,7 +651,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView gdrPaciente;
+        private System.Windows.Forms.DataGridView grdPaciente;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_PACIENTE;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE_PACIENTE;
         private System.Windows.Forms.DataGridViewTextBoxColumn APELLIDOS_PACIENTE;

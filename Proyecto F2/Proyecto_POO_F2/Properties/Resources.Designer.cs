@@ -123,6 +123,16 @@ namespace Capa01_Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3643769_building_home_house_main_menu_start_113416 {
+            get {
+                object obj = ResourceManager.GetObject("3643769-building-home-house-main-menu-start_113416", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4115228_accept_checklist_checkmark_yes_114037 {
             get {
                 object obj = ResourceManager.GetObject("4115228-accept-checklist-checkmark-yes_114037", resourceCulture);
@@ -173,9 +183,29 @@ namespace Capa01_Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hospital_4331 {
+            get {
+                object obj = ResourceManager.GetObject("hospital_4331", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap medical_clinic_icon_194649 {
             get {
                 object obj = ResourceManager.GetObject("medical_clinic_icon_194649", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nurse_hospital_care_healthcare_woman_medical_clinic_icon_140900 {
+            get {
+                object obj = ResourceManager.GetObject("nurse_hospital_care_healthcare_woman_medical_clinic_icon_140900", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -35,6 +35,10 @@
             label10 = new System.Windows.Forms.Label();
             txtNombrePuesto = new System.Windows.Forms.TextBox();
             grdLista = new System.Windows.Forms.DataGridView();
+            IdPuestoTrabajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Nombre_PuestoTrabajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Existe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             label5 = new System.Windows.Forms.Label();
             txtDescripcionPuesto = new System.Windows.Forms.TextBox();
             btnLimpiar = new System.Windows.Forms.Button();
@@ -42,10 +46,6 @@
             btnEliminar = new System.Windows.Forms.Button();
             btnGuardar = new System.Windows.Forms.Button();
             btnBuscar = new System.Windows.Forms.Button();
-            IdPuestoTrabajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            Nombre_PuestoTrabajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            Existe = new System.Windows.Forms.DataGridViewTextBoxColumn();
             groupBoxPaciente.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grdLista).BeginInit();
             SuspendLayout();
@@ -115,6 +115,34 @@
             grdLista.Size = new System.Drawing.Size(545, 293);
             grdLista.TabIndex = 14;
             grdLista.DoubleClick += grdLista_DoubleClick_1;
+            // 
+            // IdPuestoTrabajo
+            // 
+            IdPuestoTrabajo.DataPropertyName = "IdPuestoTrabajo";
+            IdPuestoTrabajo.HeaderText = "ID Puesto de Trabajo";
+            IdPuestoTrabajo.Name = "IdPuestoTrabajo";
+            IdPuestoTrabajo.Width = 150;
+            // 
+            // Nombre_PuestoTrabajo
+            // 
+            Nombre_PuestoTrabajo.DataPropertyName = "Nombre";
+            Nombre_PuestoTrabajo.HeaderText = "Nombre del Puesto";
+            Nombre_PuestoTrabajo.Name = "Nombre_PuestoTrabajo";
+            Nombre_PuestoTrabajo.Width = 150;
+            // 
+            // Descripcion
+            // 
+            Descripcion.DataPropertyName = "Descripcion";
+            Descripcion.HeaderText = "Descripcion del Puesto";
+            Descripcion.Name = "Descripcion";
+            Descripcion.Width = 200;
+            // 
+            // Existe
+            // 
+            Existe.DataPropertyName = "Existe";
+            Existe.HeaderText = "Existe";
+            Existe.Name = "Existe";
+            Existe.Visible = false;
             // 
             // label5
             // 
@@ -201,34 +229,6 @@
             btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             btnBuscar.UseVisualStyleBackColor = false;
             btnBuscar.Click += btnBuscar_Click;
-            // 
-            // IdPuestoTrabajo
-            // 
-            IdPuestoTrabajo.DataPropertyName = "IdPuestoTrabajo";
-            IdPuestoTrabajo.HeaderText = "ID Puesto de Trabajo";
-            IdPuestoTrabajo.Name = "IdPuestoTrabajo";
-            IdPuestoTrabajo.Width = 150;
-            // 
-            // Nombre_PuestoTrabajo
-            // 
-            Nombre_PuestoTrabajo.DataPropertyName = "Nombre";
-            Nombre_PuestoTrabajo.HeaderText = "Nombre del Puesto";
-            Nombre_PuestoTrabajo.Name = "Nombre_PuestoTrabajo";
-            Nombre_PuestoTrabajo.Width = 150;
-            // 
-            // Descripcion
-            // 
-            Descripcion.DataPropertyName = "Descripcion";
-            Descripcion.HeaderText = "Descripcion del Puesto";
-            Descripcion.Name = "Descripcion";
-            Descripcion.Width = 200;
-            // 
-            // Existe
-            // 
-            Existe.DataPropertyName = "Existe";
-            Existe.HeaderText = "Existe";
-            Existe.Name = "Existe";
-            Existe.Visible = false;
             // 
             // Frm_PuestosdeTrabajo
             // 

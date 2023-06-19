@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Text;
 using System.Windows.Forms;
 
@@ -36,7 +37,7 @@ namespace Capa01_Presentacion
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }       
+        }
 
         public Entidad_Citas GenerarEntidadCitas()
         {
@@ -258,7 +259,7 @@ namespace Capa01_Presentacion
 
         public void cargarListaPacientes(string condicion = "")
         {
-            gdrPaciente.Refresh();
+            grdPaciente.Refresh();
             BL_Paciente logica = new BL_Paciente(Configuracion.getConnectionString);
             List<Entidad_Paciente> paciente;
             try
@@ -266,12 +267,87 @@ namespace Capa01_Presentacion
                 paciente = logica.ListarPacientes(condicion);
                 if (paciente.Count > 0)
                 {
-                    gdrPaciente.DataSource = paciente;
+                    grdPaciente.DataSource = paciente;
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void gdrPaciente_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Asegurarse de que se haya hecho clic en una fila válida
+            {
+                DataGridViewRow row = grdPaciente.Rows[e.RowIndex];
+
+                // Obtener el valor de la primera columna de la fila seleccionada
+                string valor = row.Cells[0].Value.ToString();
+
+                // Asignar el valor al TextBox
+                txtID_Paciente.Text = valor;
+
+            }
+        }
+
+        private void grdEspecialista_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0) // Asegurarse de que se haya hecho clic en una fila válida
+            {
+                DataGridViewRow row = grdEspecialista.Rows[e.RowIndex];
+
+                // Obtener el valor de la primera columna de la fila seleccionada
+                string valor = row.Cells[1].Value.ToString();
+                DateTime valor1 = (DateTime)row.Cells[4].Value;
+                string valor2 = row.Cells[5].Value.ToString();
+
+                // Asignar el valor al TextBox
+                txtID_Funcionario.Text = valor;
+                dtp_Fecha.Value = valor1;
+                txtHoraInicio.Text = valor2;
+            }
+        }
+
+        private void txtHoraInicio_TextChanged(object sender, EventArgs e)
+        {
+            // Verificar si el texto en txtHoraInicio es válido
+            if (!string.IsNullOrWhiteSpace(txtHoraInicio.Text))
+            {
+                // Intentar convertir el texto en un objeto DateTime
+                if (DateTime.TryParseExact(txtHoraInicio.Text, "HH:mm:ss", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime horaInicio))
+                {
+                    // Sumar 30 minutos a la hora de inicio
+                    DateTime horaFin = horaInicio.AddMinutes(30);
+                    txtHoraFin.Text = horaFin.ToString("HH:mm:ss");
+                }
+                else
+                {
+                    // El formato de la hora de inicio no es válido
+                    // Aquí puedes mostrar un mensaje de error o tomar alguna acción adecuada
+                    // Por ejemplo, borrar el contenido de txtHoraFin si el formato es incorrecto
+                    txtHoraFin.Text = string.Empty;
+                }
+            }
+            else
+            {
+                // El campo de hora de inicio está vacío
+                // Puedes tomar alguna acción si es necesario, como borrar el contenido de txtHoraFin
+                txtHoraFin.Text = string.Empty;
+            }
+        }
+
+        private void txtEstado_TextChanged(object sender, EventArgs e)
+        {
+            string estado = txtEstado.Text.Trim();
+
+            if (estado.Length >= 3)
+            {
+                if (estado != "ACT" && estado != "INA" && estado != "PEN")
+                {
+                    MessageBox.Show("El estado ingresado no es válido. Debe ser 'ACT', 'INA' o 'PEN'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    txtEstado.Text = string.Empty;
+                }
             }
         }
     }

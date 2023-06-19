@@ -157,12 +157,12 @@ namespace Capa03_AccesoDatos
             int filasAfectadas = -1;
             SqlConnection conexion = new SqlConnection(_cadenaConexion);
             SqlCommand comando = new SqlCommand();
-            string sentencia = "UPDATE CITAS SET ID_PACIENTE = @ID_PACIENTE, ID_FUNCIONARIO = @ID_FUNCIONARIO, MOTIVO = @MOTIVO, FECHA = @FECHA, HORA_INICIO = @HORA_INICIO, HORA_FIN = @HORA_FIN, ESTADO = @ESTADO WHERE ID_CITA = @ID_CITA";
+            string sentencia = "UPDATE CITAS SET MOTIVO = @MOTIVO, FECHA = @FECHA, HORA_INICIO = @HORA_INICIO, HORA_FIN = @HORA_FIN, ESTADO = @ESTADO WHERE ID_CITA = @ID_CITA";
             comando.CommandText = sentencia;
             comando.Connection = conexion;
             comando.Parameters.AddWithValue("@ID_CITA", cita.IdCita);
-            comando.Parameters.AddWithValue("@ID_PACIENTE", cita.IdPaciente);
-            comando.Parameters.AddWithValue("@ID_FUNCIONARIO", cita.IdFuncionario);
+            //comando.Parameters.AddWithValue("@ID_PACIENTE", cita.IdPaciente);
+            //comando.Parameters.AddWithValue("@ID_FUNCIONARIO", cita.IdFuncionario);
             comando.Parameters.AddWithValue("@MOTIVO", cita.Motivo);
             comando.Parameters.AddWithValue("@FECHA", cita.Fecha);
             comando.Parameters.AddWithValue("@HORA_INICIO", cita.HoraInicio);

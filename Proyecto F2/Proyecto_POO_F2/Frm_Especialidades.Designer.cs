@@ -250,7 +250,7 @@
             MinimizeBox = false;
             Name = "Frm_Especialidades";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "Frm_Especialidades";
+            Text = "Especialidades";
             Load += Frm_Especialidades_Load;
             groupBoxPaciente.ResumeLayout(false);
             groupBoxPaciente.PerformLayout();

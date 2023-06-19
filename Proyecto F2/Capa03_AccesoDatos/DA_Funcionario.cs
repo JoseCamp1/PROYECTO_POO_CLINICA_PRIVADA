@@ -197,8 +197,8 @@ namespace Capa03_AccesoDatos
             comando.CommandText = sentencia;
             comando.Connection = conexion;
             comando.Parameters.AddWithValue("@ID_FUNCIONARIO", funcionario.IdFuncionario);
-            comando.Parameters.AddWithValue("@ID_FUNCIONARIO", funcionario.IdPuestoTrabajo);
-            comando.Parameters.AddWithValue("@ID_FUNCIONARIO", funcionario.IdEspecialidad);
+            comando.Parameters.AddWithValue("@ID_PUESTO", funcionario.IdPuestoTrabajo);
+            comando.Parameters.AddWithValue("@ID_ESPECIALIDAD", funcionario.IdEspecialidad);
             comando.Parameters.AddWithValue("@NOMBRE_FUNCIONARIO", funcionario.Nombre);
             comando.Parameters.AddWithValue("@APELLIDOS_FUNCIONARIO", funcionario.Apellidos);
             comando.Parameters.AddWithValue("@CEDULA_FUNCIONARIO", funcionario.Cedula);

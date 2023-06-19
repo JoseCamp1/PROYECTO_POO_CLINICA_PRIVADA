@@ -30,11 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_BuscarFuncionario));
             groupBox1 = new System.Windows.Forms.GroupBox();
-            btnAceptar = new System.Windows.Forms.Button();
-            btnBuscar = new System.Windows.Forms.Button();
-            btnCancelar = new System.Windows.Forms.Button();
-            label2 = new System.Windows.Forms.Label();
-            txtNombre = new System.Windows.Forms.TextBox();
             grdLista = new System.Windows.Forms.DataGridView();
             ID_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ID_PuestodeTrabajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,6 +42,11 @@
             DIRECCION_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             FECHA_NACIMIENTO_PACIENTE = new System.Windows.Forms.DataGridViewTextBoxColumn();
             Existe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            btnAceptar = new System.Windows.Forms.Button();
+            btnBuscar = new System.Windows.Forms.Button();
+            btnCancelar = new System.Windows.Forms.Button();
+            label2 = new System.Windows.Forms.Label();
+            txtNombre = new System.Windows.Forms.TextBox();
             groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grdLista).BeginInit();
             SuspendLayout();
@@ -66,64 +66,6 @@
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             groupBox1.Text = "Buscar";
-            // 
-            // btnAceptar
-            // 
-            btnAceptar.BackColor = System.Drawing.SystemColors.Window;
-            btnAceptar.Image = Properties.Resources._4115228_accept_checklist_checkmark_yes_114037;
-            btnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnAceptar.Location = new System.Drawing.Point(1095, 12);
-            btnAceptar.Name = "btnAceptar";
-            btnAceptar.Size = new System.Drawing.Size(75, 71);
-            btnAceptar.TabIndex = 29;
-            btnAceptar.Text = "&Aceptar";
-            btnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnAceptar.UseVisualStyleBackColor = false;
-            btnAceptar.Click += btnAceptar_Click;
-            // 
-            // btnBuscar
-            // 
-            btnBuscar.BackColor = System.Drawing.SystemColors.Window;
-            btnBuscar.Image = Properties.Resources.seo_social_web_network_internet_340_icon_icons_com_61497;
-            btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnBuscar.Location = new System.Drawing.Point(1014, 12);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new System.Drawing.Size(75, 71);
-            btnBuscar.TabIndex = 28;
-            btnBuscar.Text = "&Buscar";
-            btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnBuscar.UseVisualStyleBackColor = false;
-            btnBuscar.Click += btnBuscar_Click;
-            // 
-            // btnCancelar
-            // 
-            btnCancelar.BackColor = System.Drawing.SystemColors.Window;
-            btnCancelar.Image = Properties.Resources._1487086345_cross_815771;
-            btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnCancelar.Location = new System.Drawing.Point(1176, 12);
-            btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new System.Drawing.Size(75, 71);
-            btnCancelar.TabIndex = 19;
-            btnCancelar.Text = "&Cancelar";
-            btnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnCancelar.UseVisualStyleBackColor = false;
-            btnCancelar.Click += btnCancelar_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(6, 23);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(107, 15);
-            label2.TabIndex = 26;
-            label2.Text = "Ingrese el Nombre ";
-            // 
-            // txtNombre
-            // 
-            txtNombre.Location = new System.Drawing.Point(6, 41);
-            txtNombre.Name = "txtNombre";
-            txtNombre.Size = new System.Drawing.Size(284, 23);
-            txtNombre.TabIndex = 27;
             // 
             // grdLista
             // 
@@ -209,6 +151,64 @@
             Existe.HeaderText = "Existe";
             Existe.Name = "Existe";
             Existe.Visible = false;
+            // 
+            // btnAceptar
+            // 
+            btnAceptar.BackColor = System.Drawing.SystemColors.Window;
+            btnAceptar.Image = Properties.Resources._4115228_accept_checklist_checkmark_yes_114037;
+            btnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnAceptar.Location = new System.Drawing.Point(1095, 12);
+            btnAceptar.Name = "btnAceptar";
+            btnAceptar.Size = new System.Drawing.Size(75, 71);
+            btnAceptar.TabIndex = 29;
+            btnAceptar.Text = "&Aceptar";
+            btnAceptar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btnAceptar.UseVisualStyleBackColor = false;
+            btnAceptar.Click += btnAceptar_Click;
+            // 
+            // btnBuscar
+            // 
+            btnBuscar.BackColor = System.Drawing.SystemColors.Window;
+            btnBuscar.Image = Properties.Resources.seo_social_web_network_internet_340_icon_icons_com_61497;
+            btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnBuscar.Location = new System.Drawing.Point(1014, 12);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new System.Drawing.Size(75, 71);
+            btnBuscar.TabIndex = 28;
+            btnBuscar.Text = "&Buscar";
+            btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btnBuscar.UseVisualStyleBackColor = false;
+            btnBuscar.Click += btnBuscar_Click;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.BackColor = System.Drawing.SystemColors.Window;
+            btnCancelar.Image = Properties.Resources._1487086345_cross_815771;
+            btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnCancelar.Location = new System.Drawing.Point(1176, 12);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new System.Drawing.Size(75, 71);
+            btnCancelar.TabIndex = 19;
+            btnCancelar.Text = "&Cancelar";
+            btnCancelar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btnCancelar.UseVisualStyleBackColor = false;
+            btnCancelar.Click += btnCancelar_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(6, 23);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(107, 15);
+            label2.TabIndex = 26;
+            label2.Text = "Ingrese el Nombre ";
+            // 
+            // txtNombre
+            // 
+            txtNombre.Location = new System.Drawing.Point(6, 41);
+            txtNombre.Name = "txtNombre";
+            txtNombre.Size = new System.Drawing.Size(284, 23);
+            txtNombre.TabIndex = 27;
             // 
             // Frm_BuscarFuncionario
             // 

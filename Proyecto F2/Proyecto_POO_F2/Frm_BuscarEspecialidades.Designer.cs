@@ -175,7 +175,7 @@
             MinimizeBox = false;
             Name = "Frm_BuscarEspecialidades";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "Frm_BuscarEspecialidades";
+            Text = "Buscar Especialidades";
             Load += Frm_BuscarEspecialidades_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();

@@ -21,13 +21,13 @@ namespace Capa01_Presentacion
         // Variable global: si el campo txtIdFuncionario.Text tiene algún valor, significa que el funcionario existe y no se debe insertar sino modificar
         Entidad_Funcionario funcionarioRegistrado;
 
-        private void ListarFuncionariosconEspecialidad(string condicion = "",string orden="")
+        private void ListarFuncionariosconEspecialidad(string condicion = "", string orden = "")
         {
             BL_Funcionario logica = new BL_Funcionario(Configuracion.getConnectionString);
             DataSet DSFuncionarios;
             try
             {
-                DSFuncionarios = logica.ListarFuncionariosconEspecialidad(condicion,orden);
+                DSFuncionarios = logica.ListarFuncionariosconEspecialidad(condicion, orden);
                 grdLista.DataSource = DSFuncionarios;
                 grdLista.DataMember = DSFuncionarios.Tables["Funcionarios"].TableName;
             }
@@ -246,9 +246,10 @@ namespace Capa01_Presentacion
         {
             try
             {
-                verificarDoctor();
+                //verificarDoctor();
                 cargarListaPuestosTrabajo();
                 cargarListaFuncionarios();
+                cargarListaEspecialidades();
             }
             catch (Exception ex)
             {
@@ -343,14 +344,14 @@ namespace Capa01_Presentacion
             }
             else
             {
-                txtID_Especialidad.Text = "1";
+                //txtID_Especialidad.Text = "1";
                 grdEspecialidad.Enabled = true;
             }
         }
 
         private void txtID_Puesto_TextChanged(object sender, EventArgs e)
         {
-            verificarDoctor();
+            //verificarDoctor();
         }
     }
 }

@@ -43,6 +43,7 @@
             // 
             // menuStrip1
             // 
+            menuStrip1.BackColor = System.Drawing.Color.Transparent;
             menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { pacientesToolStripMenuItem, serviciosToolStripMenuItem });
             menuStrip1.Location = new System.Drawing.Point(0, 0);
             menuStrip1.Name = "menuStrip1";
@@ -52,13 +53,16 @@
             // 
             // pacientesToolStripMenuItem
             // 
+            pacientesToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { pacientesToolStripMenuItem1, funcionariosToolStripMenuItem, puestosDeTrabajoToolStripMenuItem, especialidadesMedicasToolStripMenuItem, agendaEspecialistaToolStripMenuItem });
+            pacientesToolStripMenuItem.Image = Properties.Resources._3643769_building_home_house_main_menu_start_113416;
             pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
-            pacientesToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
-            pacientesToolStripMenuItem.Text = "Editar";
+            pacientesToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            pacientesToolStripMenuItem.Text = "Menu Principal";
             // 
             // pacientesToolStripMenuItem1
             // 
+            pacientesToolStripMenuItem1.BackColor = System.Drawing.Color.Transparent;
             pacientesToolStripMenuItem1.Image = Properties.Resources.users_people_workers_customers_icon_124243;
             pacientesToolStripMenuItem1.Name = "pacientesToolStripMenuItem1";
             pacientesToolStripMenuItem1.Size = new System.Drawing.Size(197, 22);
@@ -67,7 +71,8 @@
             // 
             // funcionariosToolStripMenuItem
             // 
-            funcionariosToolStripMenuItem.Image = Properties.Resources.users_people_workers_customers_icon_124243;
+            funcionariosToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            funcionariosToolStripMenuItem.Image = Properties.Resources.effective_employees_users_team_group_icon_152042;
             funcionariosToolStripMenuItem.Name = "funcionariosToolStripMenuItem";
             funcionariosToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             funcionariosToolStripMenuItem.Text = "Funcionarios";
@@ -75,7 +80,8 @@
             // 
             // puestosDeTrabajoToolStripMenuItem
             // 
-            puestosDeTrabajoToolStripMenuItem.Image = Properties.Resources.effective_employees_users_team_group_icon_152042;
+            puestosDeTrabajoToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
+            puestosDeTrabajoToolStripMenuItem.Image = Properties.Resources.products_new_cube_product_design_icon_153845;
             puestosDeTrabajoToolStripMenuItem.Name = "puestosDeTrabajoToolStripMenuItem";
             puestosDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
             puestosDeTrabajoToolStripMenuItem.Text = "Puestos de Trabajo";
@@ -83,6 +89,7 @@
             // 
             // especialidadesMedicasToolStripMenuItem
             // 
+            especialidadesMedicasToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             especialidadesMedicasToolStripMenuItem.Image = Properties.Resources.medical_clinic_icon_194649;
             especialidadesMedicasToolStripMenuItem.Name = "especialidadesMedicasToolStripMenuItem";
             especialidadesMedicasToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
@@ -91,6 +98,7 @@
             // 
             // agendaEspecialistaToolStripMenuItem
             // 
+            agendaEspecialistaToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             agendaEspecialistaToolStripMenuItem.Image = Properties.Resources.time_clock_icon_129581;
             agendaEspecialistaToolStripMenuItem.Name = "agendaEspecialistaToolStripMenuItem";
             agendaEspecialistaToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
@@ -99,13 +107,16 @@
             // 
             // serviciosToolStripMenuItem
             // 
+            serviciosToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             serviciosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { citasToolStripMenuItem });
+            serviciosToolStripMenuItem.Image = Properties.Resources.hospital_4331;
             serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
-            serviciosToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
+            serviciosToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
             serviciosToolStripMenuItem.Text = "Servicios";
             // 
             // citasToolStripMenuItem
             // 
+            citasToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             citasToolStripMenuItem.Image = Properties.Resources.calendar_with_a_clock_time_tools_icon_icons_com_56831;
             citasToolStripMenuItem.Name = "citasToolStripMenuItem";
             citasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
@@ -116,6 +127,7 @@
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            BackColor = System.Drawing.SystemColors.Control;
             BackgroundImage = Properties.Resources.Screenshot_2023_06_10_171827;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             ClientSize = new System.Drawing.Size(1518, 590);
@@ -126,7 +138,7 @@
             MainMenuStrip = menuStrip1;
             Name = "Frm_MenuPrincipal";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            Text = "Frm_MenuPrincipal";
+            Text = "Clínica Privada El Buen Vivir";
             WindowState = System.Windows.Forms.FormWindowState.Maximized;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
