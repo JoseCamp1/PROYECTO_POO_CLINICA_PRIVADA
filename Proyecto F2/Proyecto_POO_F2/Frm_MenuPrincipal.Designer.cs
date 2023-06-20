@@ -38,13 +38,14 @@
             agendaEspecialistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             citasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.BackColor = System.Drawing.Color.Transparent;
-            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { pacientesToolStripMenuItem, serviciosToolStripMenuItem });
+            menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { pacientesToolStripMenuItem, serviciosToolStripMenuItem, infoToolStripMenuItem });
             menuStrip1.Location = new System.Drawing.Point(0, 0);
             menuStrip1.Name = "menuStrip1";
             menuStrip1.Size = new System.Drawing.Size(1518, 24);
@@ -119,9 +120,17 @@
             citasToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             citasToolStripMenuItem.Image = Properties.Resources.calendar_with_a_clock_time_tools_icon_icons_com_56831;
             citasToolStripMenuItem.Name = "citasToolStripMenuItem";
-            citasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            citasToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             citasToolStripMenuItem.Text = "Citas";
             citasToolStripMenuItem.Click += citasToolStripMenuItem_Click;
+            // 
+            // infoToolStripMenuItem
+            // 
+            infoToolStripMenuItem.Image = Properties.Resources.acerca;
+            infoToolStripMenuItem.Name = "infoToolStripMenuItem";
+            infoToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
+            infoToolStripMenuItem.Text = "About";
+            infoToolStripMenuItem.Click += infoToolStripMenuItem_Click;
             // 
             // Frm_MenuPrincipal
             // 
@@ -157,5 +166,6 @@
         private System.Windows.Forms.ToolStripMenuItem puestosDeTrabajoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem especialidadesMedicasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agendaEspecialistaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
     }
 }

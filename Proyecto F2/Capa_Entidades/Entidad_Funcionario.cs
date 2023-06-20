@@ -21,6 +21,8 @@ namespace Capa_Entidades
 
         //metodos getter and setter
         public int IdFuncionario { get => idFuncionario; set => idFuncionario = value; }
+        public int IdPuestoTrabajo { get => idPuestoTrabajo; set => idPuestoTrabajo = value; }
+        public int IdEspecialidad { get => idEspecialidad; set => idEspecialidad = value; }
         public string Nombre { get => nombre; set => nombre = value; }
         public string Apellidos { get => apellidos; set => apellidos = value; }
         public string Cedula { get => cedula; set => cedula = value; }
@@ -29,8 +31,7 @@ namespace Capa_Entidades
         public string Direccion { get => direccion; set => direccion = value; }
         public DateTime FechaNacimiento { get => fechaNacimiento; set => fechaNacimiento = value; }
         public bool Existe { get => existe; set => existe = value; }
-        public int IdPuestoTrabajo { get => idPuestoTrabajo; set => idPuestoTrabajo = value; }
-        public int IdEspecialidad { get => idEspecialidad; set => idEspecialidad = value; }
+        
 
         //constructores
         public Entidad_Funcionario()
@@ -44,7 +45,7 @@ namespace Capa_Entidades
             Telefono = string.Empty;
             Correo = string.Empty;
             Direccion = string.Empty;
-            FechaNacimiento = DateTime.MinValue;
+            FechaNacimiento = Convert.ToDateTime("01/01/1900");
             Existe = false;
         }
 
@@ -65,8 +66,6 @@ namespace Capa_Entidades
             this.FechaNacimiento = fechaNacimiento;
             this.Existe = existe;
         }
-
-
         public override string ToString()
         {
             return string.Format("{0} - {1}", IdFuncionario, Nombre);

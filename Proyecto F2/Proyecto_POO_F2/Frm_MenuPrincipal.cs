@@ -56,5 +56,16 @@ namespace Capa01_Presentacion
             citas.MdiParent = this;
             citas.Show();
         }
+
+        private void infoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string titulo = "Sobre Mi Programa";
+            string mensaje = "¡Bienvenido a Mi Programa!\n\n" +
+                             "Versión: 1.0\n" +
+                             "Desarrollado por: Tu Nombre\n" +
+                             "Contacto: tu@email.com";
+
+            MessageBox.Show(mensaje, titulo, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

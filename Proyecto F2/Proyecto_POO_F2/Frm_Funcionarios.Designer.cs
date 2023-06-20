@@ -30,21 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Funcionarios));
             groupBoxPaciente = new System.Windows.Forms.GroupBox();
-            grdPuesto = new System.Windows.Forms.DataGridView();
-            IdPuestoTrabajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            Nombre_PuestoTrabajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            label12 = new System.Windows.Forms.Label();
-            label11 = new System.Windows.Forms.Label();
+            groupBox2 = new System.Windows.Forms.GroupBox();
             grdEspecialidad = new System.Windows.Forms.DataGridView();
-            IdEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            groupBox1 = new System.Windows.Forms.GroupBox();
+            grdPuesto = new System.Windows.Forms.DataGridView();
+            label11 = new System.Windows.Forms.Label();
+            txt_ID_PUESTO_TRABAJO = new System.Windows.Forms.TextBox();
+            btnLimpiar = new System.Windows.Forms.Button();
+            btnSalir = new System.Windows.Forms.Button();
+            btnEliminar = new System.Windows.Forms.Button();
+            label12 = new System.Windows.Forms.Label();
+            btnGuardar = new System.Windows.Forms.Button();
+            btnBuscar = new System.Windows.Forms.Button();
             txtID_Especialidad = new System.Windows.Forms.TextBox();
             label9 = new System.Windows.Forms.Label();
-            txtID_Puesto = new System.Windows.Forms.TextBox();
             label6 = new System.Windows.Forms.Label();
             txtFechaNacimiento = new System.Windows.Forms.TextBox();
             txtID_Funcionario = new System.Windows.Forms.TextBox();
@@ -74,27 +73,37 @@
             label8 = new System.Windows.Forms.Label();
             label7 = new System.Windows.Forms.Label();
             txtCedula = new System.Windows.Forms.TextBox();
-            btnLimpiar = new System.Windows.Forms.Button();
-            btnSalir = new System.Windows.Forms.Button();
-            btnEliminar = new System.Windows.Forms.Button();
-            btnGuardar = new System.Windows.Forms.Button();
-            btnBuscar = new System.Windows.Forms.Button();
+            IdPuestoTrabajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Nombre_PuestoTrabajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            IdEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             groupBoxPaciente.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)grdPuesto).BeginInit();
+            groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grdEspecialidad).BeginInit();
+            groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)grdPuesto).BeginInit();
             ((System.ComponentModel.ISupportInitialize)grdLista).BeginInit();
             SuspendLayout();
             // 
             // groupBoxPaciente
             // 
             groupBoxPaciente.BackColor = System.Drawing.Color.Transparent;
-            groupBoxPaciente.Controls.Add(grdPuesto);
-            groupBoxPaciente.Controls.Add(label12);
+            groupBoxPaciente.Controls.Add(groupBox2);
+            groupBoxPaciente.Controls.Add(groupBox1);
             groupBoxPaciente.Controls.Add(label11);
-            groupBoxPaciente.Controls.Add(grdEspecialidad);
+            groupBoxPaciente.Controls.Add(txt_ID_PUESTO_TRABAJO);
+            groupBoxPaciente.Controls.Add(btnLimpiar);
+            groupBoxPaciente.Controls.Add(btnSalir);
+            groupBoxPaciente.Controls.Add(btnEliminar);
+            groupBoxPaciente.Controls.Add(label12);
+            groupBoxPaciente.Controls.Add(btnGuardar);
+            groupBoxPaciente.Controls.Add(btnBuscar);
             groupBoxPaciente.Controls.Add(txtID_Especialidad);
             groupBoxPaciente.Controls.Add(label9);
-            groupBoxPaciente.Controls.Add(txtID_Puesto);
             groupBoxPaciente.Controls.Add(label6);
             groupBoxPaciente.Controls.Add(txtFechaNacimiento);
             groupBoxPaciente.Controls.Add(txtID_Funcionario);
@@ -113,74 +122,22 @@
             groupBoxPaciente.Controls.Add(label8);
             groupBoxPaciente.Controls.Add(label7);
             groupBoxPaciente.Controls.Add(txtCedula);
-            groupBoxPaciente.Location = new System.Drawing.Point(12, 12);
+            groupBoxPaciente.Location = new System.Drawing.Point(10, 10);
             groupBoxPaciente.Name = "groupBoxPaciente";
-            groupBoxPaciente.Size = new System.Drawing.Size(1258, 439);
+            groupBoxPaciente.Size = new System.Drawing.Size(1258, 512);
             groupBoxPaciente.TabIndex = 49;
             groupBoxPaciente.TabStop = false;
             groupBoxPaciente.Text = "Informacion del Funcionario";
             // 
-            // grdPuesto
+            // groupBox2
             // 
-            grdPuesto.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            grdPuesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            grdPuesto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { IdPuestoTrabajo, Nombre_PuestoTrabajo, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3 });
-            grdPuesto.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            grdPuesto.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            grdPuesto.Location = new System.Drawing.Point(90, 96);
-            grdPuesto.Name = "grdPuesto";
-            grdPuesto.RowTemplate.Height = 25;
-            grdPuesto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            grdPuesto.Size = new System.Drawing.Size(343, 137);
-            grdPuesto.TabIndex = 48;
-            grdPuesto.CellDoubleClick += grdPuesto_CellDoubleClick;
-            // 
-            // IdPuestoTrabajo
-            // 
-            IdPuestoTrabajo.DataPropertyName = "IdPuestoTrabajo";
-            IdPuestoTrabajo.HeaderText = "ID Puesto de Trabajo";
-            IdPuestoTrabajo.Name = "IdPuestoTrabajo";
-            IdPuestoTrabajo.Width = 150;
-            // 
-            // Nombre_PuestoTrabajo
-            // 
-            Nombre_PuestoTrabajo.DataPropertyName = "Nombre";
-            Nombre_PuestoTrabajo.HeaderText = "Nombre del Puesto";
-            Nombre_PuestoTrabajo.Name = "Nombre_PuestoTrabajo";
-            Nombre_PuestoTrabajo.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewTextBoxColumn2.DataPropertyName = "Descripcion";
-            dataGridViewTextBoxColumn2.HeaderText = "Descripcion del Puesto";
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.Visible = false;
-            dataGridViewTextBoxColumn2.Width = 200;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewTextBoxColumn3.DataPropertyName = "Existe";
-            dataGridViewTextBoxColumn3.HeaderText = "Existe";
-            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new System.Drawing.Point(803, 78);
-            label12.Name = "label12";
-            label12.Size = new System.Drawing.Size(323, 15);
-            label12.TabIndex = 50;
-            label12.Text = "*Doble click sobre la especialidad del medico para agregarlo";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new System.Drawing.Point(90, 78);
-            label11.Name = "label11";
-            label11.Size = new System.Drawing.Size(288, 15);
-            label11.TabIndex = 49;
-            label11.Text = "*Doble click sobre el puesto de trabajo para agregarlo";
+            groupBox2.Controls.Add(grdEspecialidad);
+            groupBox2.Location = new System.Drawing.Point(624, 83);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new System.Drawing.Size(627, 164);
+            groupBox2.TabIndex = 53;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Especialidades Medicas";
             // 
             // grdEspecialidad
             // 
@@ -189,42 +146,135 @@
             grdEspecialidad.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { IdEspecialidad, Nombre, Descripcion, dataGridViewTextBoxColumn1 });
             grdEspecialidad.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             grdEspecialidad.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            grdEspecialidad.Location = new System.Drawing.Point(803, 96);
+            grdEspecialidad.Location = new System.Drawing.Point(6, 22);
             grdEspecialidad.Name = "grdEspecialidad";
             grdEspecialidad.RowTemplate.Height = 25;
             grdEspecialidad.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            grdEspecialidad.Size = new System.Drawing.Size(344, 137);
+            grdEspecialidad.Size = new System.Drawing.Size(615, 137);
             grdEspecialidad.TabIndex = 47;
             grdEspecialidad.CellDoubleClick += grdEspecialidad_CellDoubleClick;
             // 
-            // IdEspecialidad
+            // groupBox1
             // 
-            IdEspecialidad.DataPropertyName = "IdEspecialidad";
-            IdEspecialidad.HeaderText = "ID Especialidad";
-            IdEspecialidad.Name = "IdEspecialidad";
-            IdEspecialidad.Width = 150;
+            groupBox1.Controls.Add(grdPuesto);
+            groupBox1.Location = new System.Drawing.Point(6, 82);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new System.Drawing.Size(612, 165);
+            groupBox1.TabIndex = 52;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Puestos de Trabajo";
             // 
-            // Nombre
+            // grdPuesto
             // 
-            Nombre.DataPropertyName = "Nombre";
-            Nombre.HeaderText = "Nombre";
-            Nombre.Name = "Nombre";
-            Nombre.Width = 150;
+            grdPuesto.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            grdPuesto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            grdPuesto.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { IdPuestoTrabajo, Nombre_PuestoTrabajo, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3 });
+            grdPuesto.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            grdPuesto.GridColor = System.Drawing.SystemColors.ActiveBorder;
+            grdPuesto.Location = new System.Drawing.Point(6, 22);
+            grdPuesto.Name = "grdPuesto";
+            grdPuesto.RowTemplate.Height = 25;
+            grdPuesto.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            grdPuesto.Size = new System.Drawing.Size(600, 137);
+            grdPuesto.TabIndex = 48;
+            grdPuesto.CellDoubleClick += grdPuesto_CellDoubleClick;
             // 
-            // Descripcion
+            // label11
             // 
-            Descripcion.DataPropertyName = "Descripcion";
-            Descripcion.HeaderText = "Descripcion";
-            Descripcion.Name = "Descripcion";
-            Descripcion.Visible = false;
-            Descripcion.Width = 200;
+            label11.AutoSize = true;
+            label11.Location = new System.Drawing.Point(121, 66);
+            label11.Name = "label11";
+            label11.Size = new System.Drawing.Size(288, 15);
+            label11.TabIndex = 49;
+            label11.Text = "*Doble click sobre el puesto de trabajo para agregarlo";
             // 
-            // dataGridViewTextBoxColumn1
+            // txt_ID_PUESTO_TRABAJO
             // 
-            dataGridViewTextBoxColumn1.DataPropertyName = "Existe";
-            dataGridViewTextBoxColumn1.HeaderText = "Existe";
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.Visible = false;
+            txt_ID_PUESTO_TRABAJO.BackColor = System.Drawing.SystemColors.Info;
+            txt_ID_PUESTO_TRABAJO.Enabled = false;
+            txt_ID_PUESTO_TRABAJO.Location = new System.Drawing.Point(203, 40);
+            txt_ID_PUESTO_TRABAJO.Name = "txt_ID_PUESTO_TRABAJO";
+            txt_ID_PUESTO_TRABAJO.Size = new System.Drawing.Size(100, 23);
+            txt_ID_PUESTO_TRABAJO.TabIndex = 51;
+            // 
+            // btnLimpiar
+            // 
+            btnLimpiar.BackColor = System.Drawing.SystemColors.Window;
+            btnLimpiar.Image = Properties.Resources.broom_5182;
+            btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnLimpiar.Location = new System.Drawing.Point(509, 435);
+            btnLimpiar.Name = "btnLimpiar";
+            btnLimpiar.Size = new System.Drawing.Size(75, 71);
+            btnLimpiar.TabIndex = 48;
+            btnLimpiar.Text = "&Limpiar";
+            btnLimpiar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btnLimpiar.UseVisualStyleBackColor = false;
+            btnLimpiar.Click += btnLimpiar_Click;
+            // 
+            // btnSalir
+            // 
+            btnSalir.BackColor = System.Drawing.SystemColors.Window;
+            btnSalir.Image = Properties.Resources._4115235_exit_logout_sign_out_114030;
+            btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnSalir.Location = new System.Drawing.Point(803, 435);
+            btnSalir.Name = "btnSalir";
+            btnSalir.Size = new System.Drawing.Size(75, 71);
+            btnSalir.TabIndex = 47;
+            btnSalir.Text = "&Salir";
+            btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btnSalir.UseVisualStyleBackColor = false;
+            btnSalir.Click += btnSalir_Click;
+            // 
+            // btnEliminar
+            // 
+            btnEliminar.BackColor = System.Drawing.SystemColors.Window;
+            btnEliminar.Image = Properties.Resources.trash_bin_icon_icons_com_67981;
+            btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnEliminar.Location = new System.Drawing.Point(704, 435);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new System.Drawing.Size(75, 71);
+            btnEliminar.TabIndex = 46;
+            btnEliminar.Text = "&Eliminar";
+            btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btnEliminar.UseVisualStyleBackColor = false;
+            btnEliminar.Click += btnEliminar_Click;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new System.Drawing.Point(803, 66);
+            label12.Name = "label12";
+            label12.Size = new System.Drawing.Size(323, 15);
+            label12.TabIndex = 50;
+            label12.Text = "*Doble click sobre la especialidad del medico para agregarlo";
+            // 
+            // btnGuardar
+            // 
+            btnGuardar.BackColor = System.Drawing.SystemColors.Window;
+            btnGuardar.Image = Properties.Resources._1490129329_rounded38_82203;
+            btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnGuardar.Location = new System.Drawing.Point(612, 435);
+            btnGuardar.Name = "btnGuardar";
+            btnGuardar.Size = new System.Drawing.Size(75, 71);
+            btnGuardar.TabIndex = 45;
+            btnGuardar.Text = "&Guardar";
+            btnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btnGuardar.UseVisualStyleBackColor = false;
+            btnGuardar.Click += btnGuardar_Click;
+            // 
+            // btnBuscar
+            // 
+            btnBuscar.BackColor = System.Drawing.SystemColors.Window;
+            btnBuscar.Image = Properties.Resources.seo_social_web_network_internet_340_icon_icons_com_61497;
+            btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            btnBuscar.Location = new System.Drawing.Point(412, 435);
+            btnBuscar.Name = "btnBuscar";
+            btnBuscar.Size = new System.Drawing.Size(75, 71);
+            btnBuscar.TabIndex = 44;
+            btnBuscar.Text = "&Buscar";
+            btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            btnBuscar.UseVisualStyleBackColor = false;
+            btnBuscar.Click += btnBuscar_Click;
             // 
             // txtID_Especialidad
             // 
@@ -243,16 +293,6 @@
             label9.Size = new System.Drawing.Size(86, 15);
             label9.TabIndex = 45;
             label9.Text = "ID Especialidad";
-            // 
-            // txtID_Puesto
-            // 
-            txtID_Puesto.BackColor = System.Drawing.SystemColors.Info;
-            txtID_Puesto.Enabled = false;
-            txtID_Puesto.Location = new System.Drawing.Point(202, 40);
-            txtID_Puesto.Name = "txtID_Puesto";
-            txtID_Puesto.Size = new System.Drawing.Size(100, 23);
-            txtID_Puesto.TabIndex = 44;
-            txtID_Puesto.TextChanged += txtID_Puesto_TextChanged;
             // 
             // label6
             // 
@@ -343,11 +383,11 @@
             grdLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { ID_FUNCIONARIO, ID_PuestodeTrabajo, Id_Especialidad, NOMBRE_PACIENTE, APELLIDOS_PACIENTE, CEDULA_PACIENTE, TELEFONO_PACIENTE, CORREO_PACIENTE, DIRECCION_PACIENTE, FECHA_NACIMIENTO_PACIENTE, Existe });
             grdLista.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             grdLista.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            grdLista.Location = new System.Drawing.Point(6, 239);
+            grdLista.Location = new System.Drawing.Point(6, 253);
             grdLista.Name = "grdLista";
             grdLista.RowTemplate.Height = 25;
             grdLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            grdLista.Size = new System.Drawing.Size(1245, 193);
+            grdLista.Size = new System.Drawing.Size(1245, 179);
             grdLista.TabIndex = 14;
             grdLista.DoubleClick += grdLista_DoubleClick;
             // 
@@ -479,75 +519,61 @@
             txtCedula.Size = new System.Drawing.Size(100, 23);
             txtCedula.TabIndex = 33;
             // 
-            // btnLimpiar
+            // IdPuestoTrabajo
             // 
-            btnLimpiar.BackColor = System.Drawing.SystemColors.Window;
-            btnLimpiar.Image = Properties.Resources.broom_5182;
-            btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnLimpiar.Location = new System.Drawing.Point(499, 457);
-            btnLimpiar.Name = "btnLimpiar";
-            btnLimpiar.Size = new System.Drawing.Size(75, 71);
-            btnLimpiar.TabIndex = 48;
-            btnLimpiar.Text = "&Limpiar";
-            btnLimpiar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnLimpiar.UseVisualStyleBackColor = false;
-            btnLimpiar.Click += btnLimpiar_Click;
+            IdPuestoTrabajo.DataPropertyName = "IdPuestoTrabajo";
+            IdPuestoTrabajo.HeaderText = "ID Puesto de Trabajo";
+            IdPuestoTrabajo.Name = "IdPuestoTrabajo";
+            IdPuestoTrabajo.Width = 150;
             // 
-            // btnSalir
+            // Nombre_PuestoTrabajo
             // 
-            btnSalir.BackColor = System.Drawing.SystemColors.Window;
-            btnSalir.Image = Properties.Resources._4115235_exit_logout_sign_out_114030;
-            btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnSalir.Location = new System.Drawing.Point(803, 457);
-            btnSalir.Name = "btnSalir";
-            btnSalir.Size = new System.Drawing.Size(75, 71);
-            btnSalir.TabIndex = 47;
-            btnSalir.Text = "&Salir";
-            btnSalir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnSalir.UseVisualStyleBackColor = false;
-            btnSalir.Click += btnSalir_Click;
+            Nombre_PuestoTrabajo.DataPropertyName = "Nombre";
+            Nombre_PuestoTrabajo.HeaderText = "Nombre del Puesto";
+            Nombre_PuestoTrabajo.Name = "Nombre_PuestoTrabajo";
+            Nombre_PuestoTrabajo.Width = 150;
             // 
-            // btnEliminar
+            // dataGridViewTextBoxColumn2
             // 
-            btnEliminar.BackColor = System.Drawing.SystemColors.Window;
-            btnEliminar.Image = Properties.Resources.trash_bin_icon_icons_com_67981;
-            btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnEliminar.Location = new System.Drawing.Point(712, 457);
-            btnEliminar.Name = "btnEliminar";
-            btnEliminar.Size = new System.Drawing.Size(75, 71);
-            btnEliminar.TabIndex = 46;
-            btnEliminar.Text = "&Eliminar";
-            btnEliminar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnEliminar.UseVisualStyleBackColor = false;
-            btnEliminar.Click += btnEliminar_Click;
+            dataGridViewTextBoxColumn2.DataPropertyName = "Descripcion";
+            dataGridViewTextBoxColumn2.HeaderText = "Descripcion del Puesto";
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.Width = 250;
             // 
-            // btnGuardar
+            // dataGridViewTextBoxColumn3
             // 
-            btnGuardar.BackColor = System.Drawing.SystemColors.Window;
-            btnGuardar.Image = Properties.Resources._1490129329_rounded38_82203;
-            btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnGuardar.Location = new System.Drawing.Point(602, 455);
-            btnGuardar.Name = "btnGuardar";
-            btnGuardar.Size = new System.Drawing.Size(75, 71);
-            btnGuardar.TabIndex = 45;
-            btnGuardar.Text = "&Guardar";
-            btnGuardar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnGuardar.UseVisualStyleBackColor = false;
-            btnGuardar.Click += btnGuardar_Click;
+            dataGridViewTextBoxColumn3.DataPropertyName = "Existe";
+            dataGridViewTextBoxColumn3.HeaderText = "Existe";
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            dataGridViewTextBoxColumn3.Visible = false;
             // 
-            // btnBuscar
+            // IdEspecialidad
             // 
-            btnBuscar.BackColor = System.Drawing.SystemColors.Window;
-            btnBuscar.Image = Properties.Resources.seo_social_web_network_internet_340_icon_icons_com_61497;
-            btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            btnBuscar.Location = new System.Drawing.Point(404, 455);
-            btnBuscar.Name = "btnBuscar";
-            btnBuscar.Size = new System.Drawing.Size(75, 71);
-            btnBuscar.TabIndex = 44;
-            btnBuscar.Text = "&Buscar";
-            btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            btnBuscar.UseVisualStyleBackColor = false;
-            btnBuscar.Click += btnBuscar_Click;
+            IdEspecialidad.DataPropertyName = "IdEspecialidad";
+            IdEspecialidad.HeaderText = "ID Especialidad";
+            IdEspecialidad.Name = "IdEspecialidad";
+            IdEspecialidad.Width = 150;
+            // 
+            // Nombre
+            // 
+            Nombre.DataPropertyName = "Nombre";
+            Nombre.HeaderText = "Nombre";
+            Nombre.Name = "Nombre";
+            Nombre.Width = 150;
+            // 
+            // Descripcion
+            // 
+            Descripcion.DataPropertyName = "Descripcion";
+            Descripcion.HeaderText = "Descripcion";
+            Descripcion.Name = "Descripcion";
+            Descripcion.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.DataPropertyName = "Existe";
+            dataGridViewTextBoxColumn1.HeaderText = "Existe";
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.Visible = false;
             // 
             // Frm_Funcionarios
             // 
@@ -558,11 +584,6 @@
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             ClientSize = new System.Drawing.Size(1280, 534);
             Controls.Add(groupBoxPaciente);
-            Controls.Add(btnLimpiar);
-            Controls.Add(btnSalir);
-            Controls.Add(btnEliminar);
-            Controls.Add(btnGuardar);
-            Controls.Add(btnBuscar);
             DoubleBuffered = true;
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
@@ -573,8 +594,10 @@
             Load += Frm_Funcionarios_Load;
             groupBoxPaciente.ResumeLayout(false);
             groupBoxPaciente.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)grdPuesto).EndInit();
+            groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)grdEspecialidad).EndInit();
+            groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)grdPuesto).EndInit();
             ((System.ComponentModel.ISupportInitialize)grdLista).EndInit();
             ResumeLayout(false);
         }
@@ -606,18 +629,9 @@
         private System.Windows.Forms.Button btnBuscar;
         private System.Windows.Forms.TextBox txtID_Especialidad;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txtID_Puesto;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView grdEspecialidad;
         private System.Windows.Forms.DataGridView grdPuesto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdPuestoTrabajo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_PuestoTrabajo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IdEspecialidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_FUNCIONARIO;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID_PuestodeTrabajo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Id_Especialidad;
@@ -631,5 +645,16 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Existe;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txt_ID_PUESTO_TRABAJO;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdPuestoTrabajo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_PuestoTrabajo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IdEspecialidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
     }
 }

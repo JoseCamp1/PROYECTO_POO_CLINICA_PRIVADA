@@ -27,14 +27,15 @@ namespace Capa03_AccesoDatos
             SqlConnection conexion = new SqlConnection(_cadenaConexion);
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            string sentencia = "INSERT INTO CITAS (ID_PACIENTE, ID_FUNCIONARIO, MOTIVO, FECHA, HORA_INICIO, HORA_FIN, ESTADO) VALUES (@ID_PACIENTE, @ID_FUNCIONARIO, @MOTIVO, @FECHA, @HORA_INICIO, @HORA_FIN, @ESTADO) SELECT @@IDENTITY";
+            string sentencia = "INSERT INTO CITAS (ID_PACIENTE, ID_FUNCIONARIO, MOTIVO, FECHA, HORA_INICIO, HORA_FIN)" +
+                               "VALUES (@ID_PACIENTE, @ID_FUNCIONARIO, @MOTIVO, @FECHA, @HORA_INICIO, @HORA_FIN)" +
+                               "SELECT @@IDENTITY";
             comando.Parameters.AddWithValue("@ID_PACIENTE", cita.IdPaciente);
             comando.Parameters.AddWithValue("@ID_FUNCIONARIO", cita.IdFuncionario);
             comando.Parameters.AddWithValue("@MOTIVO", cita.Motivo);
             comando.Parameters.AddWithValue("@FECHA", cita.Fecha);
             comando.Parameters.AddWithValue("@HORA_INICIO", cita.HoraInicio);
-            comando.Parameters.AddWithValue("@HORA_FIN", cita.HoraFin);
-            comando.Parameters.AddWithValue("@ESTADO", cita.Estado);
+            comando.Parameters.AddWithValue("@HORA_FIN", cita.HoraFin);            
             comando.CommandText = sentencia;
             try
             {

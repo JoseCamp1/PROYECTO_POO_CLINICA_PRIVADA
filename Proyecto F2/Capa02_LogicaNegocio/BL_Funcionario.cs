@@ -26,6 +26,20 @@ namespace Capa02_LogicaNegocio
             _mensaje = string.Empty;
         }
 
+        
+        public DataSet ListarDoctores(string condicion = "", string orden = "")
+        {
+            DataSet DS;
+            DA_Funcionario accesoDatos = new DA_Funcionario(_cadenaConexion);
+            try
+            {
+                DS = accesoDatos.ListarDoctores(condicion, orden);
+            }
+            catch (Exception) { throw; }
+            return DS;
+        }
+
+
         public DataSet ListarFuncionariosconEspecialidad(string condicion="",string orden = "")
         {
             DataSet DS;

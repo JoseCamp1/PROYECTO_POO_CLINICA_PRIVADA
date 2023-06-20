@@ -113,7 +113,7 @@ VALUES
 -- Inserción de datos en la tabla ESPECIALIDADES
 INSERT INTO ESPECIALIDADES (NOMBRE_ESPECIALIDAD, DESCRIPCION_ESPECIALIDAD)
 VALUES
-  ('', ''),
+  ('Sin Especialidad', 'Empleado que no es del area de medicina'),
   ('Medicina General', 'Especialidad médica que se encarga del cuidado integral de la salud de los pacientes'),
   ('Pediatría', 'Especialidad médica que se enfoca en la atención y cuidado de los niños y adolescentes'),
   ('Ginecología', 'Especialidad médica que se ocupa de la salud del aparato reproductor femenino');
@@ -166,4 +166,12 @@ SELECT * FROM CITAS;
 --FROM FUNCIONARIOS F
 --INNER JOIN ESPECIALIDADES E ON F.ID_ESPECIALIDAD = E.ID_ESPECIALIDAD
 --WHERE E.ID_ESPECIALIDAD != 1;
+
+--INSERT INTO CITAS (ID_PACIENTE, ID_FUNCIONARIO, MOTIVO, FECHA, HORA_INICIO, HORA_FIN, ESTADO)
+--VALUES (3,2, 'DOLOR DE ESTOMAGO','2023-06-20', '08:00:00', '08:30:00','ACT')
+
+--UPDATE ESPECIALIDADES SET NOMBRE_ESPECIALIDAD='Sin Especialidad',DESCRIPCION_ESPECIALIDAD='Empleado que no es del area de medicina'
+--WHERE ID_ESPECIALIDAD = 1
+
+SELECT*FROM FUNCIONARIOS
 

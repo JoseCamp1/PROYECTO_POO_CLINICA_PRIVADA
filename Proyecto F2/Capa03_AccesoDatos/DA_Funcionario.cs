@@ -31,7 +31,11 @@ namespace Capa03_AccesoDatos
             DataSet datos = new DataSet();
             SqlConnection conexion = new SqlConnection(_cadenaConexion);
             SqlDataAdapter adapter;
-            string sentencia = "SELECT E.NOMBRE_ESPECIALIDAD, F.ID_FUNCIONARIO, F.NOMBRE_FUNCIONARIO, F.APELLIDOS_FUNCIONARIO, A.FECHA, A.HORA_INICIO, A.HORA_FIN\r\nFROM FUNCIONARIOS F\r\nINNER JOIN ESPECIALIDADES E ON F.ID_ESPECIALIDAD = E.ID_ESPECIALIDAD\r\nINNER JOIN AGENDA A ON F.ID_FUNCIONARIO = A.ID_FUNCIONARIO\r\nWHERE E.ID_ESPECIALIDAD != 1;\r\n";
+            string sentencia = "SELECT E.NOMBRE_ESPECIALIDAD, F.ID_FUNCIONARIO, F.NOMBRE_FUNCIONARIO, F.APELLIDOS_FUNCIONARIO, A.FECHA, A.HORA_INICIO, A.HORA_FIN " +
+                               "FROM FUNCIONARIOS F " +
+                               "INNER JOIN ESPECIALIDADES E ON F.ID_ESPECIALIDAD = E.ID_ESPECIALIDAD " +
+                               "INNER JOIN AGENDA A ON F.ID_FUNCIONARIO = A.ID_FUNCIONARIO " +
+                               "WHERE E.ID_ESPECIALIDAD != 1";
 
             if (!string.IsNullOrEmpty(condicion))
             {
@@ -51,6 +55,35 @@ namespace Capa03_AccesoDatos
             return datos;
         }
 
+        public DataSet ListarDoctores(string condicion = "", string orden = "")
+        {
+            DataSet datos = new DataSet();
+            SqlConnection conexion = new SqlConnection(_cadenaConexion);
+            SqlDataAdapter adapter;
+            string sentencia = "SELECT E.NOMBRE_ESPECIALIDAD, F.ID_FUNCIONARIO, F.NOMBRE_FUNCIONARIO, F.APELLIDOS_FUNCIONARIO " +
+                               "FROM FUNCIONARIOS F " +
+                               "INNER JOIN ESPECIALIDADES E ON F.ID_ESPECIALIDAD = E.ID_ESPECIALIDAD " +
+                               "WHERE E.ID_ESPECIALIDAD != 1";
+
+            if (!string.IsNullOrEmpty(condicion))
+            {
+                sentencia = string.Format("{0} AND {1}", sentencia, condicion);
+            }
+
+            try
+            {
+                adapter = new SqlDataAdapter(sentencia, conexion);
+                adapter.Fill(datos, "Funcionarios");
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+
+            return datos;
+        }
+
+
         public int InsertarFuncionario(Entidad_Funcionario funcionario)
         {
             int id = 0;
@@ -59,8 +92,11 @@ namespace Capa03_AccesoDatos
             //Establecer los comandos sQL
             SqlCommand comando = new SqlCommand();
             comando.Connection = conexion;
-            string sentencia = "INSERT INTO FUNCIONARIOS (ID_PUESTO,ID_ESPECIALIDAD,NOMBRE_FUNCIONARIO,APELLIDOS_FUNCIONARIO,CEDULA_FUNCIONARIO,TELEFONO_FUNCIONARIO,CORREO_FUNCIONARIO,DIRECCION_FUNCIONARIO,FECHA_NACIMIENTO_FUNCIONARIO) VALUES (@ID_PUESTO,@ID_ESPECIALIDAD,@NOMBRE_FUNCIONARIO,@APELLIDOS_FUNCIONARIO,@CEDULA_FUNCIONARIO,@TELEFONO_FUNCIONARIO,@CORREO_FUNCIONARIO,@DIRECCION_FUNCIONARIO,@FECHA_NACIMIENTO_FUNCIONARIO) SELECT @@IDENTITY";
-            comando.Parameters.AddWithValue("@ID_PUESTO", funcionario.IdFuncionario);
+            string sentencia = "INSERT INTO FUNCIONARIOS " +
+                               "(ID_PUESTO,ID_ESPECIALIDAD,NOMBRE_FUNCIONARIO,APELLIDOS_FUNCIONARIO,CEDULA_FUNCIONARIO,TELEFONO_FUNCIONARIO,CORREO_FUNCIONARIO,DIRECCION_FUNCIONARIO,FECHA_NACIMIENTO_FUNCIONARIO)" +
+                               "VALUES (@ID_PUESTO,@ID_ESPECIALIDAD,@NOMBRE_FUNCIONARIO,@APELLIDOS_FUNCIONARIO,@CEDULA_FUNCIONARIO,@TELEFONO_FUNCIONARIO,@CORREO_FUNCIONARIO,@DIRECCION_FUNCIONARIO,@FECHA_NACIMIENTO_FUNCIONARIO)" +
+                               "SELECT @@IDENTITY";
+            comando.Parameters.AddWithValue("@ID_PUESTO", funcionario.IdPuestoTrabajo);
             comando.Parameters.AddWithValue("@ID_ESPECIALIDAD", funcionario.IdEspecialidad);
             comando.Parameters.AddWithValue("@NOMBRE_FUNCIONARIO", funcionario.Nombre);
             comando.Parameters.AddWithValue("@APELLIDOS_FUNCIONARIO", funcionario.Apellidos);
@@ -87,9 +123,6 @@ namespace Capa03_AccesoDatos
             }
             return id;
         }
-
-        
-
 
         public List<Entidad_Funcionario> ListarFuncionarios(string condicion = "")
         {

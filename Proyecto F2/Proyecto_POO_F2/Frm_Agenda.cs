@@ -22,25 +22,6 @@ namespace Capa01_Presentacion
         // No se debe insertar, se debe modificar
         Entidad_Agenda agendaRegistrada;
 
-        public void cargarListaFuncionarios(string condicion = "")
-        {
-            grdFuncionario.Refresh();
-            BL_Funcionario logica = new BL_Funcionario(Configuracion.getConnectionString);
-            List<Entidad_Funcionario> funcionarios;
-            try
-            {
-                funcionarios = logica.ListarFuncionarios(condicion);
-                if (funcionarios.Count > 0)
-                {
-                    grdFuncionario.DataSource = funcionarios;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         public Entidad_Agenda GenerarEntidadAgenda()
         {
             Entidad_Agenda agenda;
@@ -246,8 +227,7 @@ namespace Capa01_Presentacion
             try
             {
                 cargarListaAgendas();
-                cargarListaFuncionarios();
-
+                ListarDoctores();
             }
             catch (Exception ex)
             {
@@ -255,35 +235,38 @@ namespace Capa01_Presentacion
             }
         }
 
-        private void grdFuncionario_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        private void ListarDoctores(string condicion = "", string orden = "")
         {
-            if (e.RowIndex >= 0) // Asegurarse de que se haya hecho clic en una fila válida
+            BL_Funcionario logica = new BL_Funcionario(Configuracion.getConnectionString);
+            DataSet DSFuncionarios;
+            try
             {
-                DataGridViewRow row = grdFuncionario.Rows[e.RowIndex];
+                DSFuncionarios = logica.ListarDoctores(condicion, orden);
+                grdEspecialista.DataSource = DSFuncionarios;
+                grdEspecialista.DataMember = DSFuncionarios.Tables["Funcionarios"].TableName;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 
-                string puestoTrabajo = row.Cells[9].Value.ToString(); // Valor de la columna 9 (Puesto de trabajo)
-                string idEspecialidad = row.Cells[10].Value.ToString(); // Valor de la columna 10 (ID Especialidad)
-                string valor = row.Cells[0].Value.ToString(); // Valor de la columna 0 (idfuncionario)
-
-                if (puestoTrabajo == "1")
+        private void grdEspecialista_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0) // Asegurarse de que se haya hecho clic en una celda válida
+            {
+                DataGridViewCell cell = grdEspecialista.Rows[e.RowIndex].Cells[e.ColumnIndex];
+                if (cell.Value != null) // Verificar si la celda tiene un valor
                 {
-                    MessageBox.Show("Es médico");
-                    if (idEspecialidad != "1")
-                    {
-                        MessageBox.Show("Tiene una especialidad");
-                        txtID_Funcionario.Text = valor;
-                    }
-                    else
-                    {
-                        MessageBox.Show("No tiene una especialidad");
-                    }
+                    string valor = cell.Value.ToString();
+                    txtID_Funcionario.Text = valor;
                 }
                 else
                 {
-                    MessageBox.Show("No es médico");
+                    // La celda está vacía, puedes mostrar un mensaje de error o realizar otra acción apropiada.
+                    MessageBox.Show("La celda seleccionada está vacía.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-
         }
     }
 }

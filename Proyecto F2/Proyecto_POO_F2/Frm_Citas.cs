@@ -50,7 +50,9 @@ namespace Capa01_Presentacion
             {
                 cita = new Entidad_Citas();
             }
+            cita.IdPaciente= Convert.ToInt32(txtID_Paciente.Text);
             cita.IdFuncionario = Convert.ToInt32(txtID_Funcionario.Text);
+            cita.Motivo=txtMotivo.Text;
             cita.Fecha = dtp_Fecha.Value;
             cita.HoraInicio = TimeSpan.Parse(txtHoraInicio.Text);
             cita.HoraFin = TimeSpan.Parse(txtHoraFin.Text);
@@ -73,7 +75,7 @@ namespace Capa01_Presentacion
             int resultado;
             try
             {
-                if (!string.IsNullOrEmpty(txtID_Funcionario.Text) && !string.IsNullOrEmpty(txtHoraInicio.Text) && !string.IsNullOrEmpty(txtHoraFin.Text))
+                if (!string.IsNullOrEmpty(txtID_Paciente.Text) && !string.IsNullOrEmpty(txtID_Funcionario.Text) && !string.IsNullOrEmpty(txtMotivo.Text) && !string.IsNullOrEmpty(txtHoraInicio.Text) && !string.IsNullOrEmpty(txtHoraFin.Text))
                 {
                     cita = GenerarEntidadCitas();
                     if (!cita.Existe)
