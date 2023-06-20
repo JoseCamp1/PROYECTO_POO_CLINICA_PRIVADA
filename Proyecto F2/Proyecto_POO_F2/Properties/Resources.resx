@@ -121,9 +121,6 @@
   <data name="seo-social-web-network-internet_340_icon-icons.com_61497" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\seo-social-web-network-internet_340_icon-icons.com_61497.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="calendar-with-a-clock-time-tools_icon-icons.com_56831" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\calendar-with-a-clock-time-tools_icon-icons.com_56831.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="hospital_4331" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hospital_4331.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -138,6 +135,12 @@
   </data>
   <data name="nurse_hospital_care_healthcare_woman_medical_clinic_icon_140900" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\nurse_hospital_care_healthcare_woman_medical_clinic_icon_140900.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1490129329-rounded38_82203" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1490129329-rounded38_82203.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="acerca" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\acerca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="broom_5182" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\broom_5182.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -160,9 +163,6 @@
   <data name="1487086345-cross_81577" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1487086345-cross_81577.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1904659-arrow-backup-down-download-save-storage-transfer_122509" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1904659-arrow-backup-down-download-save-storage-transfer_122509.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="3643769-building-home-house-main-menu-start_113416" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\3643769-building-home-house-main-menu-start_113416.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,11 +175,14 @@
   <data name="effective_employees_users_team_group_icon_152042" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\effective_employees_users_team_group_icon_152042.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="calendar-with-a-clock-time-tools_icon-icons.com_56831" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calendar-with-a-clock-time-tools_icon-icons.com_56831.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Screenshot 2023-06-10 171827" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Screenshot 2023-06-10 171827.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1490129329-rounded38_82203" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1490129329-rounded38_82203.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1904659-arrow-backup-down-download-save-storage-transfer_122509" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1904659-arrow-backup-down-download-save-storage-transfer_122509.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="self_protection_healthcare_medical_covid_coronavirus_icon_140748" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\self_protection_healthcare_medical_covid_coronavirus_icon_140748.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,7 +190,7 @@
   <data name="medical_clinic_icon_194649" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\medical_clinic_icon_194649.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="acerca" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\acerca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dollar_dollars_money_bills_icon_178114" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dollar_dollars_money_bills_icon_178114.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

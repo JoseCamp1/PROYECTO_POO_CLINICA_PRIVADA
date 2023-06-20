@@ -183,6 +183,16 @@ namespace Capa01_Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap dollar_dollars_money_bills_icon_178114 {
+            get {
+                object obj = ResourceManager.GetObject("dollar_dollars_money_bills_icon_178114", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap effective_employees_users_team_group_icon_152042 {
             get {
                 object obj = ResourceManager.GetObject("effective_employees_users_team_group_icon_152042", resourceCulture);

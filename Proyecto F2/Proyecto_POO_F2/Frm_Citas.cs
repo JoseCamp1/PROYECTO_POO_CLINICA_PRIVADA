@@ -50,9 +50,9 @@ namespace Capa01_Presentacion
             {
                 cita = new Entidad_Citas();
             }
-            cita.IdPaciente= Convert.ToInt32(txtID_Paciente.Text);
+            cita.IdPaciente = Convert.ToInt32(txtID_Paciente.Text);
             cita.IdFuncionario = Convert.ToInt32(txtID_Funcionario.Text);
-            cita.Motivo=txtMotivo.Text;
+            cita.Motivo = txtMotivo.Text;
             cita.Fecha = dtp_Fecha.Value;
             cita.HoraInicio = TimeSpan.Parse(txtHoraInicio.Text);
             cita.HoraFin = TimeSpan.Parse(txtHoraFin.Text);
@@ -62,10 +62,14 @@ namespace Capa01_Presentacion
         private void Limpiar()
         {
             txtID_Cita.Text = string.Empty;
+            txtID_Paciente.Text = string.Empty;
+            txtID_Funcionario.Text = string.Empty;
             txtID_Funcionario.Text = string.Empty;
             dtp_Fecha.ResetText();
             txtHoraInicio.Text = string.Empty;
             txtHoraFin.Text = string.Empty;
+            txtMotivo.Text = string.Empty;
+            txtEstado.Text = string.Empty;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -350,6 +354,28 @@ namespace Capa01_Presentacion
                     MessageBox.Show("El estado ingresado no es válido. Debe ser 'ACT', 'INA' o 'PEN'.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     txtEstado.Text = string.Empty;
                 }
+            }
+        }
+
+        private void dtp_Fecha_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime fechaSeleccionada = dtp_Fecha.Value.Date; // Obtener solo la fecha, sin la hora
+
+            // Obtener la fecha actual sin la hora
+            DateTime fechaActual = DateTime.Now.Date;
+
+            // Comparar la fecha seleccionada con la fecha actual
+            if (fechaSeleccionada < fechaActual)
+            {
+                txtEstado.Text = "INA"; // La fecha ya pasó
+            }
+            else if (fechaSeleccionada > fechaActual)
+            {
+                txtEstado.Text = "ACT"; // La fecha está en el futuro
+            }
+            else
+            {
+                txtEstado.Text = "PEN"; // La fecha es hoy
             }
         }
     }

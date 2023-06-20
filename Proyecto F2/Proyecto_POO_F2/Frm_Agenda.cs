@@ -226,6 +226,7 @@ namespace Capa01_Presentacion
         {
             try
             {
+                grdEspecialista.Refresh();
                 cargarListaAgendas();
                 ListarDoctores();
             }
@@ -253,19 +254,15 @@ namespace Capa01_Presentacion
 
         private void grdEspecialista_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.ColumnIndex >= 0) // Asegurarse de que se haya hecho clic en una celda válida
+            if (e.RowIndex >= 0) // Asegurarse de que se haya hecho clic en una fila válida
             {
-                DataGridViewCell cell = grdEspecialista.Rows[e.RowIndex].Cells[e.ColumnIndex];
-                if (cell.Value != null) // Verificar si la celda tiene un valor
-                {
-                    string valor = cell.Value.ToString();
-                    txtID_Funcionario.Text = valor;
-                }
-                else
-                {
-                    // La celda está vacía, puedes mostrar un mensaje de error o realizar otra acción apropiada.
-                    MessageBox.Show("La celda seleccionada está vacía.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                DataGridViewRow row = grdEspecialista.Rows[e.RowIndex];
+
+                // Obtener el valor de la primera columna de la fila seleccionada
+                string valor = row.Cells[1].Value.ToString();
+
+                // Asignar el valor al TextBox
+                txtID_Funcionario.Text = valor;
             }
         }
     }

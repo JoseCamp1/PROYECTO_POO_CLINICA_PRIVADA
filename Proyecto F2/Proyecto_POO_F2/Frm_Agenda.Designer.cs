@@ -36,38 +36,35 @@
             label10 = new System.Windows.Forms.Label();
             label5 = new System.Windows.Forms.Label();
             groupBox1 = new System.Windows.Forms.GroupBox();
-            grdEspecialista = new System.Windows.Forms.DataGridView();
-            label3 = new System.Windows.Forms.Label();
-            txtHoraFin = new System.Windows.Forms.TextBox();
-            txtHoraInicio = new System.Windows.Forms.TextBox();
-            dtp_Fecha = new System.Windows.Forms.DateTimePicker();
-            label1 = new System.Windows.Forms.Label();
+            groupBox3 = new System.Windows.Forms.GroupBox();
             grdLista = new System.Windows.Forms.DataGridView();
-            btnLimpiar = new System.Windows.Forms.Button();
-            btnSalir = new System.Windows.Forms.Button();
-            btnEliminar = new System.Windows.Forms.Button();
-            btnGuardar = new System.Windows.Forms.Button();
-            btnBuscar = new System.Windows.Forms.Button();
-            groupBox2 = new System.Windows.Forms.GroupBox();
-            NOMBRE_ESPECIALIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            NOMBRE_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            APELLIDOS_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            FECHA_CITA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            HORA_INICIO_CITA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            HORA_FIN_CITA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             IDAGENDA = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ID_Funcionario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
             HoraInicio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             HoraFin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            groupBox3 = new System.Windows.Forms.GroupBox();
+            groupBox2 = new System.Windows.Forms.GroupBox();
+            grdEspecialista = new System.Windows.Forms.DataGridView();
+            label3 = new System.Windows.Forms.Label();
+            txtHoraFin = new System.Windows.Forms.TextBox();
+            txtHoraInicio = new System.Windows.Forms.TextBox();
+            dtp_Fecha = new System.Windows.Forms.DateTimePicker();
+            label1 = new System.Windows.Forms.Label();
+            btnLimpiar = new System.Windows.Forms.Button();
+            btnSalir = new System.Windows.Forms.Button();
+            btnEliminar = new System.Windows.Forms.Button();
+            btnGuardar = new System.Windows.Forms.Button();
+            btnBuscar = new System.Windows.Forms.Button();
+            NOMBRE_ESPECIALIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            NOMBRE_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            APELLIDOS_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)grdEspecialista).BeginInit();
+            groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grdLista).BeginInit();
             groupBox2.SuspendLayout();
-            groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)grdEspecialista).BeginInit();
             SuspendLayout();
             // 
             // txtID_Agenda
@@ -152,11 +149,84 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Agenda del Especialista";
             // 
+            // groupBox3
+            // 
+            groupBox3.Controls.Add(grdLista);
+            groupBox3.Location = new System.Drawing.Point(14, 364);
+            groupBox3.Name = "groupBox3";
+            groupBox3.Size = new System.Drawing.Size(581, 204);
+            groupBox3.TabIndex = 71;
+            groupBox3.TabStop = false;
+            groupBox3.Text = "Agendas";
+            // 
+            // grdLista
+            // 
+            grdLista.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
+            grdLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            grdLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { IDAGENDA, ID_Funcionario, Fecha, HoraInicio, HoraFin, dataGridViewTextBoxColumn3 });
+            grdLista.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            grdLista.GridColor = System.Drawing.SystemColors.ActiveBorder;
+            grdLista.Location = new System.Drawing.Point(7, 20);
+            grdLista.Name = "grdLista";
+            grdLista.RowTemplate.Height = 25;
+            grdLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            grdLista.Size = new System.Drawing.Size(568, 178);
+            grdLista.TabIndex = 62;
+            grdLista.DoubleClick += grdLista_DoubleClick;
+            // 
+            // IDAGENDA
+            // 
+            IDAGENDA.DataPropertyName = "IdAgenda";
+            IDAGENDA.HeaderText = "ID Agenda ";
+            IDAGENDA.Name = "IDAGENDA";
+            // 
+            // ID_Funcionario
+            // 
+            ID_Funcionario.DataPropertyName = "IdFuncionario";
+            ID_Funcionario.HeaderText = "ID Funcionario ";
+            ID_Funcionario.Name = "ID_Funcionario";
+            ID_Funcionario.Width = 120;
+            // 
+            // Fecha
+            // 
+            Fecha.DataPropertyName = "Fecha";
+            Fecha.HeaderText = "Fecha ";
+            Fecha.Name = "Fecha";
+            // 
+            // HoraInicio
+            // 
+            HoraInicio.DataPropertyName = "HoraInicio";
+            HoraInicio.HeaderText = "Hora Inicio ";
+            HoraInicio.Name = "HoraInicio";
+            // 
+            // HoraFin
+            // 
+            HoraFin.DataPropertyName = "HoraFin";
+            HoraFin.HeaderText = "Hora Fin ";
+            HoraFin.Name = "HoraFin";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewTextBoxColumn3.DataPropertyName = "Existe";
+            dataGridViewTextBoxColumn3.HeaderText = "Existe";
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(grdEspecialista);
+            groupBox2.Location = new System.Drawing.Point(14, 118);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new System.Drawing.Size(581, 240);
+            groupBox2.TabIndex = 70;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Especialistas";
+            // 
             // grdEspecialista
             // 
             grdEspecialista.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             grdEspecialista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            grdEspecialista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { NOMBRE_ESPECIALIDAD, dataGridViewTextBoxColumn1, NOMBRE_FUNCIONARIO, APELLIDOS_FUNCIONARIO, FECHA_CITA, HORA_INICIO_CITA, HORA_FIN_CITA });
+            grdEspecialista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { NOMBRE_ESPECIALIDAD, dataGridViewTextBoxColumn1, NOMBRE_FUNCIONARIO, APELLIDOS_FUNCIONARIO });
             grdEspecialista.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             grdEspecialista.GridColor = System.Drawing.SystemColors.ActiveBorder;
             grdEspecialista.Location = new System.Drawing.Point(6, 22);
@@ -205,21 +275,6 @@
             label1.Size = new System.Drawing.Size(38, 15);
             label1.TabIndex = 63;
             label1.Text = "Fecha";
-            // 
-            // grdLista
-            // 
-            grdLista.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
-            grdLista.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            grdLista.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] { IDAGENDA, ID_Funcionario, Fecha, HoraInicio, HoraFin, dataGridViewTextBoxColumn3 });
-            grdLista.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            grdLista.GridColor = System.Drawing.SystemColors.ActiveBorder;
-            grdLista.Location = new System.Drawing.Point(7, 20);
-            grdLista.Name = "grdLista";
-            grdLista.RowTemplate.Height = 25;
-            grdLista.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            grdLista.Size = new System.Drawing.Size(568, 178);
-            grdLista.TabIndex = 62;
-            grdLista.DoubleClick += grdLista_DoubleClick;
             // 
             // btnLimpiar
             // 
@@ -291,16 +346,6 @@
             btnBuscar.UseVisualStyleBackColor = false;
             btnBuscar.Click += btnBuscar_Click;
             // 
-            // groupBox2
-            // 
-            groupBox2.Controls.Add(grdEspecialista);
-            groupBox2.Location = new System.Drawing.Point(14, 118);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new System.Drawing.Size(581, 240);
-            groupBox2.TabIndex = 70;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Especialistas";
-            // 
             // NOMBRE_ESPECIALIDAD
             // 
             NOMBRE_ESPECIALIDAD.DataPropertyName = "NOMBRE_ESPECIALIDAD";
@@ -327,77 +372,6 @@
             APELLIDOS_FUNCIONARIO.HeaderText = "Apellidos";
             APELLIDOS_FUNCIONARIO.Name = "APELLIDOS_FUNCIONARIO";
             // 
-            // FECHA_CITA
-            // 
-            FECHA_CITA.DataPropertyName = "FECHA";
-            FECHA_CITA.HeaderText = "Dia";
-            FECHA_CITA.Name = "FECHA_CITA";
-            FECHA_CITA.Visible = false;
-            // 
-            // HORA_INICIO_CITA
-            // 
-            HORA_INICIO_CITA.DataPropertyName = "HORA_INICIO";
-            HORA_INICIO_CITA.HeaderText = "Inicio del  Turno";
-            HORA_INICIO_CITA.Name = "HORA_INICIO_CITA";
-            HORA_INICIO_CITA.Visible = false;
-            HORA_INICIO_CITA.Width = 150;
-            // 
-            // HORA_FIN_CITA
-            // 
-            HORA_FIN_CITA.DataPropertyName = "HORA_FIN";
-            HORA_FIN_CITA.HeaderText = "Fin del Turno";
-            HORA_FIN_CITA.Name = "HORA_FIN_CITA";
-            HORA_FIN_CITA.Visible = false;
-            HORA_FIN_CITA.Width = 150;
-            // 
-            // IDAGENDA
-            // 
-            IDAGENDA.DataPropertyName = "IdAgenda";
-            IDAGENDA.HeaderText = "ID Agenda ";
-            IDAGENDA.Name = "IDAGENDA";
-            // 
-            // ID_Funcionario
-            // 
-            ID_Funcionario.DataPropertyName = "IdFuncionario";
-            ID_Funcionario.HeaderText = "ID Funcionario ";
-            ID_Funcionario.Name = "ID_Funcionario";
-            ID_Funcionario.Width = 120;
-            // 
-            // Fecha
-            // 
-            Fecha.DataPropertyName = "Fecha";
-            Fecha.HeaderText = "Fecha ";
-            Fecha.Name = "Fecha";
-            // 
-            // HoraInicio
-            // 
-            HoraInicio.DataPropertyName = "HoraInicio";
-            HoraInicio.HeaderText = "Hora Inicio ";
-            HoraInicio.Name = "HoraInicio";
-            // 
-            // HoraFin
-            // 
-            HoraFin.DataPropertyName = "HoraFin";
-            HoraFin.HeaderText = "Hora Fin ";
-            HoraFin.Name = "HoraFin";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewTextBoxColumn3.DataPropertyName = "Existe";
-            dataGridViewTextBoxColumn3.HeaderText = "Existe";
-            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // groupBox3
-            // 
-            groupBox3.Controls.Add(grdLista);
-            groupBox3.Location = new System.Drawing.Point(14, 364);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new System.Drawing.Size(581, 204);
-            groupBox3.TabIndex = 71;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Agendas";
-            // 
             // Frm_Agenda
             // 
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -418,10 +392,10 @@
             Load += Frm_Agenda_Load;
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)grdEspecialista).EndInit();
+            groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)grdLista).EndInit();
             groupBox2.ResumeLayout(false);
-            groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)grdEspecialista).EndInit();
             ResumeLayout(false);
         }
 
@@ -457,8 +431,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOMBRE_FUNCIONARIO;
         private System.Windows.Forms.DataGridViewTextBoxColumn APELLIDOS_FUNCIONARIO;
-        private System.Windows.Forms.DataGridViewTextBoxColumn FECHA_CITA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HORA_INICIO_CITA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HORA_FIN_CITA;
     }
 }

@@ -125,6 +125,8 @@
             // 
             // txtEstado
             // 
+            txtEstado.BackColor = System.Drawing.SystemColors.Info;
+            txtEstado.Enabled = false;
             txtEstado.Location = new System.Drawing.Point(724, 36);
             txtEstado.Name = "txtEstado";
             txtEstado.Size = new System.Drawing.Size(100, 23);
@@ -194,10 +196,12 @@
             // dtp_Fecha
             // 
             dtp_Fecha.CalendarMonthBackground = System.Drawing.SystemColors.Menu;
+            dtp_Fecha.Enabled = false;
             dtp_Fecha.Location = new System.Drawing.Point(335, 36);
             dtp_Fecha.Name = "dtp_Fecha";
             dtp_Fecha.Size = new System.Drawing.Size(170, 23);
             dtp_Fecha.TabIndex = 64;
+            dtp_Fecha.ValueChanged += dtp_Fecha_ValueChanged;
             // 
             // label1
             // 

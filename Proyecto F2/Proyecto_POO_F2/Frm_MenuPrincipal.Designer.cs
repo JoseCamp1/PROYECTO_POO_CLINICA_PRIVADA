@@ -36,30 +36,35 @@
             puestosDeTrabajoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             especialidadesMedicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             agendaEspecialistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             citasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            facturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // menuStrip1
             // 
             menuStrip1.BackColor = System.Drawing.Color.Transparent;
+            menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] { pacientesToolStripMenuItem, serviciosToolStripMenuItem, infoToolStripMenuItem });
             menuStrip1.Location = new System.Drawing.Point(0, 0);
+            menuStrip1.MaximumSize = new System.Drawing.Size(0, 100);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new System.Drawing.Size(1518, 24);
+            menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            menuStrip1.Size = new System.Drawing.Size(948, 24);
             menuStrip1.TabIndex = 0;
             menuStrip1.Text = "menuStrip1";
             // 
             // pacientesToolStripMenuItem
             // 
             pacientesToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
-            pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { pacientesToolStripMenuItem1, funcionariosToolStripMenuItem, puestosDeTrabajoToolStripMenuItem, especialidadesMedicasToolStripMenuItem, agendaEspecialistaToolStripMenuItem });
+            pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { pacientesToolStripMenuItem1, funcionariosToolStripMenuItem, puestosDeTrabajoToolStripMenuItem, especialidadesMedicasToolStripMenuItem, agendaEspecialistaToolStripMenuItem, salirToolStripMenuItem });
             pacientesToolStripMenuItem.Image = Properties.Resources._3643769_building_home_house_main_menu_start_113416;
             pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
             pacientesToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
-            pacientesToolStripMenuItem.Text = "Menu Principal";
+            pacientesToolStripMenuItem.Text = "&Menu Principal";
             // 
             // pacientesToolStripMenuItem1
             // 
@@ -67,7 +72,7 @@
             pacientesToolStripMenuItem1.Image = Properties.Resources.users_people_workers_customers_icon_124243;
             pacientesToolStripMenuItem1.Name = "pacientesToolStripMenuItem1";
             pacientesToolStripMenuItem1.Size = new System.Drawing.Size(197, 22);
-            pacientesToolStripMenuItem1.Text = "Pacientes";
+            pacientesToolStripMenuItem1.Text = "&Pacientes";
             pacientesToolStripMenuItem1.Click += pacientesToolStripMenuItem1_Click;
             // 
             // funcionariosToolStripMenuItem
@@ -76,7 +81,7 @@
             funcionariosToolStripMenuItem.Image = Properties.Resources.effective_employees_users_team_group_icon_152042;
             funcionariosToolStripMenuItem.Name = "funcionariosToolStripMenuItem";
             funcionariosToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            funcionariosToolStripMenuItem.Text = "Funcionarios";
+            funcionariosToolStripMenuItem.Text = "&Funcionarios";
             funcionariosToolStripMenuItem.Click += funcionariosToolStripMenuItem_Click;
             // 
             // puestosDeTrabajoToolStripMenuItem
@@ -85,7 +90,7 @@
             puestosDeTrabajoToolStripMenuItem.Image = Properties.Resources.products_new_cube_product_design_icon_153845;
             puestosDeTrabajoToolStripMenuItem.Name = "puestosDeTrabajoToolStripMenuItem";
             puestosDeTrabajoToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            puestosDeTrabajoToolStripMenuItem.Text = "Puestos de Trabajo";
+            puestosDeTrabajoToolStripMenuItem.Text = "&Puestos de Trabajo";
             puestosDeTrabajoToolStripMenuItem.Click += puestosDeTrabajoToolStripMenuItem_Click;
             // 
             // especialidadesMedicasToolStripMenuItem
@@ -94,7 +99,7 @@
             especialidadesMedicasToolStripMenuItem.Image = Properties.Resources.medical_clinic_icon_194649;
             especialidadesMedicasToolStripMenuItem.Name = "especialidadesMedicasToolStripMenuItem";
             especialidadesMedicasToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            especialidadesMedicasToolStripMenuItem.Text = "Especialidades Medicas";
+            especialidadesMedicasToolStripMenuItem.Text = "&Especialidades Medicas";
             especialidadesMedicasToolStripMenuItem.Click += especialidadesMedicasToolStripMenuItem_Click;
             // 
             // agendaEspecialistaToolStripMenuItem
@@ -103,34 +108,51 @@
             agendaEspecialistaToolStripMenuItem.Image = Properties.Resources.time_clock_icon_129581;
             agendaEspecialistaToolStripMenuItem.Name = "agendaEspecialistaToolStripMenuItem";
             agendaEspecialistaToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
-            agendaEspecialistaToolStripMenuItem.Text = "Agenda Especialista";
+            agendaEspecialistaToolStripMenuItem.Text = "&Agenda Especialista";
             agendaEspecialistaToolStripMenuItem.Click += agendaEspecialistaToolStripMenuItem_Click;
+            // 
+            // salirToolStripMenuItem
+            // 
+            salirToolStripMenuItem.Image = Properties.Resources._4115235_exit_logout_sign_out_114030;
+            salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            salirToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            salirToolStripMenuItem.Text = "&Salir";
+            salirToolStripMenuItem.Click += salirToolStripMenuItem_Click;
             // 
             // serviciosToolStripMenuItem
             // 
             serviciosToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
-            serviciosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { citasToolStripMenuItem });
+            serviciosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { citasToolStripMenuItem, facturasToolStripMenuItem });
             serviciosToolStripMenuItem.Image = Properties.Resources.hospital_4331;
             serviciosToolStripMenuItem.Name = "serviciosToolStripMenuItem";
             serviciosToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
-            serviciosToolStripMenuItem.Text = "Servicios";
+            serviciosToolStripMenuItem.Text = "&Servicios";
             // 
             // citasToolStripMenuItem
             // 
             citasToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             citasToolStripMenuItem.Image = Properties.Resources.calendar_with_a_clock_time_tools_icon_icons_com_56831;
             citasToolStripMenuItem.Name = "citasToolStripMenuItem";
-            citasToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
-            citasToolStripMenuItem.Text = "Citas";
+            citasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            citasToolStripMenuItem.Text = "&Citas";
             citasToolStripMenuItem.Click += citasToolStripMenuItem_Click;
             // 
             // infoToolStripMenuItem
             // 
+            infoToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             infoToolStripMenuItem.Image = Properties.Resources.acerca;
             infoToolStripMenuItem.Name = "infoToolStripMenuItem";
             infoToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
-            infoToolStripMenuItem.Text = "About";
+            infoToolStripMenuItem.Text = "&About";
             infoToolStripMenuItem.Click += infoToolStripMenuItem_Click;
+            // 
+            // facturasToolStripMenuItem
+            // 
+            facturasToolStripMenuItem.Image = Properties.Resources.dollar_dollars_money_bills_icon_178114;
+            facturasToolStripMenuItem.Name = "facturasToolStripMenuItem";
+            facturasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            facturasToolStripMenuItem.Text = "Facturas";
+            facturasToolStripMenuItem.Click += facturasToolStripMenuItem_Click;
             // 
             // Frm_MenuPrincipal
             // 
@@ -139,7 +161,7 @@
             BackColor = System.Drawing.SystemColors.Control;
             BackgroundImage = Properties.Resources.Screenshot_2023_06_10_171827;
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            ClientSize = new System.Drawing.Size(1518, 590);
+            ClientSize = new System.Drawing.Size(948, 495);
             Controls.Add(menuStrip1);
             DoubleBuffered = true;
             Icon = (System.Drawing.Icon)resources.GetObject("$this.Icon");
@@ -167,5 +189,7 @@
         private System.Windows.Forms.ToolStripMenuItem especialidadesMedicasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem agendaEspecialistaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem facturasToolStripMenuItem;
     }
 }

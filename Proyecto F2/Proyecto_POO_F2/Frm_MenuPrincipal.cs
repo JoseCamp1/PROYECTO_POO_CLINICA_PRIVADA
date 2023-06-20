@@ -62,9 +62,21 @@ namespace Capa01_Presentacion
             string titulo = "Sobre Mi Programa";
             string mensaje = "¡Bienvenido a Mi Programa!\n\n" +
                              "Versión: 1.0\n" +
-                             "Desarrollado por: Tu Nombre\n" +
-                             "Contacto: tu@email.com";
+                             "Desarrollado por: Jose Campos Chaves\n" +
+                             "Contacto: joacachavez20@gmail.com\n" +
+                             "Proyecto F2 INA POO 2023";
+            MessageBox.Show(mensaje, titulo, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
 
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void facturasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            string titulo = "Esta Funcionalidad se Encuentra Actualmente en Desarrollo";
+            string mensaje = "Proximamente en Versión: 2.0";
             MessageBox.Show(mensaje, titulo, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
