@@ -22,6 +22,9 @@
     <Compile Update="Frm_BuscarPuestoTrabajo.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Frm_BuscarUsuarioSistema.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Frm_Citas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -31,6 +34,9 @@
     <Compile Update="Frm_Funcionarios.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Frm_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Frm_MenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -38,6 +44,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Frm_PuestosdeTrabajo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Frm_UsuarioSistema.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -46,6 +46,10 @@
             dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             groupBox2 = new System.Windows.Forms.GroupBox();
             grdEspecialista = new System.Windows.Forms.DataGridView();
+            NOMBRE_ESPECIALIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            NOMBRE_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            APELLIDOS_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             label3 = new System.Windows.Forms.Label();
             txtHoraFin = new System.Windows.Forms.TextBox();
             txtHoraInicio = new System.Windows.Forms.TextBox();
@@ -56,10 +60,6 @@
             btnEliminar = new System.Windows.Forms.Button();
             btnGuardar = new System.Windows.Forms.Button();
             btnBuscar = new System.Windows.Forms.Button();
-            NOMBRE_ESPECIALIDAD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            NOMBRE_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            APELLIDOS_FUNCIONARIO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             groupBox1.SuspendLayout();
             groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grdLista).BeginInit();
@@ -237,6 +237,32 @@
             grdEspecialista.TabIndex = 69;
             grdEspecialista.CellDoubleClick += grdEspecialista_CellDoubleClick;
             // 
+            // NOMBRE_ESPECIALIDAD
+            // 
+            NOMBRE_ESPECIALIDAD.DataPropertyName = "NOMBRE_ESPECIALIDAD";
+            NOMBRE_ESPECIALIDAD.HeaderText = "Especialidad";
+            NOMBRE_ESPECIALIDAD.Name = "NOMBRE_ESPECIALIDAD";
+            NOMBRE_ESPECIALIDAD.Width = 110;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.DataPropertyName = "ID_FUNCIONARIO";
+            dataGridViewTextBoxColumn1.HeaderText = "ID Funcionario";
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.Width = 150;
+            // 
+            // NOMBRE_FUNCIONARIO
+            // 
+            NOMBRE_FUNCIONARIO.DataPropertyName = "NOMBRE_FUNCIONARIO";
+            NOMBRE_FUNCIONARIO.HeaderText = "Nombre";
+            NOMBRE_FUNCIONARIO.Name = "NOMBRE_FUNCIONARIO";
+            // 
+            // APELLIDOS_FUNCIONARIO
+            // 
+            APELLIDOS_FUNCIONARIO.DataPropertyName = "APELLIDOS_FUNCIONARIO";
+            APELLIDOS_FUNCIONARIO.HeaderText = "Apellidos";
+            APELLIDOS_FUNCIONARIO.Name = "APELLIDOS_FUNCIONARIO";
+            // 
             // label3
             // 
             label3.AutoSize = true;
@@ -278,7 +304,8 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.BackColor = System.Drawing.SystemColors.Window;
+            btnLimpiar.BackColor = System.Drawing.Color.Transparent;
+            btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnLimpiar.Image = Properties.Resources.broom_5182;
             btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnLimpiar.Location = new System.Drawing.Point(162, 580);
@@ -292,7 +319,8 @@
             // 
             // btnSalir
             // 
-            btnSalir.BackColor = System.Drawing.SystemColors.Window;
+            btnSalir.BackColor = System.Drawing.Color.Transparent;
+            btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnSalir.Image = Properties.Resources._4115235_exit_logout_sign_out_114030;
             btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnSalir.Location = new System.Drawing.Point(461, 580);
@@ -306,7 +334,8 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.BackColor = System.Drawing.SystemColors.Window;
+            btnEliminar.BackColor = System.Drawing.Color.Transparent;
+            btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnEliminar.Image = Properties.Resources.trash_bin_icon_icons_com_67981;
             btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnEliminar.Location = new System.Drawing.Point(363, 580);
@@ -320,7 +349,8 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.BackColor = System.Drawing.SystemColors.Window;
+            btnGuardar.BackColor = System.Drawing.Color.Transparent;
+            btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnGuardar.Image = Properties.Resources._1490129329_rounded38_82203;
             btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnGuardar.Location = new System.Drawing.Point(265, 578);
@@ -334,7 +364,8 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.BackColor = System.Drawing.SystemColors.Window;
+            btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnBuscar.Image = Properties.Resources.seo_social_web_network_internet_340_icon_icons_com_61497;
             btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnBuscar.Location = new System.Drawing.Point(67, 578);
@@ -345,32 +376,6 @@
             btnBuscar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             btnBuscar.UseVisualStyleBackColor = false;
             btnBuscar.Click += btnBuscar_Click;
-            // 
-            // NOMBRE_ESPECIALIDAD
-            // 
-            NOMBRE_ESPECIALIDAD.DataPropertyName = "NOMBRE_ESPECIALIDAD";
-            NOMBRE_ESPECIALIDAD.HeaderText = "Especialidad";
-            NOMBRE_ESPECIALIDAD.Name = "NOMBRE_ESPECIALIDAD";
-            NOMBRE_ESPECIALIDAD.Width = 110;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.DataPropertyName = "ID_FUNCIONARIO";
-            dataGridViewTextBoxColumn1.HeaderText = "ID Funcionario";
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.Width = 150;
-            // 
-            // NOMBRE_FUNCIONARIO
-            // 
-            NOMBRE_FUNCIONARIO.DataPropertyName = "NOMBRE_FUNCIONARIO";
-            NOMBRE_FUNCIONARIO.HeaderText = "Nombre";
-            NOMBRE_FUNCIONARIO.Name = "NOMBRE_FUNCIONARIO";
-            // 
-            // APELLIDOS_FUNCIONARIO
-            // 
-            APELLIDOS_FUNCIONARIO.DataPropertyName = "APELLIDOS_FUNCIONARIO";
-            APELLIDOS_FUNCIONARIO.HeaderText = "Apellidos";
-            APELLIDOS_FUNCIONARIO.Name = "APELLIDOS_FUNCIONARIO";
             // 
             // Frm_Agenda
             // 

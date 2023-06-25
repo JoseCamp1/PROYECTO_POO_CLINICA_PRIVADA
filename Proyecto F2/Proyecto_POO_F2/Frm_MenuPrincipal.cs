@@ -75,9 +75,21 @@ namespace Capa01_Presentacion
 
         private void facturasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string titulo = "Esta Funcionalidad se Encuentra Actualmente en Desarrollo";
+            string titulo = "En Desarrollo";
             string mensaje = "Proximamente en Versión: 2.0";
             MessageBox.Show(mensaje, titulo, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void usuariosDelSistemaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_UsuarioSistema usuario = new Frm_UsuarioSistema();
+            usuario.MdiParent = this;
+            usuario.Show();
+        }
+
+        private void Frm_MenuPrincipal_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            
         }
     }
 }

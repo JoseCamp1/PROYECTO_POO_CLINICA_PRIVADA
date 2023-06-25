@@ -36,11 +36,12 @@
             puestosDeTrabajoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             especialidadesMedicasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             agendaEspecialistaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            usuariosDelSistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             serviciosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             citasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             facturasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            infoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -60,7 +61,7 @@
             // pacientesToolStripMenuItem
             // 
             pacientesToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
-            pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { pacientesToolStripMenuItem1, funcionariosToolStripMenuItem, puestosDeTrabajoToolStripMenuItem, especialidadesMedicasToolStripMenuItem, agendaEspecialistaToolStripMenuItem, salirToolStripMenuItem });
+            pacientesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] { pacientesToolStripMenuItem1, funcionariosToolStripMenuItem, puestosDeTrabajoToolStripMenuItem, especialidadesMedicasToolStripMenuItem, agendaEspecialistaToolStripMenuItem, usuariosDelSistemaToolStripMenuItem, salirToolStripMenuItem });
             pacientesToolStripMenuItem.Image = Properties.Resources._3643769_building_home_house_main_menu_start_113416;
             pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
             pacientesToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
@@ -111,6 +112,14 @@
             agendaEspecialistaToolStripMenuItem.Text = "&Agenda Especialista";
             agendaEspecialistaToolStripMenuItem.Click += agendaEspecialistaToolStripMenuItem_Click;
             // 
+            // usuariosDelSistemaToolStripMenuItem
+            // 
+            usuariosDelSistemaToolStripMenuItem.Image = Properties.Resources.pc_with_monitor_icon_icons_com_56248;
+            usuariosDelSistemaToolStripMenuItem.Name = "usuariosDelSistemaToolStripMenuItem";
+            usuariosDelSistemaToolStripMenuItem.Size = new System.Drawing.Size(197, 22);
+            usuariosDelSistemaToolStripMenuItem.Text = "Usuarios del Sistema";
+            usuariosDelSistemaToolStripMenuItem.Click += usuariosDelSistemaToolStripMenuItem_Click;
+            // 
             // salirToolStripMenuItem
             // 
             salirToolStripMenuItem.Image = Properties.Resources._4115235_exit_logout_sign_out_114030;
@@ -133,9 +142,17 @@
             citasToolStripMenuItem.BackColor = System.Drawing.Color.Transparent;
             citasToolStripMenuItem.Image = Properties.Resources.calendar_with_a_clock_time_tools_icon_icons_com_56831;
             citasToolStripMenuItem.Name = "citasToolStripMenuItem";
-            citasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            citasToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
             citasToolStripMenuItem.Text = "&Citas";
             citasToolStripMenuItem.Click += citasToolStripMenuItem_Click;
+            // 
+            // facturasToolStripMenuItem
+            // 
+            facturasToolStripMenuItem.Image = Properties.Resources.dollar_dollars_money_bills_icon_178114;
+            facturasToolStripMenuItem.Name = "facturasToolStripMenuItem";
+            facturasToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            facturasToolStripMenuItem.Text = "Facturas";
+            facturasToolStripMenuItem.Click += facturasToolStripMenuItem_Click;
             // 
             // infoToolStripMenuItem
             // 
@@ -145,14 +162,6 @@
             infoToolStripMenuItem.Size = new System.Drawing.Size(68, 20);
             infoToolStripMenuItem.Text = "&About";
             infoToolStripMenuItem.Click += infoToolStripMenuItem_Click;
-            // 
-            // facturasToolStripMenuItem
-            // 
-            facturasToolStripMenuItem.Image = Properties.Resources.dollar_dollars_money_bills_icon_178114;
-            facturasToolStripMenuItem.Name = "facturasToolStripMenuItem";
-            facturasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            facturasToolStripMenuItem.Text = "Facturas";
-            facturasToolStripMenuItem.Click += facturasToolStripMenuItem_Click;
             // 
             // Frm_MenuPrincipal
             // 
@@ -171,6 +180,7 @@
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Clínica Privada El Buen Vivir";
             WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            FormClosed += Frm_MenuPrincipal_FormClosed;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
             ResumeLayout(false);
@@ -191,5 +201,6 @@
         private System.Windows.Forms.ToolStripMenuItem infoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem facturasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem usuariosDelSistemaToolStripMenuItem;
     }
 }

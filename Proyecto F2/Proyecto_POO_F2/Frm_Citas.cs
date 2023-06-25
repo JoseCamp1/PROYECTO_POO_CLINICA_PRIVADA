@@ -25,6 +25,7 @@ namespace Capa01_Presentacion
 
         private void ListarFuncionariosconEspecialidad(string condicion = "", string orden = "")
         {
+            grdEspecialista.Refresh();
             BL_Funcionario logica = new BL_Funcionario(Configuracion.getConnectionString);
             DataSet DSFuncionarios;
             try

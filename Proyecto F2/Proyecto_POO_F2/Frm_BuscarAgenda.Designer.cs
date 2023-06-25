@@ -55,6 +55,7 @@
             groupBox1.Controls.Add(btnCancelar);
             groupBox1.Controls.Add(label2);
             groupBox1.Controls.Add(txtID_Funcionario);
+            groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             groupBox1.Location = new System.Drawing.Point(12, 12);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new System.Drawing.Size(562, 242);
@@ -116,7 +117,8 @@
             // 
             // btnAceptar
             // 
-            btnAceptar.BackColor = System.Drawing.SystemColors.Window;
+            btnAceptar.BackColor = System.Drawing.Color.Transparent;
+            btnAceptar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnAceptar.Image = Properties.Resources._4115228_accept_checklist_checkmark_yes_114037;
             btnAceptar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnAceptar.Location = new System.Drawing.Point(382, 12);
@@ -130,7 +132,8 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.BackColor = System.Drawing.SystemColors.Window;
+            btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnBuscar.Image = Properties.Resources.seo_social_web_network_internet_340_icon_icons_com_61497;
             btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnBuscar.Location = new System.Drawing.Point(301, 12);
@@ -144,7 +147,8 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.BackColor = System.Drawing.SystemColors.Window;
+            btnCancelar.BackColor = System.Drawing.Color.Transparent;
+            btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnCancelar.Image = Properties.Resources._1487086345_cross_815771;
             btnCancelar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnCancelar.Location = new System.Drawing.Point(463, 12);

@@ -32,8 +32,16 @@
             groupBoxPaciente = new System.Windows.Forms.GroupBox();
             groupBox2 = new System.Windows.Forms.GroupBox();
             grdEspecialidad = new System.Windows.Forms.DataGridView();
+            IdEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             groupBox1 = new System.Windows.Forms.GroupBox();
             grdPuesto = new System.Windows.Forms.DataGridView();
+            IdPuestoTrabajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            Nombre_PuestoTrabajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             label11 = new System.Windows.Forms.Label();
             txt_ID_PUESTO_TRABAJO = new System.Windows.Forms.TextBox();
             btnLimpiar = new System.Windows.Forms.Button();
@@ -73,14 +81,6 @@
             label8 = new System.Windows.Forms.Label();
             label7 = new System.Windows.Forms.Label();
             txtCedula = new System.Windows.Forms.TextBox();
-            IdPuestoTrabajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            Nombre_PuestoTrabajo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            IdEspecialidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             groupBoxPaciente.SuspendLayout();
             groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)grdEspecialidad).BeginInit();
@@ -154,6 +154,34 @@
             grdEspecialidad.TabIndex = 47;
             grdEspecialidad.CellDoubleClick += grdEspecialidad_CellDoubleClick;
             // 
+            // IdEspecialidad
+            // 
+            IdEspecialidad.DataPropertyName = "IdEspecialidad";
+            IdEspecialidad.HeaderText = "ID Especialidad";
+            IdEspecialidad.Name = "IdEspecialidad";
+            IdEspecialidad.Width = 150;
+            // 
+            // Nombre
+            // 
+            Nombre.DataPropertyName = "Nombre";
+            Nombre.HeaderText = "Nombre";
+            Nombre.Name = "Nombre";
+            Nombre.Width = 150;
+            // 
+            // Descripcion
+            // 
+            Descripcion.DataPropertyName = "Descripcion";
+            Descripcion.HeaderText = "Descripcion";
+            Descripcion.Name = "Descripcion";
+            Descripcion.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            dataGridViewTextBoxColumn1.DataPropertyName = "Existe";
+            dataGridViewTextBoxColumn1.HeaderText = "Existe";
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            dataGridViewTextBoxColumn1.Visible = false;
+            // 
             // groupBox1
             // 
             groupBox1.Controls.Add(grdPuesto);
@@ -179,6 +207,34 @@
             grdPuesto.TabIndex = 48;
             grdPuesto.CellDoubleClick += grdPuesto_CellDoubleClick;
             // 
+            // IdPuestoTrabajo
+            // 
+            IdPuestoTrabajo.DataPropertyName = "IdPuestoTrabajo";
+            IdPuestoTrabajo.HeaderText = "ID Puesto de Trabajo";
+            IdPuestoTrabajo.Name = "IdPuestoTrabajo";
+            IdPuestoTrabajo.Width = 150;
+            // 
+            // Nombre_PuestoTrabajo
+            // 
+            Nombre_PuestoTrabajo.DataPropertyName = "Nombre";
+            Nombre_PuestoTrabajo.HeaderText = "Nombre del Puesto";
+            Nombre_PuestoTrabajo.Name = "Nombre_PuestoTrabajo";
+            Nombre_PuestoTrabajo.Width = 150;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewTextBoxColumn2.DataPropertyName = "Descripcion";
+            dataGridViewTextBoxColumn2.HeaderText = "Descripcion del Puesto";
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            dataGridViewTextBoxColumn2.Width = 250;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewTextBoxColumn3.DataPropertyName = "Existe";
+            dataGridViewTextBoxColumn3.HeaderText = "Existe";
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            dataGridViewTextBoxColumn3.Visible = false;
+            // 
             // label11
             // 
             label11.AutoSize = true;
@@ -199,7 +255,8 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.BackColor = System.Drawing.SystemColors.Window;
+            btnLimpiar.BackColor = System.Drawing.Color.Transparent;
+            btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnLimpiar.Image = Properties.Resources.broom_5182;
             btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnLimpiar.Location = new System.Drawing.Point(509, 435);
@@ -213,7 +270,8 @@
             // 
             // btnSalir
             // 
-            btnSalir.BackColor = System.Drawing.SystemColors.Window;
+            btnSalir.BackColor = System.Drawing.Color.Transparent;
+            btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnSalir.Image = Properties.Resources._4115235_exit_logout_sign_out_114030;
             btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnSalir.Location = new System.Drawing.Point(803, 435);
@@ -227,7 +285,8 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.BackColor = System.Drawing.SystemColors.Window;
+            btnEliminar.BackColor = System.Drawing.Color.Transparent;
+            btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnEliminar.Image = Properties.Resources.trash_bin_icon_icons_com_67981;
             btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnEliminar.Location = new System.Drawing.Point(704, 435);
@@ -250,7 +309,8 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.BackColor = System.Drawing.SystemColors.Window;
+            btnGuardar.BackColor = System.Drawing.Color.Transparent;
+            btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnGuardar.Image = Properties.Resources._1490129329_rounded38_82203;
             btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnGuardar.Location = new System.Drawing.Point(612, 435);
@@ -264,7 +324,8 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.BackColor = System.Drawing.SystemColors.Window;
+            btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnBuscar.Image = Properties.Resources.seo_social_web_network_internet_340_icon_icons_com_61497;
             btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnBuscar.Location = new System.Drawing.Point(412, 435);
@@ -518,62 +579,6 @@
             txtCedula.Name = "txtCedula";
             txtCedula.Size = new System.Drawing.Size(100, 23);
             txtCedula.TabIndex = 33;
-            // 
-            // IdPuestoTrabajo
-            // 
-            IdPuestoTrabajo.DataPropertyName = "IdPuestoTrabajo";
-            IdPuestoTrabajo.HeaderText = "ID Puesto de Trabajo";
-            IdPuestoTrabajo.Name = "IdPuestoTrabajo";
-            IdPuestoTrabajo.Width = 150;
-            // 
-            // Nombre_PuestoTrabajo
-            // 
-            Nombre_PuestoTrabajo.DataPropertyName = "Nombre";
-            Nombre_PuestoTrabajo.HeaderText = "Nombre del Puesto";
-            Nombre_PuestoTrabajo.Name = "Nombre_PuestoTrabajo";
-            Nombre_PuestoTrabajo.Width = 150;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            dataGridViewTextBoxColumn2.DataPropertyName = "Descripcion";
-            dataGridViewTextBoxColumn2.HeaderText = "Descripcion del Puesto";
-            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            dataGridViewTextBoxColumn2.Width = 250;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            dataGridViewTextBoxColumn3.DataPropertyName = "Existe";
-            dataGridViewTextBoxColumn3.HeaderText = "Existe";
-            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            dataGridViewTextBoxColumn3.Visible = false;
-            // 
-            // IdEspecialidad
-            // 
-            IdEspecialidad.DataPropertyName = "IdEspecialidad";
-            IdEspecialidad.HeaderText = "ID Especialidad";
-            IdEspecialidad.Name = "IdEspecialidad";
-            IdEspecialidad.Width = 150;
-            // 
-            // Nombre
-            // 
-            Nombre.DataPropertyName = "Nombre";
-            Nombre.HeaderText = "Nombre";
-            Nombre.Name = "Nombre";
-            Nombre.Width = 150;
-            // 
-            // Descripcion
-            // 
-            Descripcion.DataPropertyName = "Descripcion";
-            Descripcion.HeaderText = "Descripcion";
-            Descripcion.Name = "Descripcion";
-            Descripcion.Width = 250;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            dataGridViewTextBoxColumn1.DataPropertyName = "Existe";
-            dataGridViewTextBoxColumn1.HeaderText = "Existe";
-            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            dataGridViewTextBoxColumn1.Visible = false;
             // 
             // Frm_Funcionarios
             // 

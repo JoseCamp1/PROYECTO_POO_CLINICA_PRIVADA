@@ -143,9 +143,29 @@ namespace Capa01_Presentacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _4115234_login_sign_in_114046 {
+            get {
+                object obj = ResourceManager.GetObject("4115234-login-sign-in_114046", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4115235_exit_logout_sign_out_114030 {
             get {
                 object obj = ResourceManager.GetObject("4115235-exit-logout-sign-out_114030", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap account_member_login_user_icon_220048 {
+            get {
+                object obj = ResourceManager.GetObject("account_member_login_user_icon_220048", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,6 +246,16 @@ namespace Capa01_Presentacion.Properties {
         internal static System.Drawing.Bitmap nurse_hospital_care_healthcare_woman_medical_clinic_icon_140900 {
             get {
                 object obj = ResourceManager.GetObject("nurse_hospital_care_healthcare_woman_medical_clinic_icon_140900", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap pc_with_monitor_icon_icons_com_56248 {
+            get {
+                object obj = ResourceManager.GetObject("pc-with-monitor_icon-icons.com_56248", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -284,7 +284,8 @@
             // 
             // btnLimpiar
             // 
-            btnLimpiar.BackColor = System.Drawing.SystemColors.Window;
+            btnLimpiar.BackColor = System.Drawing.Color.Transparent;
+            btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnLimpiar.Image = Properties.Resources.broom_5182;
             btnLimpiar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnLimpiar.Location = new System.Drawing.Point(284, 334);
@@ -298,7 +299,8 @@
             // 
             // btnSalir
             // 
-            btnSalir.BackColor = System.Drawing.SystemColors.Window;
+            btnSalir.BackColor = System.Drawing.Color.Transparent;
+            btnSalir.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnSalir.Image = Properties.Resources._4115235_exit_logout_sign_out_114030;
             btnSalir.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnSalir.Location = new System.Drawing.Point(588, 334);
@@ -312,7 +314,8 @@
             // 
             // btnEliminar
             // 
-            btnEliminar.BackColor = System.Drawing.SystemColors.Window;
+            btnEliminar.BackColor = System.Drawing.Color.Transparent;
+            btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnEliminar.Image = Properties.Resources.trash_bin_icon_icons_com_67981;
             btnEliminar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnEliminar.Location = new System.Drawing.Point(497, 334);
@@ -326,7 +329,8 @@
             // 
             // btnGuardar
             // 
-            btnGuardar.BackColor = System.Drawing.SystemColors.Window;
+            btnGuardar.BackColor = System.Drawing.Color.Transparent;
+            btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnGuardar.Image = Properties.Resources._1490129329_rounded38_82203;
             btnGuardar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnGuardar.Location = new System.Drawing.Point(387, 332);
@@ -340,7 +344,8 @@
             // 
             // btnBuscar
             // 
-            btnBuscar.BackColor = System.Drawing.SystemColors.Window;
+            btnBuscar.BackColor = System.Drawing.Color.Transparent;
+            btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             btnBuscar.Image = Properties.Resources.seo_social_web_network_internet_340_icon_icons_com_61497;
             btnBuscar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             btnBuscar.Location = new System.Drawing.Point(189, 332);
