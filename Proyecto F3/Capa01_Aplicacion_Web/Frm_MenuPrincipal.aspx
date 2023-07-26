@@ -14,13 +14,13 @@
 <body>
 
     <header class="container">
-        <h1 class="bg-secondary p-3 text-center">Menu Principal</h1>
+        <h1 class="bg-success p-3 text-center">Menu Principal</h1>
     </header>
 
     <form id="form1" runat="server">
 
         <div class="container p-3 text-center">
-            <asp:LinkButton ID="btnClientes" CssClass="btn btn-outline-secondary" runat="server" BorderStyle="None" OnClick="btnClientes_Click">Pacientes</asp:LinkButton>            
+            <asp:LinkButton ID="btnClientes" CssClass="btn btn-outline-success" runat="server" BorderStyle="None" OnClick="btnClientes_Click">Pacientes</asp:LinkButton>            
         </div>   
 
     </form>

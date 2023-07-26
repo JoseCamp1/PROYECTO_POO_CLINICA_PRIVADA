@@ -59,3 +59,9 @@ D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_Aplica
 D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_AplicacionWeb.csproj.CopyComplete
 D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_Aplicacion_Web.dll
 D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_Aplicacion_Web.pdb
+D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa02_LogicaNegocio.dll
+D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa_Entidades.dll
+D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa03_AccesoDatos.dll
+D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa02_LogicaNegocio.pdb
+D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa_Entidades.pdb
+D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa03_AccesoDatos.pdb

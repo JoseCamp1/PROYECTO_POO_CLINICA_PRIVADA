@@ -40,7 +40,7 @@ namespace Capa01_Presentacion
             paciente.Telefono = txtTelefono.Text;
             paciente.Correo = txtCorreo.Text;
             paciente.Direccion = txtDireccion.Text;
-            paciente.FechaNacimiento = DateTime.Parse(txtFechaNacimiento.Text); ;
+            paciente.FechaNacimiento = DateTime.Parse(txtFechaNacimiento.Text); 
             return paciente;
         }
 

@@ -88,6 +88,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Frm_MenuPacientes.aspx" />
     <Content Include="Frm_MenuPrincipal.aspx" />
+    <Content Include="Frm_NuevoPaciente.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -97,6 +98,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cls_Configuracion.cs" />
     <Compile Include="Frm_MenuPacientes.aspx.cs">
       <DependentUpon>Frm_MenuPacientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -110,6 +112,13 @@
     </Compile>
     <Compile Include="Frm_MenuPrincipal.aspx.designer.cs">
       <DependentUpon>Frm_MenuPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_NuevoPaciente.aspx.cs">
+      <DependentUpon>Frm_NuevoPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_NuevoPaciente.aspx.designer.cs">
+      <DependentUpon>Frm_NuevoPaciente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
