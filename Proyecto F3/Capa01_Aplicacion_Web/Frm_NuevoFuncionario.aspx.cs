@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Capa01_Aplicacion_Web
 {
-    public partial class Frm_MenuPrincipal : System.Web.UI.Page
+    public partial class Frm_NuevoFuncionario : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }       
+        }
     }
 }

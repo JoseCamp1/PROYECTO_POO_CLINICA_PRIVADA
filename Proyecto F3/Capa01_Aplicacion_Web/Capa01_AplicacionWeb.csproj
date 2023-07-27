@@ -86,9 +86,16 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Frm_MenuEspecialidades.aspx" />
+    <Content Include="Frm_MenuFuncionarios.aspx" />
     <Content Include="Frm_MenuPacientes.aspx" />
     <Content Include="Frm_MenuPrincipal.aspx" />
+    <Content Include="Frm_NuevaEspecialidad.aspx" />
+    <Content Include="Frm_NuevoFuncionario.aspx" />
     <Content Include="Frm_NuevoPaciente.aspx" />
+    <Content Include="Frm_NuevoPuestoTrabajo.aspx" />
+    <Content Include="Frm_MenuPuestosTrabajo.aspx" />
+    <Content Include="img\1.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -99,6 +106,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cls_Configuracion.cs" />
+    <Compile Include="Frm_MenuEspecialidades.aspx.cs">
+      <DependentUpon>Frm_MenuEspecialidades.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_MenuEspecialidades.aspx.designer.cs">
+      <DependentUpon>Frm_MenuEspecialidades.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MenuFuncionarios.aspx.cs">
+      <DependentUpon>Frm_MenuFuncionarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_MenuFuncionarios.aspx.designer.cs">
+      <DependentUpon>Frm_MenuFuncionarios.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Frm_MenuPacientes.aspx.cs">
       <DependentUpon>Frm_MenuPacientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -113,12 +134,40 @@
     <Compile Include="Frm_MenuPrincipal.aspx.designer.cs">
       <DependentUpon>Frm_MenuPrincipal.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Frm_NuevaEspecialidad.aspx.cs">
+      <DependentUpon>Frm_NuevaEspecialidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_NuevaEspecialidad.aspx.designer.cs">
+      <DependentUpon>Frm_NuevaEspecialidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_NuevoFuncionario.aspx.cs">
+      <DependentUpon>Frm_NuevoFuncionario.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_NuevoFuncionario.aspx.designer.cs">
+      <DependentUpon>Frm_NuevoFuncionario.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Frm_NuevoPaciente.aspx.cs">
       <DependentUpon>Frm_NuevoPaciente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Frm_NuevoPaciente.aspx.designer.cs">
       <DependentUpon>Frm_NuevoPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_NuevoPuestoTrabajo.aspx.cs">
+      <DependentUpon>Frm_NuevoPuestoTrabajo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_NuevoPuestoTrabajo.aspx.designer.cs">
+      <DependentUpon>Frm_NuevoPuestoTrabajo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MenuPuestosTrabajo.aspx.cs">
+      <DependentUpon>Frm_MenuPuestosTrabajo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_MenuPuestosTrabajo.aspx.designer.cs">
+      <DependentUpon>Frm_MenuPuestosTrabajo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

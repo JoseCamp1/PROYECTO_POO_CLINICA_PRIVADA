@@ -92,7 +92,7 @@ namespace Capa01_Aplicacion_Web
         {
             Entidad_Paciente paciente = new Entidad_Paciente();
             // si hay algo en la variable de sesion
-            if (Session["id_del_producto"] != null)
+            if (Session["id_del_paciente"] != null)
             {
                 paciente.IdPaciente = int.Parse(Session["id_del_paciente"].ToString());
                 paciente.Existe = true;

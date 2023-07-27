@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Frm_MenuPacientes.aspx.cs" Inherits="Capa01_Aplicacion_Web.Frm_MenuPacientes" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Frm_MenuPuestosTrabajo.aspx.cs" Inherits="Capa01_Aplicacion_Web.Frm_PuestosTrabajo" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Pacientes</title>
+    <title>Puestos de Trabajo</title>
     <link href="Content/bootstrap.min.css" rel="stylesheet"/>
     <script src="Scripts/bootstrap.bundle.min.js"></script>
     
@@ -19,38 +19,33 @@
 <body>
     <header class="bg-success text-light">
         <div class="container">
-            <h1 class="p-3 text-center">Pacientes</h1>
+            <h1 class="p-3 text-center">Puestos de Trabajo</h1>
         </div>        
     </header>
     <form id="form1" runat="server" class="container text-center">
         <div class="form-inline mt-3">
-            <asp:Label ID="Label2" runat="server" Text="Nombre del Paciente:" CssClass="mr-2"></asp:Label>
+            <asp:Label ID="Label2" runat="server" Text="Nombre del Puesto de Trabajo:" CssClass="mr-2"></asp:Label>
             <asp:TextBox ID="txtNombre" runat="server" CssClass="form-control mr-2"></asp:TextBox>
             <asp:Button ID="Button1" runat="server" Text="Buscar" OnClick="btnBuscar_Click" CssClass="btn btn-outline-success mr-2" />
             <asp:Button ID="btnAgregar" runat="server" Text="Agregar Nuevo" OnClick="btnAgregar_Click" CssClass="btn btn-outline-success" />
         </div>
         <div class="gridview mt-3">
-            <asp:GridView ID="grdLista" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" EmptyDataText="No existen registros para mostrar" ForeColor="Black" GridLines="Vertical" Width="100%" PageSize="8" OnPageIndexChanging="grdLista_PageIndexChanging1">
+            <asp:GridView ID="grdPuestosT" runat="server" AllowPaging="True" AutoGenerateColumns="False" BackColor="White" BorderColor="#999999" BorderStyle="Solid" BorderWidth="1px" CellPadding="3" EmptyDataText="No existen registros para mostrar" ForeColor="Black" GridLines="Vertical" Width="100%" PageSize="8" OnPageIndexChanging="grdPuestosT_PageIndexChanging">
                 <AlternatingRowStyle BackColor="#CCCCCC" />
                 <Columns>
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <asp:LinkButton ID="InkModificar" runat="server" CommandArgument='<%# Eval("IdPaciente").ToString() %>' CommandName="Modificar" OnCommand="InkModificar_Command">Modificar</asp:LinkButton>
+                            <asp:LinkButton ID="InkModificar" runat="server" CommandArgument='<%# Eval("IdPuestoTrabajo").ToString() %>' CommandName="Modificar" OnCommand="InkModificar_Command">Modificar</asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>
                     <asp:TemplateField>
                         <ItemTemplate>
-                            <asp:LinkButton ID="InkEliminar" runat="server" CommandArgument='<%# Eval("IdPaciente").ToString() %>' CommandName="Eliminar" OnCommand="InkEliminar_Command">Eliminar</asp:LinkButton>
+                            <asp:LinkButton ID="InkEliminar" runat="server" CommandArgument='<%# Eval("IdPuestoTrabajo").ToString() %>' CommandName="Eliminar" OnCommand="InkEliminar_Command">Eliminar</asp:LinkButton>
                         </ItemTemplate>
                     </asp:TemplateField>
-                    <asp:BoundField DataField="IdPaciente" HeaderText="ID" />
+                    <asp:BoundField DataField="IdPuestoTrabajo" HeaderText="ID" />
                     <asp:BoundField DataField="Nombre" HeaderText="Nombre" />
-                    <asp:BoundField DataField="Apellidos" HeaderText="Apellidos" />
-                    <asp:BoundField DataField="Cedula" HeaderText="Cedula" />
-                    <asp:BoundField DataField="Telefono" HeaderText="Telefono" />
-                    <asp:BoundField DataField="Correo" HeaderText="Correo" />
-                    <asp:BoundField DataField="Direccion" HeaderText="Direccion" />
-                    <asp:BoundField DataField="FechaNacimiento" HeaderText="Fecha de Nacimiento" />
+                    <asp:BoundField DataField="Descripcion" HeaderText="Descripcion" />                    
                     <asp:BoundField DataField="Existe" HeaderText="Existe" Visible="False" />
                 </Columns>
                 <FooterStyle BackColor="#CCCCCC" />
@@ -70,6 +65,3 @@
     </form>
 </body>
 </html> 
-
-
-
