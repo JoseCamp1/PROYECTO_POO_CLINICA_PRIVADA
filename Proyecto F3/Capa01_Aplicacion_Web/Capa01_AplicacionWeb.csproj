@@ -86,6 +86,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Frm_EnDesarrollo.aspx" />
     <Content Include="Frm_MenuEspecialidades.aspx" />
     <Content Include="Frm_MenuFuncionarios.aspx" />
     <Content Include="Frm_MenuPacientes.aspx" />
@@ -106,6 +107,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cls_Configuracion.cs" />
+    <Compile Include="Frm_EnDesarrollo.aspx.cs">
+      <DependentUpon>Frm_EnDesarrollo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_EnDesarrollo.aspx.designer.cs">
+      <DependentUpon>Frm_EnDesarrollo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Frm_MenuEspecialidades.aspx.cs">
       <DependentUpon>Frm_MenuEspecialidades.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

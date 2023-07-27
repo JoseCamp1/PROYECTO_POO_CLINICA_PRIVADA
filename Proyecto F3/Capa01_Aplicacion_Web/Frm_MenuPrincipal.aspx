@@ -34,9 +34,9 @@
                     <li><hr class="dropdown-divider"/></li>
                     <li><a class="dropdown-item " href="Frm_MenuEspecialidades.aspx">Especialidades Medicas</a></li>
                     <li><hr class="dropdown-divider"/></li>
-                    <li><a class="dropdown-item " href="#">Agenda Especialista</a></li>
+                    <li><a class="dropdown-item " href="Frm_EnDesarrollo.aspx">Agenda Especialista</a></li>
                     <li><hr class="dropdown-divider"/></li>
-                    <li><a class="dropdown-item " href="#">Usuario de Sistema</a></li>  
+                    <li><a class="dropdown-item " href="Frm_EnDesarrollo.aspx">Usuario de Sistema</a></li>  
                   </ul>
                 </li>
                 <li class="nav-item dropdown">
@@ -44,18 +44,18 @@
                     Servicios
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a class="dropdown-item " href="Frm_MenuPacientes.aspx">Citas</a></li>
+                    <li><a class="dropdown-item " href="Frm_EnDesarrollo.aspx">Citas</a></li>
                       <li><hr class="dropdown-divider"/></li>
-                    <li><a class="dropdown-item " href="#">Facturas</a></li>
+                    <li><a class="dropdown-item " href="Frm_EnDesarrollo.aspx">Facturas</a></li>
                     <li><hr class="dropdown-divider"/></li>
-                    <li><a class="dropdown-item " href="#">Otros</a></li>
+                    <li><a class="dropdown-item " href="Frm_EnDesarrollo.aspx">Otros</a></li>
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active text-white" aria-current="page" href="Frm_MenuPacientes.aspx">Sucursales</a>
+                  <a class="nav-link active text-white" aria-current="page" href="Frm_EnDesarrollo.aspx">Sucursales</a>
                 </li>            
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="Frm_MenuPacientes.aspx">Contacto</a>
+                  <a class="nav-link text-white" href="Frm_EnDesarrollo.aspx">Contacto</a>
                 </li>     
             </div>
           </div>
