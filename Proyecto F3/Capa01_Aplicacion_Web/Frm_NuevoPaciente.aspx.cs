@@ -13,6 +13,7 @@ namespace Capa01_Aplicacion_Web
 {
     public partial class Frm_NuevoPaciente : System.Web.UI.Page
     {
+        //CARGAR DATOS
         string MensajeScript;
 
         public void Limpiar()
