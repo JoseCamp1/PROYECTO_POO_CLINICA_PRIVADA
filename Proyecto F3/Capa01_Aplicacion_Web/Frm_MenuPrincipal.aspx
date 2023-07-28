@@ -34,7 +34,7 @@
                     <li><hr class="dropdown-divider"/></li>
                     <li><a class="dropdown-item " href="Frm_MenuEspecialidades.aspx">Especialidades Medicas</a></li>
                     <li><hr class="dropdown-divider"/></li>
-                    <li><a class="dropdown-item " href="Frm_EnDesarrollo.aspx">Agenda Especialista</a></li>
+                    <li><a class="dropdown-item " href="Frm_MenuAgenda.aspx">Agenda Especialistas</a></li>
                     <li><hr class="dropdown-divider"/></li>
                     <li><a class="dropdown-item " href="Frm_EnDesarrollo.aspx">Usuario de Sistema</a></li>  
                   </ul>

@@ -87,10 +87,12 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Frm_EnDesarrollo.aspx" />
+    <Content Include="Frm_MenuAgenda.aspx" />
     <Content Include="Frm_MenuEspecialidades.aspx" />
     <Content Include="Frm_MenuFuncionarios.aspx" />
     <Content Include="Frm_MenuPacientes.aspx" />
     <Content Include="Frm_MenuPrincipal.aspx" />
+    <Content Include="Frm_NuevaAgenda.aspx" />
     <Content Include="Frm_NuevaEspecialidad.aspx" />
     <Content Include="Frm_NuevoFuncionario.aspx" />
     <Content Include="Frm_NuevoPaciente.aspx" />
@@ -113,6 +115,13 @@
     </Compile>
     <Compile Include="Frm_EnDesarrollo.aspx.designer.cs">
       <DependentUpon>Frm_EnDesarrollo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MenuAgenda.aspx.cs">
+      <DependentUpon>Frm_MenuAgenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_MenuAgenda.aspx.designer.cs">
+      <DependentUpon>Frm_MenuAgenda.aspx</DependentUpon>
     </Compile>
     <Compile Include="Frm_MenuEspecialidades.aspx.cs">
       <DependentUpon>Frm_MenuEspecialidades.aspx</DependentUpon>
@@ -141,6 +150,13 @@
     </Compile>
     <Compile Include="Frm_MenuPrincipal.aspx.designer.cs">
       <DependentUpon>Frm_MenuPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_NuevaAgenda.aspx.cs">
+      <DependentUpon>Frm_NuevaAgenda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_NuevaAgenda.aspx.designer.cs">
+      <DependentUpon>Frm_NuevaAgenda.aspx</DependentUpon>
     </Compile>
     <Compile Include="Frm_NuevaEspecialidad.aspx.cs">
       <DependentUpon>Frm_NuevaEspecialidad.aspx</DependentUpon>

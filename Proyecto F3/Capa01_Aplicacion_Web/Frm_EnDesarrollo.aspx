@@ -13,7 +13,7 @@
     <form id="form1" runat="server">
         <div class="container mt-5">
             <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                <strong>¡Atención!</strong> Esta página está en desarrollo y estará disponible próximamente. ¡Gracias por su comprensión!
+                <strong>¡Atención!</strong> Esta seccion de la página está en desarrollo y estará disponible próximamente. ¡Gracias por su comprensión! <br /> Atte:<strong> El Desarrollador.</strong>  
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         </div>
