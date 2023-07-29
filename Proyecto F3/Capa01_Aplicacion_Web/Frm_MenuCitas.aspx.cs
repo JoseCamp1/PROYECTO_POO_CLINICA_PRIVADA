@@ -9,23 +9,22 @@ using System.Data;
 using Capa02_LogicaNegocio;
 using Capa_Entidades;
 
-
 namespace Capa01_Aplicacion_Web
 {
-    public partial class Frm_MenuPacientes : System.Web.UI.Page
+    public partial class Frm_Citas : System.Web.UI.Page
     {
         //CARGAR DATOS
         String mensajeScript;
-        public void cargarListaPacientes(string condicion = "")
+        public void cargarListaCitas(string condicion = "")
         {
-            BL_Paciente logica = new BL_Paciente(Cls_Configuracion.getConnectionString);
-            List<Entidad_Paciente> paciente;
+            BL_Citas logica = new BL_Citas(Cls_Configuracion.getConnectionString);
+            List<Entidad_Citas> citas;
             try
             {
-                paciente = logica.ListarPacientes(condicion);
-                if (paciente.Count > 0)
+                citas = logica.ListarCitas(condicion);
+                if (citas.Count > 0)
                 {
-                    grdLista.DataSource = paciente;
+                    grdLista.DataSource = citas;
                 }
                 grdLista.DataBind();//necesario para que visualicen los datos
             }
@@ -40,7 +39,7 @@ namespace Capa01_Aplicacion_Web
             {
                 if (!IsPostBack)
                 {
-                    cargarListaPacientes();
+                    cargarListaCitas();
                 }
             }
             catch (Exception)
@@ -48,12 +47,13 @@ namespace Capa01_Aplicacion_Web
                 //throw;
             }
         }
+
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             try
             {
-                string condicion = string.Format("NOMBRE_PACIENTE LIKE '%{0}%'", txtNombre.Text);
-                cargarListaPacientes(condicion);
+                string condicion = string.Format("ID_PACIENTE LIKE '%{0}%'", txtNombre.Text);
+                cargarListaCitas(condicion);
             }
             catch (Exception ex)
             {
@@ -67,31 +67,47 @@ namespace Capa01_Aplicacion_Web
             //eliminamos la variable de sesin, asi cuando el otro formulario pregunte si esta vacia
             //determinara que efectivamente esta vacia, lo cual significa que debamos
             //agregar un cliente nuevo
-            Session.Remove("id_del_paciente");
+            Session.Remove("id_del_cita");
             //redireccionamos al otro formulario
-            Response.Redirect("Frm_NuevoPaciente.aspx");
-        }        
+            Response.Redirect("Frm_NuevaCita.aspx");
+        }
 
         protected void btnRegresar_Click(object sender, EventArgs e)
         {
             Response.Redirect("Frm_MenuPrincipal.aspx");
         }
 
+        protected void grdLista_PageIndexChanging1(object sender, GridViewPageEventArgs e)
+        {
+            grdLista.PageIndex = e.NewPageIndex;
+            cargarListaCitas();
+        }
+
+        protected void InkModificar_Command(object sender, CommandEventArgs e)
+        {
+            //aqui vamos a asignar el valor de SESION y redireccionar la pagina
+            //en el valor de SESION colocamos el valor que contenga el Command
+            //(el ID del cliente ) al cual se le dio click
+            Session["id_del_cita"] = e.CommandArgument.ToString();
+            //redireccionamos al otro formulario(FrmClientes)
+            Response.Redirect("Frm_NuevaCita.aspx");
+        }
+
         protected void InkEliminar_Command(object sender, CommandEventArgs e)
         {
             int id = int.Parse(e.CommandArgument.ToString());
-            BL_Paciente logica = new BL_Paciente(Cls_Configuracion.getConnectionString);
-            Entidad_Paciente paciente;
+            BL_Citas logica = new BL_Citas(Cls_Configuracion.getConnectionString);
+            Entidad_Citas cita;
             try
             {
-                paciente = logica.ObtenerPaciente(id);
-                if (paciente.Existe)
+                cita = logica.ObtenerCita(id);
+                if (cita.Existe)
                 {
-                    if (logica.EliminarPaciente(paciente) > 0)
+                    if (logica.EliminarCita(cita) > 0)
                     {
-                        mensajeScript = string.Format("javascript:mostrarMensaje('Cliente eliminado con exito')");
+                        mensajeScript = string.Format("javascript:mostrarMensaje('Cita eliminada con exito')");
                         ScriptManager.RegisterStartupScript(this, typeof(string), "MensajeRetorno", mensajeScript, true);
-                        cargarListaPacientes();
+                        cargarListaCitas();
                         txtNombre.Text = "";
                     }
                     else
@@ -106,22 +122,6 @@ namespace Capa01_Aplicacion_Web
                 mensajeScript = string.Format("javascript:mostrarMensaje('{0}')", ex.Message);
                 ScriptManager.RegisterStartupScript(this, typeof(string), "MensajeRetorno", mensajeScript, true);
             }
-        }
-
-        protected void InkModificar_Command(object sender, CommandEventArgs e)
-        {
-            //aqui vamos a asignar el valor de SESION y redireccionar la pagina
-            //en el valor de SESION colocamos el valor que contenga el Command
-            //(el ID del cliente ) al cual se le dio click
-            Session["id_del_paciente"] = e.CommandArgument.ToString();
-            //redireccionamos al otro formulario(FrmClientes)
-            Response.Redirect("Frm_NuevoPaciente.aspx");
-        }        
-
-        protected void grdLista_PageIndexChanging1(object sender, GridViewPageEventArgs e)
-        {
-            grdLista.PageIndex = e.NewPageIndex;
-            cargarListaPacientes();
         }
     }
 }
