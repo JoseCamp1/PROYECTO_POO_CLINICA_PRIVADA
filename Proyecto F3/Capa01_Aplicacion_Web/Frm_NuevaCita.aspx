@@ -107,19 +107,19 @@
                         </div>
                         <div class="form-group">
                             <asp:Label ID="lblCedula" runat="server" Text="Fecha:"></asp:Label>
-                            <asp:TextBox ID="txtFecha" runat="server" CssClass="form-control" Width="100%"></asp:TextBox>
+                            <asp:TextBox ID="txtFecha" runat="server" CssClass="form-control" Width="100%" AutoPostBack="True" OnTextChanged="txtFecha_TextChanged"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <asp:Label ID="lblTelefono" runat="server" Text="Hora de Inicio:"></asp:Label>
-                            <asp:TextBox ID="txtHoraInicio" runat="server" CssClass="form-control" Width="100%"></asp:TextBox>
+                            <asp:TextBox ID="txtHoraInicio" runat="server" CssClass="form-control" Width="100%" OnTextChanged="txtHoraInicio_TextChanged" AutoPostBack="True"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <asp:Label ID="lblCorreo" runat="server" Text="Hora de Fin:"></asp:Label>
-                            <asp:TextBox ID="txtHoraFin" runat="server" CssClass="form-control" Width="100%"></asp:TextBox>
+                            <asp:TextBox ID="txtHoraFin" runat="server" CssClass="form-control" Width="100%" ReadOnly="True"></asp:TextBox>
                         </div>
                         <div class="form-group">
                             <asp:Label ID="lblDireccion" runat="server" Text="Estado:"></asp:Label>
-                            <asp:TextBox ID="txtEstado" runat="server" CssClass="form-control" Width="100%"></asp:TextBox>
+                            <asp:TextBox ID="txtEstado" runat="server" CssClass="form-control" Width="100%" ReadOnly="True"></asp:TextBox>
                         </div>
                         <div class="text-center">
                             <asp:Button ID="btnGuardar" runat="server" Text="Guardar" CssClass="btn btn-outline-success" OnClick="btnGuardar_Click" />

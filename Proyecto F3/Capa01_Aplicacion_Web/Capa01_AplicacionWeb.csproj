@@ -91,8 +91,10 @@
     <Content Include="Frm_MenuAgenda.aspx" />
     <Content Include="Frm_MenuEspecialidades.aspx" />
     <Content Include="Frm_MenuFuncionarios.aspx" />
+    <Content Include="Default.aspx" />
     <Content Include="Frm_MenuPacientes.aspx" />
     <Content Include="Frm_MenuPrincipal.aspx" />
+    <Content Include="Frm_MenuUsuarioSistema.aspx" />
     <Content Include="Frm_NuevaAgenda.aspx" />
     <Content Include="Frm_NuevaCita.aspx" />
     <Content Include="Frm_NuevaEspecialidad.aspx" />
@@ -100,6 +102,7 @@
     <Content Include="Frm_NuevoPaciente.aspx" />
     <Content Include="Frm_NuevoPuestoTrabajo.aspx" />
     <Content Include="Frm_MenuPuestosTrabajo.aspx" />
+    <Content Include="Frm_NuevoUsuarioSistema.aspx" />
     <Content Include="img\1.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -146,6 +149,13 @@
     <Compile Include="Frm_MenuFuncionarios.aspx.designer.cs">
       <DependentUpon>Frm_MenuFuncionarios.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Frm_MenuPacientes.aspx.cs">
       <DependentUpon>Frm_MenuPacientes.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -159,6 +169,13 @@
     </Compile>
     <Compile Include="Frm_MenuPrincipal.aspx.designer.cs">
       <DependentUpon>Frm_MenuPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_MenuUsuarioSistema.aspx.cs">
+      <DependentUpon>Frm_MenuUsuarioSistema.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_MenuUsuarioSistema.aspx.designer.cs">
+      <DependentUpon>Frm_MenuUsuarioSistema.aspx</DependentUpon>
     </Compile>
     <Compile Include="Frm_NuevaAgenda.aspx.cs">
       <DependentUpon>Frm_NuevaAgenda.aspx</DependentUpon>
@@ -208,6 +225,13 @@
     </Compile>
     <Compile Include="Frm_MenuPuestosTrabajo.aspx.designer.cs">
       <DependentUpon>Frm_MenuPuestosTrabajo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Frm_NuevoUsuarioSistema.aspx.cs">
+      <DependentUpon>Frm_NuevoUsuarioSistema.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Frm_NuevoUsuarioSistema.aspx.designer.cs">
+      <DependentUpon>Frm_NuevoUsuarioSistema.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

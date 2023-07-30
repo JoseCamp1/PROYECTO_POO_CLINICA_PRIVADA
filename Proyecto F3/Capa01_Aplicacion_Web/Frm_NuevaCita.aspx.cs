@@ -9,6 +9,14 @@ using System.Data;
 using Capa02_LogicaNegocio;
 using Capa_Entidades;
 
+
+using System.ComponentModel;
+
+using System.Drawing;
+using System.Globalization;
+using System.Text;
+
+
 namespace Capa01_Aplicacion_Web
 {
     public partial class Frm_NuevaCita : System.Web.UI.Page
@@ -225,6 +233,57 @@ namespace Capa01_Aplicacion_Web
         {
             grdPacientes.PageIndex = e.NewPageIndex;
             cargarListaPacientes();
+        }
+
+        protected void txtHoraInicio_TextChanged(object sender, EventArgs e)
+        {
+            // Verificar si el texto en txtHoraInicio es válido
+            if (!string.IsNullOrWhiteSpace(txtHoraInicio.Text))
+            {
+                // Intentar convertir el texto en un objeto DateTime
+                if (DateTime.TryParseExact(txtHoraInicio.Text, "HH:mm:ss", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime horaInicio))
+                {
+                    // Sumar 30 minutos a la hora de inicio
+                    DateTime horaFin = horaInicio.AddMinutes(30);
+                    txtHoraFin.Text = horaFin.ToString("HH:mm:ss");
+                }
+                else
+                {
+                    // El formato de la hora de inicio no es válido
+                    // Aquí puedes mostrar un mensaje de error o tomar alguna acción adecuada
+                    // Por ejemplo, borrar el contenido de txtHoraFin si el formato es incorrecto
+                    txtHoraFin.Text = string.Empty;
+                }
+            }
+            else
+            {
+                // El campo de hora de inicio está vacío
+                // Puedes tomar alguna acción si es necesario, como borrar el contenido de txtHoraFin
+                txtHoraFin.Text = string.Empty;
+            }
+        }
+
+        protected void txtFecha_TextChanged(object sender, EventArgs e)
+        {
+            DateTime fechaSeleccionada = DateTime.Parse(txtFecha.Text); // Obtener solo la fecha, sin la hora
+
+            // Obtener la fecha actual sin la hora
+            DateTime fechaActual = DateTime.Now.Date;
+
+            // Comparar la fecha seleccionada con la fecha actual
+            if (fechaSeleccionada < fechaActual)
+            {
+                txtEstado.Text = "INA"; // La fecha ya pasó
+            }
+            else if (fechaSeleccionada > fechaActual)
+            {
+                txtEstado.Text = "ACT"; // La fecha está en el futuro
+            }
+            else
+            {
+                //txtEstado.Text = "PEN"; // La fecha es hoy
+                txtEstado.Text = "ACT";
+            }
         }
     }
 }
