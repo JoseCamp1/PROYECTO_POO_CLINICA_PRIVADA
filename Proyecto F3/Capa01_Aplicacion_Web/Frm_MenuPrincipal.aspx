@@ -63,9 +63,21 @@
     </header>   
 
     <form id="form1" runat="server">       
-        <div class="container-fluid text-center">
-           <asp:Image ID="Image1" runat="server" ImageUrl="~/img/1.jpg" CssClass="img-fluid" />
-        </div>           
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/img/1.jpg" CssClass="img-fluid" />
+                    <h2 class="mt-3 text-center text-success">
+                        ¡Bienvenido a la Clínica El Buen Vivir!
+                    </h2>
+                    <p class="text-center fs-5">
+                        Somos una clínica comprometida con el bienestar y la salud de nuestros pacientes.
+                        Nuestro equipo de profesionales altamente capacitados está listo para brindarte
+                        la mejor atención médica en un ambiente cálido y amigable.
+                    </p>
+                </div>
+            </div>
+        </div>
     </form>
 
     <footer class="bg-dark p-1 text-white fixed-bottom">        

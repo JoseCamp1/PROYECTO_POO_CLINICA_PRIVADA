@@ -65,3 +65,4 @@ D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa03_AccesoDatos.
 D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa02_LogicaNegocio.pdb
 D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa_Entidades.pdb
 D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa03_AccesoDatos.pdb
+D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_Aplicacion_Web.g.resources

@@ -240,7 +240,7 @@ namespace Capa01_Aplicacion_Web
             // Verificar si el texto en txtHoraInicio es válido
             if (!string.IsNullOrWhiteSpace(txtHoraInicio.Text))
             {
-                // Intentar convertir el texto en un objeto DateTime
+                // convertir el texto en un objeto DateTime
                 if (DateTime.TryParseExact(txtHoraInicio.Text, "HH:mm:ss", CultureInfo.InvariantCulture, DateTimeStyles.None, out DateTime horaInicio))
                 {
                     // Sumar 30 minutos a la hora de inicio
@@ -249,16 +249,13 @@ namespace Capa01_Aplicacion_Web
                 }
                 else
                 {
-                    // El formato de la hora de inicio no es válido
-                    // Aquí puedes mostrar un mensaje de error o tomar alguna acción adecuada
-                    // Por ejemplo, borrar el contenido de txtHoraFin si el formato es incorrecto
+                    // El formato de la hora de inicio no es válido                    
                     txtHoraFin.Text = string.Empty;
                 }
             }
             else
             {
-                // El campo de hora de inicio está vacío
-                // Puedes tomar alguna acción si es necesario, como borrar el contenido de txtHoraFin
+                // El campo de hora de inicio está vacío                
                 txtHoraFin.Text = string.Empty;
             }
         }
