@@ -6,31 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title></title>
     <link href="Content/bootstrap.min.css" rel="stylesheet"/>
-    <script src="Scripts/bootstrap.bundle.min.js"></script>    
-
+    <script src="Scripts/bootstrap.bundle.min.js"></script>   
+    
     <style>
-        body {
-            background-image: url('https://localhost:44369/img/2.png');
-            background-repeat: no-repeat;
+        body{
+            background-image:url('https://localhost:44369/img/2.png');
+            background-repeat:no-repeat;
             background-size: cover;
-        }
-
-        .login-container {
-            position: relative;
-            background-color: rgba(255, 255, 255, 0.8); /* Fondo transparente */
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 100px;
-        }
-
-        .login-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1; /* Para que la imagen quede detrás del formulario */
-            opacity: 0.8;
+            
         }
     </style>
 
@@ -42,11 +25,11 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container">
+        <div class="container mt-5">
             <div class="row justify-content-center">
-                <div class="col-md-4 login-container">
-                    <div class="card">
-                        <div class="card-header bg-success text-white">
+                <div class="col-md-4">
+                    <div class="">
+                        <div class="card-header text-white">
                             <h3 class="text-center">Iniciar sesión</h3>
                         </div>
                         <div class="card-body">
@@ -59,16 +42,20 @@
                                 <asp:TextBox ID="txtPassword" runat="server" TextMode="Password" CssClass="form-control"></asp:TextBox>
                             </div>
                             <div class="text-center">
-                                <asp:Button ID="btnLogin" runat="server" Text="Ingresar" CssClass="btn btn-outline-success" OnClick="btnLogin_Click" />
+                                <asp:Button ID="btnLogin" runat="server" Text="Ingresar" CssClass="btn btn-success" OnClick="btnLogin_Click" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <img src="~/img/2.png" class="login-image" />
+        </div>        
     </form>
 </body>
 </html>
+
+
+
+
+
 
 
