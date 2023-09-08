@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KWzCs/9SDm4um5nBvQgEWpW11emK6MuW6S2HHPPLNvw7pmaNH7GM8otsCM2Qw9wOnlpxC5dzeO8z+VoONH9ZkQ==",
+  "dgSpecHash": "K0+mG0sDfQmuH6In5OrSM9AhN5n0R5EWc9aFL+rrV9e/w1/Z2N+J7YaUe24sxyJvA8bk/MCQJ5IQp+m++vmKwA==",
   "success": true,
-  "projectFilePath": "D:\\POO C#\\Proyecto POO\\Proyecto F3\\Proyecto_POO_F3\\Capa01_Presentacion.csproj",
+  "projectFilePath": "D:\\PROGRAMACION INA\\POO C#\\Proyecto POO\\Proyecto F3\\Proyecto_POO_F3\\Capa01_Presentacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JoaCa\\.nuget\\packages\\bootstrap\\5.3.0\\bootstrap.5.3.0.nupkg.sha512",
     "C:\\Users\\JoaCa\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",

@@ -66,3 +66,139 @@ D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa02_LogicaNegoci
 D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa_Entidades.pdb
 D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa03_AccesoDatos.pdb
 D:\POO C#\Proyecto POO\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_Aplicacion_Web.g.resources
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa01_Aplicacion_Web.dll.config
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa01_Aplicacion_Web.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa01_Aplicacion_Web.pdb
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\csc.exe
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\csc.exe.config
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\csc.rsp
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\csi.exe
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\csi.exe.config
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\csi.rsp
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.Managed.Core.targets
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.AppContext.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Collections.Immutable.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Console.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Globalization.Calendars.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.IO.Compression.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.IO.FileSystem.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Net.Http.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Net.Sockets.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.ValueTuple.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Xml.XPath.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\vbc.exe
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\vbc.exe.config
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\vbc.rsp
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\VBCSCompiler.exe
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\VBCSCompiler.exe.config
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa02_LogicaNegocio.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa_Entidades.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\System.Data.SqlClient.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa03_AccesoDatos.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa02_LogicaNegocio.pdb
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa_Entidades.pdb
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\System.Data.SqlClient.xml
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa03_AccesoDatos.pdb
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_AplicacionWeb.csproj.AssemblyReference.cache
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_Aplicacion_Web.g.resources
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_AplicacionWeb.csproj.CoreCompileInputs.cache
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_AplicacionWeb.csproj.CopyComplete
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_Aplicacion_Web.dll
+D:\PROGRAMACION INA\POO C#\Proyecto POO\PROYECTO_POO_CLINICA_PRIVADA\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_Aplicacion_Web.pdb
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa01_Aplicacion_Web.dll.config
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa01_Aplicacion_Web.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa01_Aplicacion_Web.pdb
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\csc.exe
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\csc.exe.config
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\csc.rsp
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\csi.exe
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\csi.exe.config
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\csi.rsp
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.AppContext.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Collections.Immutable.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Console.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Globalization.Calendars.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.IO.Compression.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.IO.FileSystem.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Net.Http.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Net.Sockets.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Reflection.Metadata.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.ValueTuple.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Xml.XPath.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\vbc.exe
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\vbc.exe.config
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\vbc.rsp
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\VBCSCompiler.exe
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\roslyn\VBCSCompiler.exe.config
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa02_LogicaNegocio.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa_Entidades.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\System.Data.SqlClient.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa03_AccesoDatos.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa02_LogicaNegocio.pdb
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa_Entidades.pdb
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\System.Data.SqlClient.xml
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Proyecto F3\Capa01_Aplicacion_Web\bin\Capa03_AccesoDatos.pdb
+D:\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_AplicacionWeb.csproj.AssemblyReference.cache
+D:\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_Aplicacion_Web.g.resources
+D:\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_AplicacionWeb.csproj.CoreCompileInputs.cache
+D:\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_AplicacionWeb.csproj.CopyComplete
+D:\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_Aplicacion_Web.dll
+D:\Proyecto F3\Capa01_Aplicacion_Web\obj\Debug\Capa01_Aplicacion_Web.pdb

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/zHn0/jAMnRAQCzOzL44G3CxSxG/4qJhLoszahD3R0OFUawS/OUJht0maFfo+7D+xdqfKoFx8q+eomplMWbetQ==",
+  "dgSpecHash": "2Bs19nqdgwWyDvMkwaD9RXu5qcqxUut3jKix6cDwk9w3RAQ0RF55EplPMZw7KDjfjfA76DW4Fw9ves6JDxIyWQ==",
   "success": true,
-  "projectFilePath": "D:\\POO C#\\Proyecto POO\\Proyecto F3\\Capa_Entidades\\Capa_Entidades.csproj",
+  "projectFilePath": "D:\\PROGRAMACION INA\\POO C#\\Proyecto POO\\Proyecto F3\\Capa_Entidades\\Capa_Entidades.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JoaCa\\.nuget\\packages\\bootstrap\\5.3.0\\bootstrap.5.3.0.nupkg.sha512",
     "C:\\Users\\JoaCa\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",

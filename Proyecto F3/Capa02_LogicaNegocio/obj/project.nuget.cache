@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3TMsCodEewjpjYpyidRQs7NdPLhNFNiDQ4e+Z+VHsbDo+WzBYovOvlbopnZ5VIxVjO9SNCuKpLv3/VW6DP5SLQ==",
+  "dgSpecHash": "HiSlE9KlZjFLQ1GPjE4YaxdgcTtR7N1FUynANrm/h+NEkOCaKrLmkhyyupLzR7cQOPuNkkchv2kVoTvZNc0jfg==",
   "success": true,
-  "projectFilePath": "D:\\POO C#\\Proyecto POO\\Proyecto F3\\Capa02_LogicaNegocio\\Capa02_LogicaNegocio.csproj",
+  "projectFilePath": "D:\\PROGRAMACION INA\\POO C#\\Proyecto POO\\Proyecto F3\\Capa02_LogicaNegocio\\Capa02_LogicaNegocio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JoaCa\\.nuget\\packages\\bootstrap\\5.3.0\\bootstrap.5.3.0.nupkg.sha512",
     "C:\\Users\\JoaCa\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
