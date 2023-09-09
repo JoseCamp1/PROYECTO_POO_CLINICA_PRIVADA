@@ -1,6 +1,6 @@
 # PROYECTO_POO_CLINICA_PRIVADA
 
-Este es el proyecto desarrollado como parte del módulo de Programación Orientada a Objetos (POO) en el INA. El objetivo de este proyecto es crear una aplicación de gestión para una clínica privada utilizando varias tecnologías, incluyendo SQL, C#, ASP.NET y Bootstrap.
+Este es el proyecto desarrollado como parte del módulo de Programación Orientada a Objetos (POO) en el INA. El objetivo de este proyecto es crear una aplicación de gestión para una clínica privada utilizando varias tecnologías, incluyendo TSQL, C#, ASP.NET y Bootstrap.
 
 ## Descripción
 
