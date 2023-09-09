@@ -8,7 +8,7 @@ Este proyecto se enfoca en la creación de una aplicación de software que permi
 
 ## Tecnologías Utilizadas
 
-- SQL: Para la gestión de la base de datos.
+- TSQL: Para la gestión de la base de datos.
 - C#: Para la lógica de la aplicación.
 - ASP.NET: Para el desarrollo web.
 - Bootstrap: Para el diseño de la interfaz de usuario.
